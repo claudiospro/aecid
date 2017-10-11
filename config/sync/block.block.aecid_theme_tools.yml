@@ -1,0 +1,26 @@
+uuid: 5bf45f85-868d-4881-ac6c-0d175120f1bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - aecid_theme
+_core:
+  default_config_hash: XVQWauJkRJx8d4HH_FLD8EUm7YerKLgRRzyIzq9V2kI
+id: aecid_theme_tools
+theme: aecid_theme
+region: sidebar_second
+weight: -14
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

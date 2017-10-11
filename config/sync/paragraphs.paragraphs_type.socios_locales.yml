@@ -1,0 +1,7 @@
+uuid: 3bbadcbd-fe24-4b48-87d8-826931b8d8d1
+langcode: en
+status: true
+dependencies: {  }
+id: socios_locales
+label: 'Socios Locales'
+behavior_plugins: {  }

@@ -1,0 +1,20 @@
+uuid: 7509133f-c6b8-4a09-8110-5e157aceff05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_cargo_rep_peru
+  module:
+    - user
+id: user.user.field_cargo_rep_peru
+field_name: field_cargo_rep_peru
+entity_type: user
+bundle: user
+label: Cargo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

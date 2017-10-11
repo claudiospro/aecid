@@ -1,0 +1,33 @@
+uuid: c5ed01f3-6f12-4974-9a41-b7912e2d8a97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.canalizadores.field_canalizadores
+    - field.field.paragraph.canalizadores.field_porcentaje
+    - paragraphs.paragraphs_type.canalizadores
+  module:
+    - content_moderation
+    - entity_reference_views_select
+id: paragraph.canalizadores.default
+targetEntityType: paragraph
+bundle: canalizadores
+mode: default
+content:
+  field_canalizadores:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_select
+    region: content
+  field_porcentaje:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

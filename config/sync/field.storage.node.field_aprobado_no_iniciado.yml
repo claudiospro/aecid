@@ -1,0 +1,22 @@
+uuid: afb24530-3ea7-44da-b0fb-a993b5fd182f
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_aprobado_no_iniciado
+field_name: field_aprobado_no_iniciado
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

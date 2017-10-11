@@ -1,0 +1,21 @@
+uuid: fbad1c78-5830-448d-9cf3-7ba4bfa52e30
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.tipo_de_cambio
+  module:
+    - user
+id: node.tipo_de_cambio.teaser
+targetEntityType: node
+bundle: tipo_de_cambio
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_fecha_tipo_cambio: true
+  field_moneda_tipo_cambio: true
+  field_tasa_tipo_cambio: true

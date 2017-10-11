@@ -1,0 +1,25 @@
+uuid: 141fd39b-5277-45c3-b302-aa944614f7b9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9f0a7841-5968-4239-a4cd-aa1e8ed2c2e2'
+  module:
+    - block_content
+  theme:
+    - aecid_theme
+id: titulodelpidedepagina
+theme: aecid_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:9f0a7841-5968-4239-a4cd-aa1e8ed2c2e2'
+settings:
+  id: 'block_content:9f0a7841-5968-4239-a4cd-aa1e8ed2c2e2'
+  label: 'Titulo del Pide de Página'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

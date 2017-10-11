@@ -1,0 +1,5 @@
+services:
+  aecid_twig_extension.twig.TwigExtension:
+    class: Drupal\aecid_twig_extension\TwigExtension
+    tags:
+      - {name: twig.extension}

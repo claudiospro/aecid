@@ -1,0 +1,22 @@
+uuid: e7f1e9fb-b3dc-4c0f-8cda-1eaa6fe9a17b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.intervencion
+  module:
+    - text
+id: node.intervencion.body
+field_name: body
+entity_type: node
+bundle: intervencion
+label: Descripción
+description: 'Breve descripción de la intervención. Máximo 1500 caracteres.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: 4195e79b-035c-4632-8700-23339057d568
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sitio_web
+    - node.type.actor_peruano
+  module:
+    - link
+id: node.actor_peruano.field_sitio_web
+field_name: field_sitio_web
+entity_type: node
+bundle: actor_peruano
+label: 'Sitio Web'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

@@ -1,0 +1,13 @@
+uuid: c3958c26-7054-4c39-b579-0ba249b4d663
+langcode: en
+status: true
+dependencies:
+  module:
+    - aecid_bulk_actions
+_core:
+  default_config_hash: QQhc8hLAzLt1G4kiP3GW-iAmVVcS9eoAc8qyZvHngEM
+id: change_moderation_state_aprobado
+label: 'Cambia el Estado de la Intervencion - Aprobado'
+type: node
+plugin: change_moderation_state_aprobado
+configuration: {  }

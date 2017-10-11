@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains extend_decimal.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function extend_decimal_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the extend_decimal module.
+    case 'help.page.extend_decimal':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Extender mcantidad de número decimal') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Prevents validation of decimal numbers
+ * @see https://www.drupal.org/node/2230909
+ */
+function extend_decimal_field_widget_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+  $field_definition = $context['items']->getFieldDefinition();
+  if ($field_definition->getType() == 'decimal') {
+    $element['value']['#step'] = 'any';
+  }
+}

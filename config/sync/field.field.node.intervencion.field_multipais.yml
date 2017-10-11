@@ -1,0 +1,23 @@
+uuid: 8c1214cc-a172-4ee6-8d0d-ad229631d589
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multipais
+    - node.type.intervencion
+id: node.intervencion.field_multipais
+field_name: field_multipais
+entity_type: node
+bundle: intervencion
+label: Multipaís
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 8920eb2f-1c26-4fbe-8bf1-f798ecdda696
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_acronimo
+  module:
+    - user
+id: user.user.field_acronimo
+field_name: field_acronimo
+entity_type: user
+bundle: user
+label: Acronimo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,148 @@
+jQuery(document).ready(function($) {
+  /*Preloader*/
+  var preloader = '<div class="aecid-preloader">';
+  preloader += '  <img src="/sites/default/files/aecid-preloader-intranet.svg" width="150" height="150">';
+  preloader += '  <label>';
+  preloader += '    <h3>100%</h3>';
+  preloader += '    <small>Completando...</small>';
+  preloader += '  </label>';
+  preloader += '</div>';
+  /*********************
+  Banner Front Page
+  *********************/
+  $('div[data-at-row="navbar"]').append('<div class="b-prev"></div><div class="b-next"></div>');
+  var num_banner_slides = $('div[data-at-row="navbar"] .view.view-banner-portada > .view-content > .views-row').length;
+  var _count = 0;
+
+  setInterval(function(){
+    if(_count < (num_banner_slides - 1)){
+      _count ++;
+    }else{
+      _count = 0;
+    }
+    $('div[data-at-row="navbar"] .view.view-banner-portada > .view-content').css({'margin-left':-(_count * 100)+'%'});
+  }, 5000);
+
+  $('div[data-at-row="navbar"] .b-prev').click(function(event) {
+    if(_count == 0){
+      _count = (num_banner_slides - 1);
+    }else{
+      _count--;
+    }
+    $('div[data-at-row="navbar"] .view.view-banner-portada > .view-content').css({'margin-left':-(_count * 100)+'%'});
+  });
+
+  $('div[data-at-row="navbar"] .b-next').click(function(event) {
+    if(_count < (num_banner_slides - 1)){
+      _count ++;
+    }else{
+      _count = 0;
+    }
+    $('div[data-at-row="navbar"] .view.view-banner-portada > .view-content').css({'margin-left':-(_count * 100)+'%'});
+  });
+
+  /*Mapeo*/
+  $('#mapeo-regions-container .mapeo-all-reload').on('click', function(event) {
+    window.location.reload();
+    return false;
+  });
+  $.ajax({
+    url: '/extranet/mapeo/map',
+    type: 'GET',
+    dataType: 'json',
+    success: function(data){
+      $('#mapeo-map-container').html(data);
+      $('#mapeo-regions-container table tbody tr td a').on('click', function(e) {
+        $.ajax({
+          url: $(this).attr('href'),
+          type: 'GET',
+          dataType: 'json',
+          beforeSend: function(){
+            $('.path-mapeo div[data-at-row="main"]').css({'opacity':'0.2'});
+            $('body').append(preloader);
+            $('.aecid-preloader').show();
+          },
+          success: function(resp){
+            $('.aecid-preloader').hide();
+            $('.aecid-preloader').remove();
+            $('.view-mapeo table.table.views-table tbody').html(resp[0]);
+            $('#mapeo-regions-container').html(resp[1]);
+            $('.path-mapeo div[data-at-row="main"]').css({'opacity':'1'});
+            $('#mapeo-regions-container .mapeo-all-reload').show();
+            console.log(resp);
+          },
+        });
+
+        return false;
+      });
+      $('#mapeo-map-container .st0').on('click', function(e) {
+        console.log($(this).attr('id'));
+      });
+      $('#mapeo-regions-container table tbody tr').each(function(index, el) {
+        if($(el).children().eq(0).attr('c') != '0'){
+          $('#mapeo-map-container .st0[id="'+$(el).children().eq(0).attr('d')+'"]').addClass('stactive');
+        }
+      });
+      $('#mapeo-map-container .st0').hover(function() {
+        $(this).css({'fill':'#FFB80F'});
+      }, function() {
+        $(this).css({'fill':'#c8c8c8'});
+        $('#mapeo-map-container .st0.stactive').css({'fill':'#D80F39'});
+      });
+      $('#mapeo-regions-container table tbody > tr td:nth-child(1)').hover(function() {
+        $('#mapeo-map-container .st0[id="'+$(this).attr('d')+'"]').css({'fill':'#FFB80F'});
+      }, function() {
+        $('#mapeo-map-container .st0[id="'+$(this).attr('d')+'"]').css({'fill':'#c8c8c8'});
+        $('#mapeo-map-container .st0.stactive').css({'fill':'#D80F39'});
+      });
+    }
+  });
+
+  /*Form Contact*/
+  $('body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form input[data-drupal-selector="edit-name"]').attr('placeholder', 'Nombre *');
+  $('body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form input[data-drupal-selector="edit-institucion"]').attr('placeholder', 'Institución');
+  $('body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form input[data-drupal-selector="edit-email"]').attr('placeholder', 'E-mail *');
+  $('body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form input[data-drupal-selector="edit-telefono"]').attr('placeholder', 'Teléfono');
+  $('body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form input[data-drupal-selector="edit-subject"]').attr('placeholder', 'Asunto *');
+  $('body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form textarea[data-drupal-selector="edit-message"]').attr('placeholder', 'Mensaje *');
+
+  /*********************
+  Iconos Accesos
+  *********************/
+  for(var i = 0; i < $('body.path-frontpage div[data-at-row="features"] .region > .block').length; i++){
+    var _u = $('body.path-frontpage div[data-at-row="features"] .region > .block').eq(i).find('.block__content .field-name-field-link-acceso-portada .field__item a').attr('href');
+    $('body.path-frontpage div[data-at-row="features"] .region > .block').eq(i).find('.block__content .field-name-field-icono-acceso-portada > figure').attr('u',_u);
+  }
+  for(var i = 0; i < $('body.path-frontpage div[data-at-row="header"] .region > .block').length; i++){
+    var _u = $('body.path-frontpage div[data-at-row="header"] .region > .block').eq(i).find('.block__content .field-name-field-link-acceso-portada .field__item a').attr('href');
+    $('body.path-frontpage div[data-at-row="header"] .region > .block').eq(i).find('.block__content .field-name-field-icono-acceso-portada > figure').attr('u',_u);
+  }
+  for(var i = 0; i < $('div[data-at-row="subfeatures"] .region > .block').length; i++){
+    var _u = $('div[data-at-row="subfeatures"] .region > .block').eq(i).find('.block__content .field-name-field-des-acceso-pie-pag .field__item a').attr('href');
+    $('div[data-at-row="subfeatures"] .region > .block').eq(i).find('.block__content .field-name-field-icono-acceso-pie-pagina > figure').attr('u',_u);
+  }
+  $('body.path-frontpage div[data-at-row="features"] .region .block .block__content .field-name-field-icono-acceso-portada > figure').click(function(event) {
+    var _str = $(this).attr('u');
+    if(_str.search("https") != -1 || _str.search("http") != -1){
+      window.open(_str,'_blank');
+    }else{
+      window.location.href = _str;
+    }
+  });
+  $('body.path-frontpage div[data-at-row="header"] .region .block .block__content .field-name-field-icono-acceso-portada > figure').click(function(event) {
+    var _str = $(this).attr('u');
+    if(_str.search("https") != -1 || _str.search("http") != -1){
+      window.open(_str,'_blank');
+    }else{
+      window.location.href = _str;
+    }
+  });
+  $('div[data-at-row="subfeatures"] .region .block .block__content .field-name-field-icono-acceso-pie-pagina > figure').click(function(event) {
+    var _str = $(this).attr('u');
+    if(_str.search("https") != -1 || _str.search("http") != -1){
+      window.open(_str,'_blank');
+    }else{
+      window.location.href = _str;
+    }
+  });
+});

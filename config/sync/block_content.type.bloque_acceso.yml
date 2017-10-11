@@ -1,0 +1,8 @@
+uuid: b0af9255-dd2b-4a3c-9bc1-232e2d36e9be
+langcode: en
+status: true
+dependencies: {  }
+id: bloque_acceso
+label: 'Bloque Acceso'
+revision: 0
+description: 'Bloques para accesos importantes de la portada.'

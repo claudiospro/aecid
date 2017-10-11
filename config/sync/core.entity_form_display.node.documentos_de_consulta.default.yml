@@ -1,0 +1,56 @@
+uuid: 7ad31a49-e288-45d8-8e83-b3cb4ab71693
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.documentos_de_consulta.body
+    - field.field.node.documentos_de_consulta.field_adjunto
+    - field.field.node.documentos_de_consulta.field_tags
+    - node.type.documentos_de_consulta
+  module:
+    - file
+    - text
+id: node.documentos_de_consulta.default
+targetEntityType: node
+bundle: documentos_de_consulta
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_adjunto:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_tags:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

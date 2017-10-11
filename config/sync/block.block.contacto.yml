@@ -1,0 +1,31 @@
+uuid: 6bd80c78-cad7-4e32-ab2e-47b6d376b53c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_acceso:4fc94f53-abce-4e4d-9822-e13b77f318cd'
+  module:
+    - block_content
+    - system
+  theme:
+    - aecid_theme
+id: contacto
+theme: aecid_theme
+region: header_second
+weight: 0
+provider: null
+plugin: 'block_content:4fc94f53-abce-4e4d-9822-e13b77f318cd'
+settings:
+  id: 'block_content:4fc94f53-abce-4e4d-9822-e13b77f318cd'
+  label: Contacto
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

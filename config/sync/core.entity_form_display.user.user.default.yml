@@ -1,0 +1,439 @@
+uuid: 998c7bac-2b83-4d4c-9f7a-16fb993b6fd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_acronimo
+    - field.field.user.user.field_cargo_alt
+    - field.field.user.user.field_cargo_rep_peru
+    - field.field.user.user.field_cargo_responsable
+    - field.field.user.user.field_celular_alt
+    - field.field.user.user.field_celular_rep_peru
+    - field.field.user.user.field_codigo_postal_esp
+    - field.field.user.user.field_correo_alt
+    - field.field.user.user.field_correo_esp
+    - field.field.user.user.field_correo_rep_peru
+    - field.field.user.user.field_correo_responsable
+    - field.field.user.user.field_departamento_provincia_dis
+    - field.field.user.user.field_direccion
+    - field.field.user.user.field_direccion_esp
+    - field.field.user.user.field_fax
+    - field.field.user.user.field_fax_esp
+    - field.field.user.user.field_localidad_esp
+    - field.field.user.user.field_nombre_alt
+    - field.field.user.user.field_nombre_largo
+    - field.field.user.user.field_nombre_rep_peru
+    - field.field.user.user.field_nombre_responsable
+    - field.field.user.user.field_provincia_esp
+    - field.field.user.user.field_sitio_web
+    - field.field.user.user.field_sitio_web_esp
+    - field.field.user.user.field_telefono
+    - field.field.user.user.field_telefono_alt
+    - field.field.user.user.field_telefono_esp
+    - field.field.user.user.field_telefono_rep_peru
+    - field.field.user.user.field_telefono_responsable
+    - field.field.user.user.field_tipo
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - field_group
+    - image
+    - link
+    - shs
+    - user
+third_party_settings:
+  field_group:
+    group_espanoles:
+      children:
+        - group_informacion_basica
+        - group_datos_en_peru
+        - group_datos_en_espana
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        label: Españoles
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: Españoles
+    group_informacion_basica:
+      children:
+        - field_tipo
+        - field_acronimo
+        - field_nombre_largo
+        - user_picture
+      parent_name: group_espanoles
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Información Básica'
+    group_datos_en_peru:
+      children:
+        - field_direccion
+        - field_departamento_provincia_dis
+        - field_telefono
+        - field_fax
+        - contact
+        - account
+        - field_sitio_web
+        - group_representante
+        - group_contacto_alterno
+      parent_name: group_espanoles
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Datos en Perú'
+    group_representante:
+      children:
+        - field_nombre_rep_peru
+        - field_cargo_rep_peru
+        - field_telefono_rep_peru
+        - field_celular_rep_peru
+        - field_correo_rep_peru
+      parent_name: group_datos_en_peru
+      weight: 29
+      format_type: fieldset
+      format_settings:
+        label: Representante
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Representante
+    group_contacto_alterno:
+      children:
+        - field_nombre_alt
+        - field_cargo_alt
+        - field_telefono_alt
+        - field_celular_alt
+        - field_correo_alt
+      parent_name: group_datos_en_peru
+      weight: 30
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Contacto alterno'
+    group_datos_en_espana:
+      children:
+        - field_direccion_esp
+        - field_provincia_esp
+        - field_localidad_esp
+        - field_codigo_postal_esp
+        - field_telefono_esp
+        - field_fax_esp
+        - field_correo_esp
+        - field_sitio_web_esp
+        - group_responsable_de_peru
+      parent_name: group_espanoles
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Datos en España'
+    group_responsable_de_peru:
+      children:
+        - field_nombre_responsable
+        - field_cargo_responsable
+        - field_telefono_responsable
+        - field_correo_responsable
+      parent_name: group_datos_en_espana
+      weight: 10
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Responsable de Perú'
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_acronimo:
+    weight: 7
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cargo_alt:
+    weight: 36
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cargo_rep_peru:
+    weight: 31
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cargo_responsable:
+    weight: 41
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_celular_alt:
+    weight: 38
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_celular_rep_peru:
+    weight: 33
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_codigo_postal_esp:
+    weight: 5
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_correo_alt:
+    weight: 39
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_correo_esp:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_correo_rep_peru:
+    weight: 34
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_correo_responsable:
+    weight: 43
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_departamento_provincia_dis:
+    weight: 23
+    settings:
+      display_node_count: false
+      create_new_items: false
+      create_new_levels: false
+      force_deepest: false
+    third_party_settings: {  }
+    type: options_shs
+    region: content
+  field_direccion:
+    weight: 22
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_direccion_esp:
+    weight: 2
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fax:
+    weight: 25
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fax_esp:
+    weight: 7
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_localidad_esp:
+    weight: 4
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nombre_alt:
+    weight: 35
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nombre_largo:
+    weight: 8
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nombre_rep_peru:
+    weight: 30
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nombre_responsable:
+    weight: 40
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_provincia_esp:
+    weight: 3
+    settings:
+      display_node_count: false
+      create_new_items: false
+      create_new_levels: false
+      force_deepest: false
+    third_party_settings: {  }
+    type: options_shs
+    region: content
+  field_sitio_web:
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_sitio_web_esp:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_telefono:
+    weight: 24
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_telefono_alt:
+    weight: 37
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_telefono_esp:
+    weight: 6
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_telefono_rep_peru:
+    weight: 32
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_telefono_responsable:
+    weight: 42
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tipo:
+    weight: 6
+    settings:
+      display_node_count: false
+      create_new_items: false
+      create_new_levels: false
+      force_deepest: false
+    third_party_settings: {  }
+    type: options_shs
+    region: content
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    weight: 9
+    region: content
+hidden:
+  language: true
+  timezone: true

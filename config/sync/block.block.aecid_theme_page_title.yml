@@ -1,0 +1,27 @@
+uuid: 62ed5124-d565-4275-a459-7cdeeed93f67
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aecid_theme
+_core:
+  default_config_hash: w8zuOS_ojFMv5lMGi1D6sZN6l0Ne3JWMJgv9nPx8RUQ
+id: aecid_theme_page_title
+theme: aecid_theme
+region: content
+weight: -14
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/*\r\n/user/*\r\n<front>"
+    negate: true
+    context_mapping: {  }

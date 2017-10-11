@@ -1,0 +1,23 @@
+uuid: 0c8c580b-4aeb-4157-bb77-a042f57c06f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_porcentaje
+    - paragraphs.paragraphs_type.ods
+id: paragraph.ods.field_porcentaje
+field_name: field_porcentaje
+entity_type: paragraph
+bundle: ods
+label: Porcentaje
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

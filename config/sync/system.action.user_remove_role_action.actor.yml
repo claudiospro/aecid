@@ -1,0 +1,14 @@
+uuid: 4d4387ad-dda9-4723-ba08-10b9acf3447c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.actor
+  module:
+    - user
+id: user_remove_role_action.actor
+label: 'Remove the Actor role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: actor

@@ -1,0 +1,31 @@
+uuid: c994b2bc-015c-4ae7-895a-4abb1799a9d8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_acceso:127dc9cc-243e-44fc-8d5f-4b8a58d2ce32'
+  module:
+    - block_content
+    - system
+  theme:
+    - aecid_theme
+id: quienesparticipan
+theme: aecid_theme
+region: features_third
+weight: 0
+provider: null
+plugin: 'block_content:127dc9cc-243e-44fc-8d5f-4b8a58d2ce32'
+settings:
+  id: 'block_content:127dc9cc-243e-44fc-8d5f-4b8a58d2ce32'
+  label: '¿Quienes Participan?'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

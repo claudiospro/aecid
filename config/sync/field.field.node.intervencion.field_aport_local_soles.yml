@@ -1,0 +1,23 @@
+uuid: e5d3408f-82be-41bc-b41b-a93477ce0d96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aport_local_soles
+    - node.type.intervencion
+id: node.intervencion.field_aport_local_soles
+field_name: field_aport_local_soles
+entity_type: node
+bundle: intervencion
+label: 'Monto         S/.'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: S/.
+field_type: decimal

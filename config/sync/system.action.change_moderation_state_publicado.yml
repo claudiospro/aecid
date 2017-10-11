@@ -1,0 +1,13 @@
+uuid: 4bed14d1-203b-4142-a1c6-17cb9ac49b0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - aecid_bulk_actions
+_core:
+  default_config_hash: F_rZA1W9etHCBvVq3tldNDYKNQocsa-6O7PzLVFd9Xo
+id: change_moderation_state_publicado
+label: 'Cambia el Estado de la Intervencion - Publicado'
+type: node
+plugin: change_moderation_state_publicado
+configuration: {  }

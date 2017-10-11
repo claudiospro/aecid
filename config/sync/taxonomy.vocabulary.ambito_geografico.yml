@@ -1,0 +1,9 @@
+uuid: 860d4c63-3de9-4063-a1f2-dbcf156dd63e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Ámbito Geográfico'
+vid: ambito_geografico
+description: ''
+hierarchy: 0
+weight: 0

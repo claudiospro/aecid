@@ -1,0 +1,20 @@
+uuid: e53c0662-cd70-453f-a8cd-4e8201e7202d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_localidad_esp
+  module:
+    - user
+id: user.user.field_localidad_esp
+field_name: field_localidad_esp
+entity_type: user
+bundle: user
+label: Localidad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+aecid_politicace.plan_director:
+  version: 8.x-1.0
+  css:
+    theme:
+      css/aecid_plandirector.css: {}
+  js:
+    js/aecid_plandirector.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+
+aecid_politicace.marcoasociacion:
+  version: 8.x-1.0
+  css:
+    theme:
+      css/aecid_marcoasociacion.css: {}
+  js:
+    js/aecid_marcoasociacion.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once

@@ -1,0 +1,30 @@
+uuid: 00d0999c-5075-44f3-b992-b1b04440136b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_moneda
+field_name: field_moneda
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: €
+      label: €
+    -
+      value: $
+      label: $
+    -
+      value: S/
+      label: S/
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

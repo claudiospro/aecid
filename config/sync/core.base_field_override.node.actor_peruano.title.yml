@@ -1,0 +1,18 @@
+uuid: 88ed61f1-39a5-4b2a-ab32-c0ca3e54a9d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.actor_peruano
+id: node.actor_peruano.title
+field_name: title
+entity_type: node
+bundle: actor_peruano
+label: 'Nombre largo'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

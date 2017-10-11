@@ -1,0 +1,31 @@
+uuid: a888b043-3ef9-4352-b2bb-b3232602a0eb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_acceso:62989739-c0e5-4aba-ae85-6728c8741d70'
+  module:
+    - block_content
+    - system
+  theme:
+    - aecid_theme
+id: conceptolaidea
+theme: aecid_theme
+region: header_first
+weight: -10
+provider: null
+plugin: 'block_content:62989739-c0e5-4aba-ae85-6728c8741d70'
+settings:
+  id: 'block_content:62989739-c0e5-4aba-ae85-6728c8741d70'
+  label: 'Concepto - La Idea'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

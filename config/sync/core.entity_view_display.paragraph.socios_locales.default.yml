@@ -1,0 +1,23 @@
+uuid: ea6461b7-e987-4e32-b88e-a326c7556e81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.socios_locales.field_porcentaje
+    - field.field.paragraph.socios_locales.field_socio_local
+    - paragraphs.paragraphs_type.socios_locales
+id: paragraph.socios_locales.default
+targetEntityType: paragraph
+bundle: socios_locales
+mode: default
+content:
+  field_socio_local:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_porcentaje: true

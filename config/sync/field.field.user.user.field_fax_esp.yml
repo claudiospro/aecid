@@ -1,0 +1,20 @@
+uuid: fcd2cadc-3540-4b20-86f0-ed021796ed42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_fax_esp
+  module:
+    - user
+id: user.user.field_fax_esp
+field_name: field_fax_esp
+entity_type: user
+bundle: user
+label: Fax
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,48 @@
+uuid: 131b5072-0131-4cff-892c-f694d51fe433
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_departamento
+    - node.type.intervencion
+    - paragraphs.paragraphs_type.departamento
+  module:
+    - entity_reference_revisions
+id: node.intervencion.field_departamento
+field_name: field_departamento
+entity_type: node
+bundle: intervencion
+label: Departamento
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      departamento: departamento
+    target_bundles_drag_drop:
+      ambito_sectorial_cad:
+        weight: 8
+        enabled: false
+      departamento:
+        enabled: true
+        weight: 9
+      financiadores:
+        weight: 10
+        enabled: false
+      ods:
+        weight: 11
+        enabled: false
+      orientaciones_generales:
+        weight: 12
+        enabled: false
+      resultados_de_desarrollo:
+        weight: 13
+        enabled: false
+      socios_locales:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

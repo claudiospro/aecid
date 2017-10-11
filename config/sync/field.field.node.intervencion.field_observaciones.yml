@@ -1,0 +1,19 @@
+uuid: 99d50a8d-54b1-4c67-ab3c-bd223864e124
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_observaciones
+    - node.type.intervencion
+id: node.intervencion.field_observaciones
+field_name: field_observaciones
+entity_type: node
+bundle: intervencion
+label: Observaciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

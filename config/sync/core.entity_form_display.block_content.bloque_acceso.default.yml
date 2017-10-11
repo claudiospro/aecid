@@ -1,0 +1,42 @@
+uuid: 3d953037-976d-46e0-8242-59ec65a8981e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_acceso
+    - field.field.block_content.bloque_acceso.field_icono_acceso_portada
+    - field.field.block_content.bloque_acceso.field_link_acceso_portada
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+id: block_content.bloque_acceso.default
+targetEntityType: block_content
+bundle: bloque_acceso
+mode: default
+content:
+  field_icono_acceso_portada:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link_acceso_portada:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

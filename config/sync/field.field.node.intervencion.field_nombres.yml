@@ -1,0 +1,19 @@
+uuid: a091b01d-00b0-4ca7-8ea2-28d3d936dbb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombres
+    - node.type.intervencion
+id: node.intervencion.field_nombres
+field_name: field_nombres
+entity_type: node
+bundle: intervencion
+label: Nombres
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

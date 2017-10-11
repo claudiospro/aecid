@@ -1,0 +1,42 @@
+uuid: 0612828e-327a-4981-9a78-6cece5850e4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_pie_de_pagina
+    - field.field.block_content.bloque_pie_de_pagina.field_des_acceso_pie_pag
+    - field.field.block_content.bloque_pie_de_pagina.field_icono_acceso_pie_pagina
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.bloque_pie_de_pagina.default
+targetEntityType: block_content
+bundle: bloque_pie_de_pagina
+mode: default
+content:
+  field_des_acceso_pie_pag:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_icono_acceso_pie_pagina:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

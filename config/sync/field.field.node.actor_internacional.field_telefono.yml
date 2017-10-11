@@ -1,0 +1,19 @@
+uuid: 79446c7f-daba-4a7a-ae5f-5ea0afa3e4e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefono
+    - node.type.actor_internacional
+id: node.actor_internacional.field_telefono
+field_name: field_telefono
+entity_type: node
+bundle: actor_internacional
+label: Teléfono
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

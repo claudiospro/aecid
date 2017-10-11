@@ -1,0 +1,22 @@
+uuid: 32f2e2c5-1ee5-4380-a738-1f738c2e6f42
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - aecid_theme
+_core:
+  default_config_hash: _xX3gc77HdNDVTsxlAijLDwMRhYjbknzosDSYieKOL0
+id: aecid_theme_help
+theme: aecid_theme
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

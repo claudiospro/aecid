@@ -1,0 +1,28 @@
+<thead>
+  <tr>
+    <th>CAD General Código</th>
+    <th>CAD General Descripción</th>
+    <th>CAD Específico Código</th>
+    <th>CAD Específico Descripción</th>
+    <th>CAD CRS Código</th>
+    <th>CAD CRS Descripción</th>
+  </tr>
+</thead>
+<tbody>
+  {% if data['items'] %}
+  {% for item in data['items'] %}
+  <tr>
+    <td>{{ getCodeCodigosCad(item['cgcode']) }}</td>
+    <td>{{ item['cgdesc'] }}</td>
+    <td>{{ getCodeCodigosCad(item['cecode']) }}</td>
+    <td>{{ item['cedesc'] }}</td>
+    {% if item['crcode'] %}
+    <td>{{ getCodeCodigosCad(item['crcode']) }}</td>
+    {% endif %}
+    {% if item['crdesc'] %}
+    <td>{{ item['crdesc'] }}</td>
+    {% endif %}
+  </tr>
+  {% endfor %}
+  {% endif %}
+</tbody>

@@ -1,0 +1,19 @@
+uuid: 243428e9-f6e1-46f8-8739-31fb75b26291
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acronimo
+    - node.type.actor_internacional
+id: node.actor_internacional.field_acronimo
+field_name: field_acronimo
+entity_type: node
+bundle: actor_internacional
+label: Acronimo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

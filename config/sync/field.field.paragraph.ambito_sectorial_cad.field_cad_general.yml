@@ -1,0 +1,28 @@
+uuid: 0034c425-7a94-4b2a-b9ab-0c58ae570c47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cad_general
+    - paragraphs.paragraphs_type.ambito_sectorial_cad
+    - taxonomy.vocabulary.codigos_cad
+id: paragraph.ambito_sectorial_cad.field_cad_general
+field_name: field_cad_general
+entity_type: paragraph
+bundle: ambito_sectorial_cad
+label: 'CAD General'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codigos_cad: codigos_cad
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

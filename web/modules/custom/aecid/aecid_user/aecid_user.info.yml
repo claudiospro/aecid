@@ -1,0 +1,5 @@
+name: Aecid User
+type: module
+description: Modulo de usuarios (AECID)
+core: 8.x
+package: Aecid

@@ -1,0 +1,42 @@
+#=================================
+# RUTAS PARA EL CONTROL DE ACTORES
+#=================================
+aecid_actores.intranet_actorespanol_listado:
+  path: '/intranet/actor_espanol/listado'
+  defaults:
+    _controller: '\Drupal\aecid_actores\Controller\ActorController::getActorEspanolLista'
+    _title: 'Actores Españoles'
+  requirements:
+    _permission: 'aecid_actores_permission'
+aecid_actores.intranet_actorespanol_show:
+  path: '/intranet/actor_espanol/{nid}/show'
+  defaults:
+    _controller: '\Drupal\aecid_actores\Controller\ActorController::getActorEspanolByNid'
+    _title: 'Actores Españoles'
+  requirements:
+    _permission: 'aecid_actores_permission'
+    tid: '^[0-9]+'
+aecid_actores.intranet_actorespanol_changeshowstate:
+  path: '/intranet/actor_espanol/{nid}/{state}/updatestate'
+  defaults:
+    _controller: '\Drupal\aecid_actores\Controller\ActorController::setActorShowStateEspanolByNid'
+    _title: 'Actores Españoles'
+  requirements:
+    _permission: 'aecid_actores_permission'
+    nid: '^[0-9]+'
+
+aecid_actores.intranet_actorinternacional_listado:
+  path: '/intranet/actor_internacional/listado'
+  defaults:
+    _controller: '\Drupal\aecid_actores\Controller\ActorController::getActorInternacionalLista'
+    _title: 'Actores Internacionales'
+  requirements:
+    _permission: 'aecid_actores_permission'
+
+aecid_actores.intranet_actorperuano_listado:
+  path: '/intranet/actor_peruano/listado'
+  defaults:
+    _controller: '\Drupal\aecid_actores\Controller\ActorController::getActorPeruanoLista'
+    _title: 'Actores Peruanos'
+  requirements:
+    _permission: 'aecid_actores_permission'

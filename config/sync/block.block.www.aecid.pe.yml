@@ -1,0 +1,25 @@
+uuid: 1f21f9a8-e219-4688-acc5-00bb305165cf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_pie_de_pagina:c66fd086-f46b-4d62-9249-842b9ddb8990'
+  module:
+    - block_content
+  theme:
+    - aecid_theme
+id: www.aecid.pe
+theme: aecid_theme
+region: subfeatures_fourth
+weight: 0
+provider: null
+plugin: 'block_content:c66fd086-f46b-4d62-9249-842b9ddb8990'
+settings:
+  id: 'block_content:c66fd086-f46b-4d62-9249-842b9ddb8990'
+  label: www.aecid.pe
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

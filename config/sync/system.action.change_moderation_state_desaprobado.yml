@@ -1,0 +1,13 @@
+uuid: 6e7a4e7a-6007-4ff3-87d9-fa4e2faf8a8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - aecid_bulk_actions
+_core:
+  default_config_hash: eAnC38PGkFnbli4e-TIv1B7UTKiGGsowaXvZXllo6kE
+id: change_moderation_state_desaprobado
+label: 'Cambia el Estado de la Intervencion - Desaprobado'
+type: node
+plugin: change_moderation_state_desaprobado
+configuration: {  }

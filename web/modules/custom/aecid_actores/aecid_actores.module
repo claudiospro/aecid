@@ -1,0 +1,68 @@
+<?php
+
+/**
+ * @file
+ * Contains aecid_actores.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function aecid_actores_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the aecid_actores module.
+    case 'help.page.aecid_actores':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function aecid_actores_theme() {
+  return [
+    /*Plantillas Generales*/
+    'aecid_lightbox' => array(
+        'variables' => array(
+            'content' => NULL,
+        ),
+        'template' => 'aecid_lightbox',
+    ),
+
+    /*Plantillas de Actores*/
+    'aecid_actor_espanol_lista' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'aecid_actor_espanol_lista',
+    ),
+
+    'aecid_actor_internacional_lista' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'aecid_actor_internacional_lista',
+    ),
+
+    'aecid_actor_peruano_lista' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'aecid_actor_peruano_lista',
+    ),
+
+    'aecid_actor_popup' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'aecid_actor_popup',
+    ),
+  ];
+}

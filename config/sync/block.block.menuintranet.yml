@@ -1,0 +1,39 @@
+uuid: 62eedfce-61a8-440c-8294-e6cc904fc010
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-intranet
+  module:
+    - system
+    - user
+  theme:
+    - aecid_theme
+id: menuintranet
+theme: aecid_theme
+region: highlighted
+weight: -12
+provider: null
+plugin: 'system_menu_block:menu-intranet'
+settings:
+  id: 'system_menu_block:menu-intranet'
+  label: 'Menu Intranet'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: '/intranet/*'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      actor: actor
+      administrador: administrador
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,14 @@
+uuid: 35189107-064b-46ce-a9fd-ca0ca7d9c791
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_vocabulary_date
+third_party_settings:
+  taxonomy_vocabulary_date:
+    type: 'Standard Taxonomy'
+name: 'Ubiego España'
+vid: ubiego_espana
+description: ''
+hierarchy: 0
+weight: 0

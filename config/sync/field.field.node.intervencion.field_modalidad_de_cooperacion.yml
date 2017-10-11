@@ -1,0 +1,28 @@
+uuid: 48715608-61cc-4428-b67b-9d8d082ac0e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modalidad_de_cooperacion
+    - node.type.intervencion
+    - taxonomy.vocabulary.modalidades_de_cooperacion
+id: node.intervencion.field_modalidad_de_cooperacion
+field_name: field_modalidad_de_cooperacion
+entity_type: node
+bundle: intervencion
+label: 'Modalidad de Cooperación'
+description: 'Forma en que la subvención o aporte privado es canalizado. Consultar el  Manual para conocer el significado de cada opción.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      modalidades_de_cooperacion: modalidades_de_cooperacion
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

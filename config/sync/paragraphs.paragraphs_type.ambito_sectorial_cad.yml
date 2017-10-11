@@ -1,0 +1,7 @@
+uuid: f99b96bf-b192-4fcc-93f9-b2b993221496
+langcode: en
+status: true
+dependencies: {  }
+id: ambito_sectorial_cad
+label: 'Ámbito Sectorial CAD'
+behavior_plugins: {  }

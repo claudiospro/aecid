@@ -1,0 +1,9 @@
+uuid: 9c64ef3e-66a6-436b-a6b5-43d85ec15d07
+langcode: en
+status: true
+dependencies: {  }
+name: 'Modalidades de Cooperación'
+vid: modalidades_de_cooperacion
+description: ''
+hierarchy: 0
+weight: 0

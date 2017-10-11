@@ -1,0 +1,18 @@
+uuid: 1be9daec-5bd9-49be-95e6-dca5dbdbbe99
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_tasa_tipo_cambio
+field_name: field_tasa_tipo_cambio
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

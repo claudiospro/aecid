@@ -1,0 +1,39 @@
+uuid: ee3383b8-5a55-4364-ad6d-f6bbefb962a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+    - user
+  theme:
+    - aecid_theme
+_core:
+  default_config_hash: BFW_EHgBVeZd0T3CKvhe9cxQvP_ATiP5g7Q1cosGpXQ
+id: aecid_theme_main_menu
+theme: aecid_theme
+region: highlighted
+weight: -13
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: 'intranet/*'
+    negate: true
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      actor: actor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

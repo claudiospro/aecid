@@ -1,0 +1,32 @@
+<a class="mapeo-all-reload" href="/extranet/mapeo"><i class="fa fa-arrow-left" aria-hidden="true"></i> Regresar</a>
+<table width="100%">
+  <thead>
+    <tr>
+      <th>Departamento</th>
+      <th>Cant.</th>
+      <th>Monto($)</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% if data %}
+    {% for item in data %}
+    {% if item['departamento'] != '' %}
+    <tr>
+      <td d="{{ item['departamento'] }}" c="{{ item['cantidad'] }}"><a href="/extranet/mapeo/{{ item['tid'] }}/show" {% if data['parent_id'] %}ip="{{ data['parent_id'] }}"{% endif %} ti="{{ item['tid'] }}">{{ item['departamento'] }}</a></td>
+      <td>{{ item['cantidad'] }}</td>
+      <td></td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+
+    {% if data['regional']['cantidad'] %}
+    <tr>
+      <td>Regional</td>
+      <td><a>{{ data['regional']['cantidad'] }}</a></td>
+      <td></td>
+    </tr>
+    {% endif %}
+
+    {% endif %}
+  </tbody>
+</table>

@@ -1,0 +1,16 @@
+uuid: aa1c9b61-6079-42ad-9d8d-779b4b088422
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_vocabulary_date
+third_party_settings:
+  taxonomy_vocabulary_date:
+    type: 'Plan Director'
+    start_date: '2001-01-01'
+    end_date: '2004-12-31'
+name: 'I Plan Director (2001 - 2004)'
+vid: i_plan_director_2001_2004
+description: ''
+hierarchy: 0
+weight: 0

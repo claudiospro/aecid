@@ -1,0 +1,20 @@
+uuid: 8a151b56-12a5-46ee-820b-ca3adb717a66
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - user
+id: paragraph.field_socio_local
+field_name: field_socio_local
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

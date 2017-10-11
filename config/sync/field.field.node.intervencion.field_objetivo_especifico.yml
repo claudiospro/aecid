@@ -1,0 +1,19 @@
+uuid: 38979da5-acf0-4489-b436-d719c4dcbbd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_objetivo_especifico
+    - node.type.intervencion
+id: node.intervencion.field_objetivo_especifico
+field_name: field_objetivo_especifico
+entity_type: node
+bundle: intervencion
+label: 'Objetivo Específico'
+description: 'Propósito de la intervención: Cambio esperado en la realidad después de la implementación de la intervención.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

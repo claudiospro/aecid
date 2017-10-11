@@ -1,0 +1,42 @@
+uuid: ccd2b2fc-b1d4-4471-9a3a-c932855a7715
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orientaciones_generales
+    - node.type.intervencion
+    - paragraphs.paragraphs_type.orientaciones_generales
+  module:
+    - entity_reference_revisions
+id: node.intervencion.field_orientaciones_generales
+field_name: field_orientaciones_generales
+entity_type: node
+bundle: intervencion
+label: 'Orientaciones Generales'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      orientaciones_generales: orientaciones_generales
+    target_bundles_drag_drop:
+      ambito_sectorial_cad:
+        weight: 6
+        enabled: false
+      financiadores:
+        weight: 7
+        enabled: false
+      ods:
+        weight: 8
+        enabled: false
+      orientaciones_generales:
+        enabled: true
+        weight: 9
+      socios_locales:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

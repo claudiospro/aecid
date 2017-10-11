@@ -1,0 +1,4 @@
+aecid aecid_politicace:
+  title: 'Módulo Políticas CE'
+  description: 'Acceso y restricciones para el módulo (Políticas CE) y sus rutas'
+  restrict access: false

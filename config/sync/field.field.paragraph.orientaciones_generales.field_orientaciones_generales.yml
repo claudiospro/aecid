@@ -1,0 +1,34 @@
+uuid: 4d486da4-9b66-4e3a-9092-c4a32e751afc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_orientaciones_generales
+    - paragraphs.paragraphs_type.orientaciones_generales
+    - taxonomy.vocabulary.i_plan_director_2001_2004
+    - taxonomy.vocabulary.ii_plan_director_2005_2008_
+    - taxonomy.vocabulary.iii_plan_director_2009_2012_
+    - taxonomy.vocabulary.iv_plan_director_2013_2016_
+id: paragraph.orientaciones_generales.field_orientaciones_generales
+field_name: field_orientaciones_generales
+entity_type: paragraph
+bundle: orientaciones_generales
+label: 'Orientaciones Generales'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      iii_plan_director_2009_2012_: iii_plan_director_2009_2012_
+      ii_plan_director_2005_2008_: ii_plan_director_2005_2008_
+      i_plan_director_2001_2004: i_plan_director_2001_2004
+      iv_plan_director_2013_2016_: iv_plan_director_2013_2016_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: i_plan_director_2001_2004
+field_type: entity_reference

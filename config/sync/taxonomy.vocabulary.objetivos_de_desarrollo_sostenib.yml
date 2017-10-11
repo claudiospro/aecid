@@ -1,0 +1,14 @@
+uuid: 74b85eb2-da40-47a6-9786-13d4c1f8d2ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_vocabulary_date
+third_party_settings:
+  taxonomy_vocabulary_date:
+    type: 'Objetivos de Desarrollo Sostenible'
+name: 'Objetivos de Desarrollo Sostenible'
+vid: objetivos_de_desarrollo_sostenib
+description: ''
+hierarchy: 0
+weight: 0

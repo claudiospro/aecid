@@ -1,0 +1,30 @@
+uuid: 389d6620-749a-4661-b950-5823645b4a43
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.documentos_de_consulta.body
+    - node.type.documentos_de_consulta
+  module:
+    - text
+    - user
+id: node.documentos_de_consulta.teaser
+targetEntityType: node
+bundle: documentos_de_consulta
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_adjunto: true
+  field_tags: true

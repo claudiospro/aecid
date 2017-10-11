@@ -1,0 +1,20 @@
+uuid: 05084aef-bacc-4c3d-bac1-739209fb9620
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_resultados_de_desarrollo
+field_name: field_resultados_de_desarrollo
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

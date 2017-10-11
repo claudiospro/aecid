@@ -1,0 +1,18 @@
+uuid: 1f9d04b8-bce7-439f-9467-2dcaab17fdfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.actor_internacional
+id: node.actor_internacional.title
+field_name: title
+entity_type: node
+bundle: actor_internacional
+label: 'Nombre largo'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

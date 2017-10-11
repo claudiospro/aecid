@@ -1,0 +1,25 @@
+uuid: 7824784e-98b5-4e52-86a9-233444e94ff4
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: user.field_codigo_postal_esp
+field_name: field_codigo_postal_esp
+entity_type: user
+type: string
+settings:
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

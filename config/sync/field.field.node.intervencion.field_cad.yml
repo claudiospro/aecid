@@ -1,0 +1,45 @@
+uuid: 2e320dcf-7c02-40d2-8dd8-32d0aa19b6ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cad
+    - node.type.intervencion
+    - paragraphs.paragraphs_type.ambito_sectorial_cad
+  module:
+    - entity_reference_revisions
+id: node.intervencion.field_cad
+field_name: field_cad
+entity_type: node
+bundle: intervencion
+label: CAD
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      ambito_sectorial_cad: ambito_sectorial_cad
+    target_bundles_drag_drop:
+      ambito_sectorial_cad:
+        enabled: true
+        weight: 4
+      financiadores:
+        weight: 5
+        enabled: false
+      socios_locales:
+        weight: 6
+        enabled: false
+      ods:
+        weight: 9
+        enabled: false
+      orientaciones_generales:
+        weight: 10
+        enabled: false
+      resultados_de_desarrollo:
+        weight: 11
+        enabled: false
+field_type: entity_reference_revisions

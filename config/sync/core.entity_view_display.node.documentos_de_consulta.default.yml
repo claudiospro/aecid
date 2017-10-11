@@ -1,0 +1,44 @@
+uuid: a2506cbb-bc6c-4a45-96ad-cd07d8805c3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.documentos_de_consulta.body
+    - field.field.node.documentos_de_consulta.field_adjunto
+    - field.field.node.documentos_de_consulta.field_tags
+    - node.type.documentos_de_consulta
+  module:
+    - file
+    - text
+    - user
+id: node.documentos_de_consulta.default
+targetEntityType: node
+bundle: documentos_de_consulta
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_adjunto:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_tags:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

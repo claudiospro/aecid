@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Contains aecid_user.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function aecid_user_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the aecid_user module.
+    case 'help.page.aecid_user':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Modulo para gestión de usuarios AECID.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function aecid_user_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if($form_id == 'user_login_form'){
+    $form['#submit'][] = '_aecid_user_user_login_form_submit';
+  }
+}
+
+/**
+ * Custom submit handler for login form.
+ *
+ * Reference: https://drupal.stackexchange.com/questions/234612/redirect-node-form-to-view-after-submit
+ */
+function _aecid_user_user_login_form_submit($form, \Drupal\Core\Form\FormStateInterface $form_state) {
+	$roles = \Drupal::currentUser()->getRoles();
+	foreach ($roles as $rol) {
+		switch ($rol) {
+			case 'administrator':
+			case 'Administrador':
+				$form_state->setRedirect('view.gestion_de_interveciones.page_1');
+				break;
+			case 'Actor':
+			default:
+				$form_state->setRedirect('view.gestion_de_interveciones.page_2');
+				break;
+		}
+	}
+}
+

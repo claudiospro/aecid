@@ -1,0 +1,40 @@
+uuid: 77168b8a-749b-4103-910e-8b26313b743c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.financiadores.field_financiadores
+    - field.field.paragraph.financiadores.field_moneda
+    - field.field.paragraph.financiadores.field_monto
+    - paragraphs.paragraphs_type.financiadores
+  module:
+    - content_moderation
+    - entity_reference_views_select
+id: paragraph.financiadores.default
+targetEntityType: paragraph
+bundle: financiadores
+mode: default
+content:
+  field_financiadores:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_select
+    region: content
+  field_moneda:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_monto:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

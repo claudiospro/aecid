@@ -1,0 +1,70 @@
+#########################
+# Plan Director - Routing
+#########################
+aecid_politicace.default_controller_getVocabularyPlanDirector:
+  path: '/intranet/plandirector/{vid}/show'
+  defaults:
+    _controller: '\Drupal\aecid_politicace\Controller\PlandirectorController::getVocabularyPlanDirector'
+    _title: 'Plan Director'
+  requirements:
+    _permission: 'aecid aecid_politicace'
+
+aecid_politicace.default_controller_getVocabularyPlanDirectorExport:
+  path: '/intranet/plandirector/{vid}/export'
+  defaults:
+    _controller: '\Drupal\aecid_politicace\Controller\PlandirectorController::getVocabularyPlanDirectorExport'
+    _title: 'Plan Director'
+  requirements:
+    _permission: 'aecid aecid_politicace'
+
+aecid_politicace.default_controller_getAllVocabulariesPlanDirectorExport:
+  path: '/intranet/plandirector/all/export'
+  defaults:
+    _controller: '\Drupal\aecid_politicace\Controller\PlandirectorController::getAllVocabulariesPlanDirectorExport'
+    _title: 'Plan Director'
+  requirements:
+    _permission: 'aecid aecid_politicace'
+
+aecid_politicace.default_controller_listadoPlanDirector:
+  path: '/intranet/plandirector/listado'
+  defaults:
+    _controller: '\Drupal\aecid_politicace\Controller\PlandirectorController::listadoPlanDirector'
+    _title: 'Plan Director'
+  requirements:
+    _permission: 'aecid aecid_politicace'
+
+
+############################
+# Marco Asociacion - Routing
+############################
+aecid_politicace.marcoasociacion_controller_getVocabularyMarcoAsociacion:
+  path: '/intranet/marcoasociacion/{vid}/show'
+  defaults:
+    _controller: '\Drupal\aecid_politicace\Controller\MarcoasociacionController::getVocabularyMarcoAsociacion'
+    _title: 'Marco de Asociación'
+  requirements:
+    _permission: 'aecid aecid_politicace'
+
+aecid_politicace.marcoasociacion_controller_getVocabularyMarcoAsociacionExport:
+  path: '/intranet/marcoasociacion/{vid}/export'
+  defaults:
+    _controller: '\Drupal\aecid_politicace\Controller\MarcoasociacionController::getVocabularyMarcoAsociacionExport'
+    _title: 'Marco de Asociación'
+  requirements:
+    _permission: 'aecid aecid_politicace'
+
+aecid_politicace.marcoasociacion_controller_getAllVocabulariesMarcoAsociacionExport:
+  path: '/intranet/marcoasociacion/all/export'
+  defaults:
+    _controller: '\Drupal\aecid_politicace\Controller\MarcoasociacionController::getAllVocabulariesMarcoAsociacionExport'
+    _title: 'Marco de Asociación'
+  requirements:
+    _permission: 'aecid aecid_politicace'
+
+aecid_politicace.marcoasociacion_controller_listadoMarcoAsociacion:
+  path: '/intranet/marcoasociacion/listado'
+  defaults:
+    _controller: '\Drupal\aecid_politicace\Controller\MarcoasociacionController::listadoMarcoAsociacion'
+    _title: 'Marco de Asociación'
+  requirements:
+    _permission: 'aecid aecid_politicace'

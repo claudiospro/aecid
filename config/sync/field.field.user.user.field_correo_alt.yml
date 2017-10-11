@@ -1,0 +1,20 @@
+uuid: e6ae3677-8cff-4588-95a2-45c03bef1b5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_correo_alt
+  module:
+    - user
+id: user.user.field_correo_alt
+field_name: field_correo_alt
+entity_type: user
+bundle: user
+label: Correo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,18 @@
+uuid: 35e1612c-dea3-466e-bb31-ad64d72722d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.documentos_de_consulta
+id: node.documentos_de_consulta.title
+field_name: title
+entity_type: node
+bundle: documentos_de_consulta
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

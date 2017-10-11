@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains aecid_twig_extension.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function aecid_twig_extension_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the aecid_twig_extension module.
+    case 'help.page.aecid_twig_extension':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This is a module for extends filters and functions for Twig Template') . '</p>';
+      return $output;
+
+    default:
+  }
+}

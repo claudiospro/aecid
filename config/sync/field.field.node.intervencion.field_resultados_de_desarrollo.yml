@@ -1,0 +1,45 @@
+uuid: 2d580cbd-c349-4503-abba-f846a73c1c49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resultados_de_desarrollo
+    - node.type.intervencion
+    - paragraphs.paragraphs_type.resultados_de_desarrollo
+  module:
+    - entity_reference_revisions
+id: node.intervencion.field_resultados_de_desarrollo
+field_name: field_resultados_de_desarrollo
+entity_type: node
+bundle: intervencion
+label: 'Resultados de Desarrollo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      resultados_de_desarrollo: resultados_de_desarrollo
+    target_bundles_drag_drop:
+      ambito_sectorial_cad:
+        weight: 7
+        enabled: false
+      financiadores:
+        weight: 8
+        enabled: false
+      ods:
+        weight: 9
+        enabled: false
+      orientaciones_generales:
+        weight: 10
+        enabled: false
+      resultados_de_desarrollo:
+        enabled: true
+        weight: 11
+      socios_locales:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

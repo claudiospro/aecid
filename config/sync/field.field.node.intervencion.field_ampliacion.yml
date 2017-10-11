@@ -1,0 +1,23 @@
+uuid: 4903205d-4fba-4072-a0c8-146f5b7cc0d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ampliacion
+    - node.type.intervencion
+id: node.intervencion.field_ampliacion
+field_name: field_ampliacion
+entity_type: node
+bundle: intervencion
+label: Ampliación
+description: 'Marcar sólo en el caso de que exista prórroga. Señalar el número de meses.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: 'Meses Ampliación'
+field_type: integer

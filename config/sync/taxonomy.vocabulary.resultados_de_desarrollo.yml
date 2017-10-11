@@ -1,0 +1,14 @@
+uuid: ea6fc164-5b3b-4f61-a6a4-22cd0df7b669
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_vocabulary_date
+third_party_settings:
+  taxonomy_vocabulary_date:
+    type: 'Standard Taxonomy'
+name: 'Resultados  de Desarrollo'
+vid: resultados_de_desarrollo
+description: ''
+hierarchy: 0
+weight: 0

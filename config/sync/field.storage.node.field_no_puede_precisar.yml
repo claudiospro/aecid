@@ -1,0 +1,18 @@
+uuid: 7d095261-f3f8-4e12-ab55-4c189f604f9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_no_puede_precisar
+field_name: field_no_puede_precisar
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

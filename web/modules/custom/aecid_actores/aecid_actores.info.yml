@@ -1,0 +1,5 @@
+name: Aecid Actores
+type: module
+description: Modulo de Gestión Actores - Intranet (AECID)
+core: 8.x
+package: Aecid

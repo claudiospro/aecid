@@ -1,0 +1,17 @@
+uuid: d72ea618-a469-47c9-9363-6c712d6ad121
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Banner Principal'
+type: banner_principal
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

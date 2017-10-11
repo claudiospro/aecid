@@ -1,0 +1,9 @@
+uuid: f819b512-225f-4b7d-a291-cdf8ac1d65ad
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tipo Actor'
+vid: tipo_actor
+description: 'Tipo de Actores '
+hierarchy: 1
+weight: 0

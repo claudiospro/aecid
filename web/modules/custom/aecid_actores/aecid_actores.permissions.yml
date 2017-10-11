@@ -1,0 +1,5 @@
+
+aecid_actores_permission:
+  title: 'Módulo Actores'
+  description: 'Acceso y restricciones para el módulo (ACTORES) y sus rutas'
+  restrict access: false

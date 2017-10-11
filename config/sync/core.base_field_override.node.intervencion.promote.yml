@@ -1,0 +1,22 @@
+uuid: 5e82baa6-4a30-4081-979d-a8f1193b8535
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.intervencion
+id: node.intervencion.promote
+field_name: promote
+entity_type: node
+bundle: intervencion
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

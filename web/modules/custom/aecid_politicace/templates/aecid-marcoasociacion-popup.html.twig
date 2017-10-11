@@ -1,0 +1,35 @@
+<div class="aecid-intranet-lightbox-content-actions">
+  <ul>
+    <li><a href="/admin/structure/taxonomy/manage/{{ data['vid'] }}?destination=/intranet/marcoasociacion/listado"><i class="fa fa-pencil" aria-hidden="true"></i> Editar</a></li>
+    <li><a href="/admin/structure/taxonomy/manage/{{ data['vid'] }}/delete?destination=/intranet/marcoasociacion/listado"><i class="fa fa-trash" aria-hidden="true"></i> Eliminar</a></li>
+  </ul>
+</div>
+<div class="aecid-intranet-lightbox-content-header">
+  <label>
+    Descripción:<br>
+    <small>{{ data['title'] }}</small>
+  </label>
+  <label>
+    Periodo:<br>
+    <small>({{ data['start_date'] }} - {{ data['end_date'] }})</small>
+  </label>
+  <br>
+  <a href="/admin/structure/taxonomy/manage/{{ data['vid'] }}/add?destination=/intranet/marcoasociacion/listado"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Agregar</a>
+</div>
+<div class="aecid-intranet-lightbox-content-body">
+  <table width="100%">
+    <tbody>
+    {% if data['items'] %}
+    {% if data['items']|length > 0 %}
+    {% for item in data['items'] %}
+      <tr>
+        <td>{{ item['name'] }}</td>
+        <td><a href="/taxonomy/term/{{ item['tid'] }}/edit?destination=/intranet/marcoasociacion/listado"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+        <td><a href="/taxonomy/term/{{ item['tid'] }}/delete?destination=/intranet/marcoasociacion/listado"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+      </tr>
+    {% endfor %}
+    {% endif %}
+    {% endif %}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,8 @@
+uuid: 2af359c7-19bc-4bd6-9e55-dde64fb6f888
+langcode: en
+status: true
+dependencies: {  }
+id: bloque_pie_de_pagina
+label: 'Bloque Pie de Página'
+revision: 0
+description: 'Bloques para el pie de página'

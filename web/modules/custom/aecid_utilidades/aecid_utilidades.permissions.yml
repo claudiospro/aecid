@@ -1,0 +1,5 @@
+
+aecid aecid_utilidades:
+  title: 'Módulo Utilidades'
+  description: 'Acceso y restricciones para contenido de Utilidades'
+  restrict access: false

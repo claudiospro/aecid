@@ -1,0 +1,19 @@
+uuid: d275c262-83de-41fd-9eed-b5602ac2d729
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codigo_aecid
+    - node.type.intervencion
+id: node.intervencion.field_codigo_aecid
+field_name: field_codigo_aecid
+entity_type: node
+bundle: intervencion
+label: 'Código AECID'
+description: 'Código del proyecto o convenio asignado por la AECID en el momento de aprobar la subvención. Solo llenar en caso de que la intervención sea financiada por AECID.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

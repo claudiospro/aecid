@@ -1,0 +1,28 @@
+uuid: fcb82ffd-a8d3-4c9a-b457-6a8fad32eb96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ambito_geografico
+    - node.type.intervencion
+    - taxonomy.vocabulary.ambito_geografico
+id: node.intervencion.field_ambito_geografico
+field_name: field_ambito_geografico
+entity_type: node
+bundle: intervencion
+label: 'Ámbito Geográfico'
+description: "Atención:\r\n\r\n    En el caso que haya seleccionado el ámbito \"Nacional con enfoque local\", además de seleccionar los departamentos, provincias y distritos, debe seleccionar Nacional y asignarle un porcentaje.\r\n    En el caso que haya seleccionado el ámbito \"Nacional con enfoque regional\", además de seleccionar los departamentos debe seleccionar Nacional y asignarle un porcentaje.\r\n    En el caso que haya seleccionado el ámbito \"Regional con enfoque local\", además de seleccionar los departamentos, provincias y distritos, debe asignarle un porcentaje al departamento seleccionado.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ambito_geografico: ambito_geografico
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

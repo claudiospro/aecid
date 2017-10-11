@@ -1,0 +1,31 @@
+uuid: 447e5d35-024e-4aaa-8874-0b5baf39a5c4
+langcode: en
+status: true
+dependencies: {  }
+id: backup
+label: backup
+config:
+  namer:
+    filename: backup
+    timestamp: 1
+    timestamp_format: Y-m-d\TH-i-s
+  compressor:
+    compression: gzip
+  utils:
+    site_offline: 0
+  metadata:
+    description: ''
+  db_exclude:
+    exclude_tables: {  }
+    nodata_tables: {  }
+  private_files_exclude:
+    exclude_filepaths:
+      - backup_migrate
+  public_files_exclude:
+    exclude_filepaths:
+      - js
+      - css
+      - php
+      - styles
+      - 'config_*'
+      - .htaccess

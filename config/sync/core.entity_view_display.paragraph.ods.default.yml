@@ -1,0 +1,33 @@
+uuid: 2f89b481-1326-4cdc-8098-cba95923c15b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ods.field_objetivo_de_desarrollo
+    - field.field.paragraph.ods.field_porcentaje
+    - paragraphs.paragraphs_type.ods
+id: paragraph.ods.default
+targetEntityType: paragraph
+bundle: ods
+mode: default
+content:
+  field_objetivo_de_desarrollo:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_porcentaje:
+    weight: 1
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden: {  }

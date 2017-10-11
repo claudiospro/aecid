@@ -1,0 +1,7 @@
+uuid: e849d0f9-6a64-469a-8090-4ec23a1652a6
+langcode: en
+status: true
+dependencies: {  }
+id: canalizadores
+label: Canalizadores
+behavior_plugins: {  }

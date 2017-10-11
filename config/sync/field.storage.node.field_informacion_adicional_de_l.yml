@@ -1,0 +1,23 @@
+uuid: 07229b33-bf2a-4085-9c4d-dd54297378b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: node.field_informacion_adicional_de_l
+field_name: field_informacion_adicional_de_l
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

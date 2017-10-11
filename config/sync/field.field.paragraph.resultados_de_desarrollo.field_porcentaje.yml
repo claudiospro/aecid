@@ -1,0 +1,23 @@
+uuid: 1ba6428c-5d97-41d5-adbd-6b4782d90a77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_porcentaje
+    - paragraphs.paragraphs_type.resultados_de_desarrollo
+id: paragraph.resultados_de_desarrollo.field_porcentaje
+field_name: field_porcentaje
+entity_type: paragraph
+bundle: resultados_de_desarrollo
+label: Porcentaje
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

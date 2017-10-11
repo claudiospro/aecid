@@ -1,0 +1,19 @@
+uuid: fd17bd71-8726-48d4-8f03-7470eb6186b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefono_cont_alt
+    - node.type.actor_peruano
+id: node.actor_peruano.field_telefono_cont_alt
+field_name: field_telefono_cont_alt
+entity_type: node
+bundle: actor_peruano
+label: Teléfono
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

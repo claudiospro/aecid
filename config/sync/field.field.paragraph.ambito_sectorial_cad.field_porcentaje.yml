@@ -1,0 +1,23 @@
+uuid: db1a9aa9-c05d-4ff5-8b3d-e5298303c40b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_porcentaje
+    - paragraphs.paragraphs_type.ambito_sectorial_cad
+id: paragraph.ambito_sectorial_cad.field_porcentaje
+field_name: field_porcentaje
+entity_type: paragraph
+bundle: ambito_sectorial_cad
+label: Porcentaje
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

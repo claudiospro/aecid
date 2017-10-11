@@ -1,0 +1,31 @@
+uuid: 3074aee2-b336-44b9-929e-e0b0fc5c464d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_acceso:c34b5967-5bb8-4421-99d3-47503f01e4a2'
+  module:
+    - block_content
+    - system
+  theme:
+    - aecid_theme
+id: estadisticas
+theme: aecid_theme
+region: features_second
+weight: 0
+provider: null
+plugin: 'block_content:c34b5967-5bb8-4421-99d3-47503f01e4a2'
+settings:
+  id: 'block_content:c34b5967-5bb8-4421-99d3-47503f01e4a2'
+  label: Estadísticas
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

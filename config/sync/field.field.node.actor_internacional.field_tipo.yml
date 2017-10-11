@@ -1,0 +1,28 @@
+uuid: fc585dc1-3715-4583-9c68-c9ceff57c115
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo
+    - node.type.actor_internacional
+    - taxonomy.vocabulary.tipo_actor
+id: node.actor_internacional.field_tipo
+field_name: field_tipo
+entity_type: node
+bundle: actor_internacional
+label: Tipo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_actor: tipo_actor
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 605182b7-396d-4cf8-80ca-624018d1ba4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.actor_internacional
+  module:
+    - user
+id: node.actor_internacional.teaser
+targetEntityType: node
+bundle: actor_internacional
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,45 @@
+uuid: 1acff52c-2827-4f80-9b6d-63de2d19fd2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_financiadores
+    - node.type.intervencion
+    - paragraphs.paragraphs_type.financiadores
+  module:
+    - entity_reference_revisions
+id: node.intervencion.field_financiadores
+field_name: field_financiadores
+entity_type: node
+bundle: intervencion
+label: Financiadores
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      financiadores: financiadores
+    target_bundles_drag_drop:
+      ambito_sectorial_cad:
+        weight: 7
+        enabled: false
+      financiadores:
+        enabled: true
+        weight: 8
+      ods:
+        weight: 9
+        enabled: false
+      orientaciones_generales:
+        weight: 10
+        enabled: false
+      resultados_de_desarrollo:
+        weight: 11
+        enabled: false
+      socios_locales:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

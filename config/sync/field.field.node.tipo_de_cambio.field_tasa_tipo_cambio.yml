@@ -1,0 +1,23 @@
+uuid: 0b50fa6f-e65b-49a0-8389-e9cc7d785b34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tasa_tipo_cambio
+    - node.type.tipo_de_cambio
+id: node.tipo_de_cambio.field_tasa_tipo_cambio
+field_name: field_tasa_tipo_cambio
+entity_type: node
+bundle: tipo_de_cambio
+label: Tasa
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

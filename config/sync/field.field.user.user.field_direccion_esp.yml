@@ -1,0 +1,20 @@
+uuid: fc498cc6-5e0f-4c61-9142-6af0ab3a7745
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_direccion_esp
+  module:
+    - user
+id: user.user.field_direccion_esp
+field_name: field_direccion_esp
+entity_type: user
+bundle: user
+label: Dirección
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

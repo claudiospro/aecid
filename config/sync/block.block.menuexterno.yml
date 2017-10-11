@@ -1,0 +1,29 @@
+uuid: e96624ee-716a-4bd5-b7ee-c69b0c479445
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-externo
+  module:
+    - system
+  theme:
+    - aecid_theme
+id: menuexterno
+theme: aecid_theme
+region: highlighted
+weight: -11
+provider: null
+plugin: 'system_menu_block:menu-externo'
+settings:
+  id: 'system_menu_block:menu-externo'
+  label: 'Menú Externo'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/extranet/mapeo\r\n/extranet/estadisticas\r\n/participantes\r\n/concepto-la-idea\r\n/contactenos"
+    negate: false
+    context_mapping: {  }

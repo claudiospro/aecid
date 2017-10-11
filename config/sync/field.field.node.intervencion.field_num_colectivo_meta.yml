@@ -1,0 +1,23 @@
+uuid: 68e1df3c-7c07-436f-a3fe-ea3bd7d2caa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_num_colectivo_meta
+    - node.type.intervencion
+id: node.intervencion.field_num_colectivo_meta
+field_name: field_num_colectivo_meta
+entity_type: node
+bundle: intervencion
+label: 'N° Colectivo meta'
+description: 'Número de población titular de derechos a la que la intervención beneficiará directamente. Sólo se podrá dejar en blanco en aquellas intervenciones de ámbito nacional o regional, donde sea difícil cuantificar la población meta.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: 'Personas, de las Cuales'
+field_type: integer

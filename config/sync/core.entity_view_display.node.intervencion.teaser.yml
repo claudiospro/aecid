@@ -1,0 +1,69 @@
+uuid: c3ed8ae5-7dce-4601-862c-c4268cdf5774
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.intervencion.body
+    - node.type.intervencion
+  module:
+    - text
+    - user
+id: node.intervencion.teaser
+targetEntityType: node
+bundle: intervencion
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_ambito_geografico: true
+  field_ampliacion: true
+  field_apellidos: true
+  field_apellidos_revision: true
+  field_aport_local_dolares: true
+  field_aport_local_soles: true
+  field_aport_local_ueros: true
+  field_cad: true
+  field_canalizadora: true
+  field_codigo_aecid: true
+  field_correo: true
+  field_desc_documento: true
+  field_desc_foto: true
+  field_documento: true
+  field_duracion: true
+  field_ejecucion_directa: true
+  field_en_consorcio_agrupacion: true
+  field_fase: true
+  field_fecha_inicio: true
+  field_fecha_termino: true
+  field_financiadores: true
+  field_foto: true
+  field_informacion_adicional_de_l: true
+  field_modalidad_de_cooperacion: true
+  field_multipais: true
+  field_no_puede_precisar: true
+  field_nombre_revision: true
+  field_nombres: true
+  field_num_colectivo_meta: true
+  field_num_mujeres: true
+  field_ob: true
+  field_objetivo_de_desarrollo: true
+  field_observaciones: true
+  field_observaciones_revision: true
+  field_orientaciones_generales: true
+  field_r: true
+  field_resultados_de_desarrollo: true
+  field_sitio_web_intervencion: true
+  field_socio_local: true
+  field_telefonos: true
+  field_tipo_colectivo_meta: true

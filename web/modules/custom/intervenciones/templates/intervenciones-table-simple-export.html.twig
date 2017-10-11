@@ -1,0 +1,18 @@
+<thead>
+  <tr>
+    <th>Código</th>
+    <th>Año</th>
+    <th>Título</th>
+  </tr>
+</thead>
+<tbody>
+  {% if data %}
+  {% for item in data %}
+  <tr>
+    <td>{{ item['codigo'] }}</td>
+    <td>{{ item['ano'] }}</td>
+    <td>{{ item['titulo'] }}</td>
+  </tr>
+  {% endfor %}
+  {% endif %}
+</tbody>

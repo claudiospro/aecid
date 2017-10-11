@@ -1,0 +1,8 @@
+uuid: 3a6d4e9e-7e47-4efe-a5b8-7f1dd25025e4
+langcode: en
+status: true
+dependencies: {  }
+id: fecha_intervenciones_m_d_y
+label: 'Fecha intervenciones m/d/Y'
+locked: false
+pattern: m/d/Y

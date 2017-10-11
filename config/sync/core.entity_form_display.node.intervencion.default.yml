@@ -1,0 +1,714 @@
+uuid: 7f18ba17-d61c-435f-88e6-68d942096910
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.intervencion.body
+    - field.field.node.intervencion.field_ambito_geografico
+    - field.field.node.intervencion.field_ampliacion
+    - field.field.node.intervencion.field_apellidos
+    - field.field.node.intervencion.field_apellidos_revision
+    - field.field.node.intervencion.field_aport_local_dolares
+    - field.field.node.intervencion.field_aport_local_soles
+    - field.field.node.intervencion.field_aport_local_ueros
+    - field.field.node.intervencion.field_aprobado_no_iniciado
+    - field.field.node.intervencion.field_cad
+    - field.field.node.intervencion.field_canalizadores
+    - field.field.node.intervencion.field_codigo
+    - field.field.node.intervencion.field_codigo_aecid
+    - field.field.node.intervencion.field_correo
+    - field.field.node.intervencion.field_departamento
+    - field.field.node.intervencion.field_desc_documento
+    - field.field.node.intervencion.field_desc_foto
+    - field.field.node.intervencion.field_documento
+    - field.field.node.intervencion.field_duracion
+    - field.field.node.intervencion.field_ejecucion_directa
+    - field.field.node.intervencion.field_en_consorcio_agrupacion
+    - field.field.node.intervencion.field_fase
+    - field.field.node.intervencion.field_fecha_inicio
+    - field.field.node.intervencion.field_fecha_termino
+    - field.field.node.intervencion.field_financiadores
+    - field.field.node.intervencion.field_foto
+    - field.field.node.intervencion.field_informacion_adicional_de_l
+    - field.field.node.intervencion.field_modalidad_de_cooperacion
+    - field.field.node.intervencion.field_multipais
+    - field.field.node.intervencion.field_no_puede_precisar
+    - field.field.node.intervencion.field_nombre_revision
+    - field.field.node.intervencion.field_nombres
+    - field.field.node.intervencion.field_num_colectivo_meta
+    - field.field.node.intervencion.field_num_mujeres
+    - field.field.node.intervencion.field_objetivo_de_desarrollo
+    - field.field.node.intervencion.field_objetivo_especifico
+    - field.field.node.intervencion.field_observaciones
+    - field.field.node.intervencion.field_observaciones_revision
+    - field.field.node.intervencion.field_orientaciones_generales
+    - field.field.node.intervencion.field_resultados
+    - field.field.node.intervencion.field_resultados_de_desarrollo
+    - field.field.node.intervencion.field_sitio_web_intervencion
+    - field.field.node.intervencion.field_socio_local
+    - field.field.node.intervencion.field_telefonos
+    - field.field.node.intervencion.field_tipo_colectivo_meta
+    - image.style.thumbnail
+    - node.type.intervencion
+  module:
+    - content_moderation
+    - datetime
+    - field_group
+    - file
+    - image
+    - link
+    - paragraphs
+    - shs
+    - text
+third_party_settings:
+  field_group:
+    group_i:
+      children:
+        - group_1
+        - group_2
+        - group_3
+        - group_4_cad
+        - group_5_ods
+        - group_6
+        - group_7
+        - group_8
+        - group_9
+        - group_10
+        - group_11_adicionales
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Intervención
+    group_1:
+      children:
+        - title
+        - field_en_consorcio_agrupacion
+        - field_canalizadores
+        - field_codigo
+        - field_codigo_aecid
+        - field_modalidad_de_cooperacion
+        - body
+        - field_objetivo_especifico
+        - field_resultados
+        - field_num_colectivo_meta
+        - field_num_mujeres
+        - field_no_puede_precisar
+        - field_tipo_colectivo_meta
+        - field_fecha_inicio
+        - field_aprobado_no_iniciado
+        - field_duracion
+        - field_ampliacion
+        - field_fecha_termino
+        - field_fase
+      parent_name: group_i
+      weight: 1
+      format_type: tab
+      format_settings:
+        label: '1. Identificación'
+        formatter: closed
+        description: "<h4>I. Identificación de la Intervención</h4>\n\nPase el mouse por encima de las palabras subrayadas para ver su significado. El símbolo * indica que los campos son obligatorios. Ingrese la siguiente información:"
+        required_fields: true
+        id: ''
+        classes: ''
+      label: '1. Identificación'
+    group_2:
+      children:
+        - group_financiadores
+        - group_aportes_locales
+      parent_name: group_i
+      weight: 2
+      format_type: tab
+      format_settings:
+        label: '2. Presupuesto'
+        formatter: closed
+        description: "<h4>II. Presupuesto de la intervención</h4>\n\n<h5>Financiadores</h5>\n\n\nSeleccione o digite las letras del financiador, incluye los aportes propios y los fondos o aportes internacionales, ingrese en monto, seleccione la moneda y siempre presione el botón agregar, la  conversión de la moneda se realizará  automáticamente de acuerdo al tipo de cambio  ingresado por el administrador:\n"
+        required_fields: true
+        id: ''
+        classes: ''
+      label: '2. Presupuesto'
+    group_3:
+      children:
+        - field_socio_local
+        - field_ejecucion_directa
+      parent_name: group_i
+      weight: 3
+      format_type: tab
+      format_settings:
+        label: '3. Socios'
+        formatter: closed
+        description: "<h4>III. Socios locales</h4>\n\n\nSeleccione o digite las primeras letras de las instituciones que participan en la ejecución, ingrese su peso de ejecución (porcentaje de fondos ejecutados) y siempre presione \"Agregar\":"
+        required_fields: true
+        id: ''
+        classes: ''
+      label: '3. Socios'
+    group_4_cad:
+      children:
+        - field_cad
+      parent_name: group_i
+      weight: 4
+      format_type: tab
+      format_settings:
+        label: '4. CAD'
+        formatter: closed
+        description: "<h4>IV. Ámbito sectorial CAD</h4>\n\nSeleccione los códigos CAD, ingrese el porcentaje y siempre presione \"Agregar\":"
+        required_fields: true
+        id: ''
+        classes: ''
+      label: '4. CAD'
+    group_5_ods:
+      children:
+        - field_objetivo_de_desarrollo
+      parent_name: group_i
+      weight: 5
+      format_type: tab
+      format_settings:
+        label: '5. ODS'
+        formatter: closed
+        description: "<h4>V. ODS</h4>\n\nSeleccione el Objetivo de Desarrollo Sostenible(ODS) hasta un máximo de 3 y Siempre Presione el botón Agregar"
+        required_fields: true
+        id: ''
+        classes: ''
+      label: '5. ODS'
+    group_6:
+      children:
+        - field_orientaciones_generales
+      parent_name: group_i
+      weight: 6
+      format_type: tab
+      format_settings:
+        label: '6. Plan Director'
+        formatter: closed
+        description: "<h4>Ámbito Plan Director</h4>\n\nSeleccione la orientación general y  siempre presione el botón Agregar:"
+        required_fields: true
+        id: ''
+        classes: ''
+      label: '6. Plan Director'
+    group_7:
+      children:
+        - field_resultados_de_desarrollo
+      parent_name: group_i
+      weight: 7
+      format_type: tab
+      format_settings:
+        label: '7. MAP'
+        formatter: closed
+        description: "<h4>MAP</h4>\n\nSeleccione el Resultado de Desarrollo (RD)  hasta un máximo de 3 y  Siempre presione el botón Agregar."
+        required_fields: true
+        id: ''
+        classes: ''
+      label: '7. MAP'
+    group_9:
+      children:
+        - field_desc_foto
+        - field_foto
+      parent_name: group_i
+      weight: 9
+      format_type: tab
+      format_settings:
+        label: '9. Fotos'
+        formatter: closed
+        description: "<h4>Fotos</h4>\n\nIngrese una breve descripción de la foto, seleccione el archivo y presione Adjuntar. Puede adjuntar fotos  en los siguientes formatos: png, jpg, gif y tif. El tamaño del archivo no debe ser mayor a 4MB."
+        required_fields: true
+        id: ''
+        classes: ''
+      label: '9. Fotos'
+    group_10:
+      children:
+        - field_desc_documento
+        - field_documento
+      parent_name: group_i
+      weight: 10
+      format_type: tab
+      format_settings:
+        label: '10. Archivos'
+        formatter: closed
+        description: "<h4>Documento</h4>\n\n\nIngrese una breve descripción del Documento, Seleccione el Archivo  y Presione Adjuntar. Puede adjuntar documentos en los siguinetes formatos: doc, docx, pdf. El tamaño  no debe ser  mayor a 4MB.\n"
+        required_fields: true
+        id: ''
+        classes: ''
+      label: '10. Archivos'
+    group_11_adicionales:
+      children:
+        - field_informacion_adicional_de_l
+        - field_sitio_web_intervencion
+        - group_responsable_del_ingreso_de
+        - group_nota_para_la_revision
+      parent_name: group_i
+      weight: 11
+      format_type: tab
+      format_settings:
+        label: '11. Adicionales'
+        formatter: closed
+        description: '<h4>Información Adicional</h4>'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: '11. Adicionales'
+    group_8:
+      children:
+        - field_ambito_geografico
+        - field_multipais
+        - field_departamento
+      parent_name: group_i
+      weight: 8
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: '8. Ubicación'
+    group_responsable_del_ingreso_de:
+      children:
+        - field_nombres
+        - field_apellidos
+        - field_telefonos
+        - field_correo
+        - field_observaciones
+      parent_name: group_11_adicionales
+      weight: 42
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Información para el Administrador del Sistema'
+        required_fields: true
+      label: 'Responsable del Ingreso de la Intervención'
+    group_nota_para_la_revision:
+      children:
+        - field_nombre_revision
+        - field_apellidos_revision
+        - field_observaciones_revision
+      parent_name: group_11_adicionales
+      weight: 43
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Información para el que ingresa la información'
+        required_fields: true
+      label: 'Nota para la Revisión'
+    group_financiadores:
+      children:
+        - field_financiadores
+      parent_name: group_2
+      weight: 20
+      format_type: fieldset
+      format_settings:
+        label: Financiadores
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Financiadores
+    group_aportes_locales:
+      children:
+        - field_aport_local_soles
+        - field_aport_local_dolares
+        - field_aport_local_ueros
+      parent_name: group_2
+      weight: 21
+      format_type: fieldset
+      format_settings:
+        label: 'Aportes Locales (Contrapartida)'
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Aportes Locales (Contrapartida)'
+id: node.intervencion.default
+targetEntityType: node
+bundle: intervencion
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+      summary_rows: 1
+    third_party_settings: {  }
+    region: content
+  field_ambito_geografico:
+    weight: 34
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ampliacion:
+    weight: 18
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_apellidos:
+    weight: 44
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_apellidos_revision:
+    weight: 49
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_aport_local_dolares:
+    weight: 52
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_aport_local_soles:
+    weight: 51
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_aport_local_ueros:
+    weight: 53
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_aprobado_no_iniciado:
+    weight: 16
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_cad:
+    type: entity_reference_paragraphs
+    weight: 56
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_canalizadores:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_codigo:
+    weight: 5
+    settings:
+      size: 8
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_codigo_aecid:
+    weight: 6
+    settings:
+      size: 8
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_correo:
+    weight: 46
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_departamento:
+    type: entity_reference_paragraphs
+    weight: 61
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: departamento
+    third_party_settings: {  }
+    region: content
+  field_desc_documento:
+    weight: 38
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_desc_foto:
+    weight: 36
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_documento:
+    weight: 39
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_duracion:
+    weight: 17
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_ejecucion_directa:
+    weight: 55
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_en_consorcio_agrupacion:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_fase:
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_fecha_inicio:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_fecha_termino:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_financiadores:
+    type: entity_reference_paragraphs
+    weight: 60
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_foto:
+    weight: 37
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_informacion_adicional_de_l:
+    weight: 40
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_modalidad_de_cooperacion:
+    weight: 7
+    settings:
+      display_node_count: false
+      create_new_items: false
+      create_new_levels: false
+      force_deepest: false
+    third_party_settings: {  }
+    type: options_shs
+    region: content
+  field_multipais:
+    weight: 36
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_no_puede_precisar:
+    weight: 13
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_nombre_revision:
+    weight: 48
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nombres:
+    weight: 43
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_num_colectivo_meta:
+    weight: 11
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_num_mujeres:
+    weight: 12
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_objetivo_de_desarrollo:
+    type: entity_reference_paragraphs
+    weight: 57
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_objetivo_especifico:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_observaciones:
+    weight: 47
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_observaciones_revision:
+    weight: 50
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_orientaciones_generales:
+    type: entity_reference_paragraphs
+    weight: 58
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_resultados:
+    weight: 10
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_resultados_de_desarrollo:
+    type: entity_reference_paragraphs
+    weight: 59
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_sitio_web_intervencion:
+    weight: 41
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_socio_local:
+    type: entity_reference_paragraphs
+    weight: 54
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_telefonos:
+    weight: 45
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tipo_colectivo_meta:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

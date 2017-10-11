@@ -1,0 +1,23 @@
+uuid: 19958f8f-fb0c-4a6e-8f93-99590909b81a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aprobado_no_iniciado
+    - node.type.intervencion
+id: node.intervencion.field_aprobado_no_iniciado
+field_name: field_aprobado_no_iniciado
+entity_type: node
+bundle: intervencion
+label: 'Aprobado pero no Iniciado'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

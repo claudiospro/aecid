@@ -1,0 +1,44 @@
+uuid: 6a1b24c9-d5df-4ffd-9985-54901a6911d0
+langcode: en
+status: true
+dependencies: {  }
+id: actor
+label: Actor
+weight: 4
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access files overview'
+  - 'access profile overview'
+  - 'access site-wide contact form'
+  - 'access user contact forms'
+  - 'administer block_content display'
+  - 'administer block_content_type labels'
+  - 'administer nodes'
+  - 'administer search_page labels'
+  - 'administer shortcuts'
+  - 'aecid actor_permission'
+  - 'aecid codigocad_permission'
+  - 'create espanoles profile'
+  - 'create internacionales profile'
+  - 'create intervencion content'
+  - 'create peruanos profile'
+  - 'delete own espanoles profile'
+  - 'delete own internacionales profile'
+  - 'delete own peruanos profile'
+  - 'edit own intervencion content'
+  - 'revert all revisions'
+  - 'search content'
+  - 'update own espanoles profile'
+  - 'update own internacionales profile'
+  - 'update own peruanos profile'
+  - 'use flujo_para_intervenciones transition create_new_draft'
+  - 'use flujo_para_intervenciones transition pendiente_de_revision'
+  - 'use text format full_html'
+  - 'view any espanoles profile'
+  - 'view any unpublished content'
+  - 'view any webform submission'
+  - 'view empty pages'
+  - 'view own internacionales profile'
+  - 'view own peruanos profile'
+  - 'view own unpublished content'

@@ -1,0 +1,30 @@
+uuid: 60cd32c3-e1fd-4d5e-8523-79521f5b2693
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.codigos_cad.field_codigo_cad
+    - taxonomy.vocabulary.codigos_cad
+  module:
+    - text
+id: taxonomy_term.codigos_cad.default
+targetEntityType: taxonomy_term
+bundle: codigos_cad
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_codigo_cad:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

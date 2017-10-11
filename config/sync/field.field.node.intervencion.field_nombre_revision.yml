@@ -1,0 +1,19 @@
+uuid: 8494816f-b968-4394-9078-796d39d9c6e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_revision
+    - node.type.intervencion
+id: node.intervencion.field_nombre_revision
+field_name: field_nombre_revision
+entity_type: node
+bundle: intervencion
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

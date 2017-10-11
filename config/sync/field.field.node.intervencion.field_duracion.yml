@@ -1,0 +1,23 @@
+uuid: 738c976f-144a-4e7e-aab1-019b07028ed8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duracion
+    - node.type.intervencion
+id: node.intervencion.field_duracion
+field_name: field_duracion
+entity_type: node
+bundle: intervencion
+label: Duración
+description: 'Duración estimada de la intervención, prevista en el documento de formulación del proyecto.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: Meses
+field_type: integer

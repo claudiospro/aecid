@@ -1,0 +1,20 @@
+uuid: b9526f22-0cfa-452c-b46b-5d1a7180b7b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_aport_local_soles
+field_name: field_aport_local_soles
+entity_type: node
+type: decimal
+settings:
+  precision: 15
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

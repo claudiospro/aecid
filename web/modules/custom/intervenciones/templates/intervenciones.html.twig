@@ -1,0 +1,13 @@
+{% if data['intervenciones'] %}
+{% for intervencion in data['intervenciones'] %}
+  <tr>
+    <td><a href="/node/{{ intervencion['nid'] }}">{{ intervencion['title'] }}</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+{% endfor %}
+{% else %}
+<tr><td>No se encontraron resultados...</td></tr>
+{% endif %}

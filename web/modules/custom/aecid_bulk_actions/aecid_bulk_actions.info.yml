@@ -1,0 +1,5 @@
+name: Aecid Bulk Actions
+type: module
+description: Custom mass actions for Aecid
+core: 8.x
+package: Aecid

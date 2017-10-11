@@ -1,0 +1,19 @@
+uuid: 4012a940-6be4-49f8-88ac-15aee129c21d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_correo
+    - node.type.actor_peruano
+id: node.actor_peruano.field_correo
+field_name: field_correo
+entity_type: node
+bundle: actor_peruano
+label: Correo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

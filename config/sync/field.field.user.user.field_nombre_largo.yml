@@ -1,0 +1,20 @@
+uuid: 4896b7f3-2555-4975-8348-f53d753fde2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_nombre_largo
+  module:
+    - user
+id: user.user.field_nombre_largo
+field_name: field_nombre_largo
+entity_type: user
+bundle: user
+label: 'Nombre Largo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 2f4cdb3e-2383-4c48-9351-96048b7f8c71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_telefono_esp
+  module:
+    - user
+id: user.user.field_telefono_esp
+field_name: field_telefono_esp
+entity_type: user
+bundle: user
+label: Teléfono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,16 @@
+uuid: c8bf0c1d-9b81-472c-b4e0-567380693ac0
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_vocabulary_date
+third_party_settings:
+  taxonomy_vocabulary_date:
+    type: 'Plan Director'
+    start_date: '2009-01-01'
+    end_date: '2012-12-31'
+name: 'III Plan Director (2009 - 2012)'
+vid: iii_plan_director_2009_2012_
+description: ''
+hierarchy: 0
+weight: 0

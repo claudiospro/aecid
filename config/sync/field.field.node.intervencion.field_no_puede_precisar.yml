@@ -1,0 +1,23 @@
+uuid: 11da659a-b266-4157-9292-74fb637aa506
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_no_puede_precisar
+    - node.type.intervencion
+id: node.intervencion.field_no_puede_precisar
+field_name: field_no_puede_precisar
+entity_type: node
+bundle: intervencion
+label: 'No determinado'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

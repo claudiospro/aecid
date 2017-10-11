@@ -1,0 +1,25 @@
+uuid: 4fc9e374-0f5c-471a-977e-4de147ed0c23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_canalizadores
+    - paragraphs.paragraphs_type.canalizadores
+id: paragraph.canalizadores.field_canalizadores
+field_name: field_canalizadores
+entity_type: paragraph
+bundle: canalizadores
+label: Canalizadores
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: listado_actores
+      display_name: canalizadores
+      arguments: {  }
+field_type: entity_reference

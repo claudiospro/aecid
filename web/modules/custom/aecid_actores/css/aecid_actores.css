@@ -1,0 +1,82 @@
+body.path-intranet-actor-espanol-listado div[data-at-row="main"] > div > div.regions.container{position: relative;}
+
+.aecid-actor-general-actions-menu{position: absolute; right: 1.2em; top: 20px; list-style: none; box-sizing: border-box; width: 100%; margin-bottom: 0; padding-left: 0; text-align: right;}
+.aecid-actor-general-actions-menu li{display: inline-block; vertical-align: top;}
+.aecid-actor-general-actions-menu li a{text-decoration: none; display: block; padding: 0.5em 0em; text-align: center;}
+.aecid-actor-general-actions-menu li:last-child a{margin-left: 8px; padding: 0.5em 1em; background-color: #ffffff; border: 1px solid #D81739; color: #D81739;}
+.aecid-actor-general-actions-menu li:last-child a:hover{background-color: #D81739; color: #ffffff;}
+
+.aecid-actor-group-container{margin-bottom: 50px;}
+.aecid-actor-subgroup-container{list-style: none; margin: 0; padding: 0;}
+.aecid-actor-actions-menu{position: relative; top: 50%; list-style: none; float: right; margin: 0; padding: 0; transform: translateY(-25%);}
+.aecid-actor-actions-menu li{display: inline-block; vertical-align: middle;}
+.aecid-actor-subgroup .aecid-actor-subgroup-title{cursor: pointer; padding: 1em 0.5em; background-color: #F2F2F2; border: solid 1px #B3B3B3; margin: 5px 0;}
+.aecid-actor-subgroup-data{display: none;}
+.aecid-actor-subgroup-data .aecid-actor-subgroup-data-alphabetic{list-style: none; margin: 0; padding: 0; background: #8597B4;}
+.aecid-actor-subgroup-data .aecid-actor-subgroup-data-alphabetic li{display: inline-block; vertical-align: top; padding: 3px; }
+.aecid-actor-subgroup-data .aecid-actor-subgroup-data-alphabetic li a:hover{background: #003E8B; color:#fff; border-radius: 4px;}
+.aecid-actor-subgroup-data .aecid-actor-subgroup-data-alphabetic li a{color:#fff; padding: 0.5em; display: block; text-align: center; text-decoration: none;}
+.aecid-actor-subgroup-data .aecid-actor-subgroup-data-alphabetic li a.active{background: #003E8B; color:#fff; border-radius: 4px;}
+.aecid-actor-subgroup-data .aecid-actor-subgroup-data-footer{position: relative; width: 100%; padding: 0.5em 1em; background-color: #003E8B; color: white;}
+.aecid-actor-subgroup-data .aecid-actor-subgroup-data-footer .aecid-actor-subgroup-data-count{display: inline-block; vertical-align: top; margin: 0 0 0 -4px; width: 50%; text-align: left;}
+.aecid-actor-subgroup-data .aecid-actor-subgroup-data-footer .aecid-actor-subgroup-data-pages{display: inline-block; vertical-align: top; margin: 0 0 0 -4px; width: 50%; text-align: right;}
+.aecid-actor-subgroup-data .aecid-actor-subgroup-data-footer .aecid-actor-subgroup-data-pages select{width: 50px;}
+
+
+/*
+#003E8B → azul
+#B3B3B3 → linea gris tabla
+#F2F2F2 → celdas gris
+*/
+.aecid-actor-subgroup {margin: 2em 0;}
+.aecid-actor-subgroup-data table thead tr{background-color: #003E8B; color: white;}
+.aecid-actor-subgroup-data table, table td{border:1px solid #B3B3B3;}
+.aecid-actor-subgroup-data table th{border:1px solid #003E8B;  text-align: center;}
+.aecid-actor-subgroup-data table {margin-bottom: 0;}
+
+.path-intranet #block-aecid-theme-page-title .block__content > h1 {border-bottom: 2px solid #003e8b;color: #003e8b;  font-size: 1.7em; font-weight: bolder; padding: 0.3em 0;}
+.path-intranet #block-aecid-theme-content h3{font-size: 1.4em; color: #003E8B;}
+
+/*
+=================
+Intranet LightBox
+=================
+*/
+
+.aecid-intranet-lightbox{display: none; z-index: 999; position: fixed; top: 0; left: 0; box-sizing: border-box; width: 100%; height: 100vh; background-color: rgba(200, 200, 200, 0.7);}
+.aecid-intranet-lightbox-container{box-sizing: border-box; display: table; width: 60%; margin: 50px auto; padding: 20px; background-color: white; box-shadow: 7px 7px 20px #000000;}
+.aecid-intranet-lightbox-content-top{box-sizing: border-box; width: 100%; text-align: right;}
+.aecid-intranet-lightbox-content-body{overflow-x: hidden; overflow-y: auto; box-sizing: border-box; width: 100%; height: 200px; margin: 20px 0 20px 0;}
+.aecid-intranet-lightbox-close{cursor: pointer; display: inline-block; padding: 10px 0 10px 0; font-size: 1.7em; color: #cccccc;}
+.aecid-intranet-lightbox-close:hover{color: #333333;}
+
+
+/*
+======================
+Intranet LightBox Tabs
+======================
+*/
+.aecid-intranet-lightbox .aecid-intranet-lightbox-tabs-list{list-style: none; margin: 0; padding: 0; border-bottom: solid 1px #cccccc;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-tabs-list .aecid-intranet-lightbox-tab-button{cursor: pointer; display: inline-block; vertical-align: top; margin-bottom: -1px; padding: 10px; background-color: #ffffff; outline: none!important; border-top: solid 2px #ffffff; border-right: solid 1px #ffffff; border-left: solid 1px #ffffff; border-bottom: solid 1px #cccccc; text-align: center;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-tabs-list .aecid-intranet-lightbox-tab-button:hover{border-top: solid 2px #C60B1E;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-tabs-list .aecid-intranet-lightbox-tab-button.aecid-intranet-lightbox-active-tab{margin-bottom: -1px; border-top: solid 2px #C60B1E; border-right: solid 1px #cccccc; border-left: solid 1px #cccccc; border-bottom: solid 1px #ffffff;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-body .aecid-intranet-lightbox-tabs-pane .aecid-intranet-lightbox-group-tab{display: none;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-body .aecid-intranet-lightbox-tabs-pane .aecid-intranet-lightbox-group-tab:first-child{display: inline;}
+
+/*
+==================
+Intranet Preloader
+==================
+*/
+.aecid-preloader{position: fixed; width: 150px; height: 150px; top: calc(50% - 75px); left: calc(50% - 75px);}
+.aecid-preloader label{display: block; width: 150px; text-align: center; margin-top: -100px;}
+.aecid-preloader label h3{margin: 0;}
+.aecid-preloader img{-webkit-animation: aecid-preloading-rotating 4s linear infinite; -moz-animation: aecid-preloading-rotating 4s linear infinite; -ms-animation: aecid-preloading-rotating 4s linear infinite; -o-animation: aecid-preloading-rotating 4s linear infinite; animation: aecid-preloading-rotating 4s linear infinite;}
+@-webkit-keyframes aecid-preloading-rotating{
+  from {-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg);}
+}
+@keyframes aecid-preloading-rotating {
+  from {-ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+  to {-ms-transform: rotate(360deg); -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg);transform: rotate(360deg);}
+}

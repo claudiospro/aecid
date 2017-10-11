@@ -1,0 +1,19 @@
+uuid: 379476ed-1a33-4727-b3b8-b5410948b7fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informacion_adicional_de_l
+    - node.type.intervencion
+id: node.intervencion.field_informacion_adicional_de_l
+field_name: field_informacion_adicional_de_l
+entity_type: node
+bundle: intervencion
+label: 'Información adicional de la Intervención'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

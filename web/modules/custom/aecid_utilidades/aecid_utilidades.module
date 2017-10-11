@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Contains aecid_utilidades.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function aecid_utilidades_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the aecid_utilidades module.
+    case 'help.page.aecid_utilidades':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Modulo para el contenido de Utilidades') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function aecid_utilidades_theme() {
+  return [
+    /*Plantillas Generales*/
+    'aecid_lightbox' => array(
+        'variables' => array(
+            'content' => NULL,
+        ),
+        'template' => 'global/aecid_lightbox',
+    ),
+
+    /*Plantillas de Códigos CAD*/
+    'aecid_codigos_cad_lista' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'codigocad/aecid_codigos_cad_lista',
+    ),
+
+    'aecid_codigo_cad_popup' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'codigocad/aecid_codigo_cad_popup',
+    ),
+
+    'aecid_codigos_cad_table_export' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'codigocad/aecid_codigos_cad_table_export',
+    ),
+  ];
+}

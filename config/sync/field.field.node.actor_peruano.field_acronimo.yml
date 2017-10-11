@@ -1,0 +1,19 @@
+uuid: f65f103f-a54a-4c73-a32b-c1842ea03a7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acronimo
+    - node.type.actor_peruano
+id: node.actor_peruano.field_acronimo
+field_name: field_acronimo
+entity_type: node
+bundle: actor_peruano
+label: Acronimo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

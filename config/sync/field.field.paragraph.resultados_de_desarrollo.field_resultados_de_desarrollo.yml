@@ -1,0 +1,28 @@
+uuid: 16833cec-22a7-495d-ab1f-9e1d207cff39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_resultados_de_desarrollo
+    - paragraphs.paragraphs_type.resultados_de_desarrollo
+    - taxonomy.vocabulary.resultados_de_desarrollo
+id: paragraph.resultados_de_desarrollo.field_resultados_de_desarrollo
+field_name: field_resultados_de_desarrollo
+entity_type: paragraph
+bundle: resultados_de_desarrollo
+label: 'Resultados de Desarrollo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      resultados_de_desarrollo: resultados_de_desarrollo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

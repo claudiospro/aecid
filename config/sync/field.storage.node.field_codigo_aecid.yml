@@ -1,0 +1,21 @@
+uuid: 6099c6b6-3e28-437b-90d9-1cc811e650de
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_codigo_aecid
+field_name: field_codigo_aecid
+entity_type: node
+type: string
+settings:
+  max_length: 10
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,33 @@
+uuid: 02c089c0-c5cd-4e8b-b95e-4b93aa373f2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.departamento.field_departamento
+    - field.field.paragraph.departamento.field_porcentaje
+    - paragraphs.paragraphs_type.departamento
+id: paragraph.departamento.default
+targetEntityType: paragraph
+bundle: departamento
+mode: default
+content:
+  field_departamento:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_porcentaje:
+    weight: 1
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden: {  }

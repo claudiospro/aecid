@@ -1,0 +1,20 @@
+uuid: e155ecdf-b8b5-4b05-9f65-5438b54d57e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_aport_local_dolares
+field_name: field_aport_local_dolares
+entity_type: node
+type: decimal
+settings:
+  precision: 15
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

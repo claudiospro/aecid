@@ -1,0 +1,50 @@
+body.path-intranet-codigos-cad-listado div[data-at-row="main"] > div > div.regions.container{position: relative;}
+
+.aecid-codigo-cad-general-actions-menu{position: absolute; right: 1.2em; top: 20px; list-style: none; box-sizing: border-box; width: 100%; margin-bottom: 0; padding-left: 0; text-align: right;}
+.aecid-codigo-cad-general-actions-menu li{display: inline-block; vertical-align: top;}
+.aecid-codigo-cad-general-actions-menu li a{text-decoration: none; display: block; padding: 0.5em 0em; text-align: center;}
+.aecid-codigo-cad-general-actions-menu li:last-child a{margin-left: 8px; padding: 0.5em 1em; background-color: #ffffff; border: 1px solid #D81739; color: #D81739;}
+.aecid-codigo-cad-general-actions-menu li:last-child a:hover{background-color: #D81739; color: #ffffff;}
+
+.aecid-codigo-cad-group-container{margin-bottom: 50px;}
+.aecid-codigo-cad-subgroup-container{list-style: none; margin: 0; padding: 0;}
+.aecid-codigo-cad-actions-menu{position: relative; top: 50%; list-style: none; float: right; margin: 0; padding: 0; transform: translateY(-25%);}
+.aecid-codigo-cad-actions-menu li{display: inline-block; vertical-align: middle;}
+.aecid-codigo-cad-subgroup .aecid-codigo-cad-subgroup-title{cursor: pointer; padding: 1em 0.5em; background-color: #F2F2F2; border: solid 1px #B3B3B3; margin: 5px 0;}
+.aecid-codigo-cad-subgroup-data{display: none;}
+.aecid-codigo-cad-subgroup-data .aecid-codigo-cad-subgroup-data-alphabetic{list-style: none; margin: 0; padding: 0; background: #8597B4;}
+.aecid-codigo-cad-subgroup-data .aecid-codigo-cad-subgroup-data-alphabetic li{display: inline-block; vertical-align: top; padding: 3px; }
+.aecid-codigo-cad-subgroup-data .aecid-codigo-cad-subgroup-data-alphabetic li a:hover{background: #003E8B; color:#fff; border-radius: 4px;}
+.aecid-codigo-cad-subgroup-data .aecid-codigo-cad-subgroup-data-alphabetic li a{color:#fff; padding: 0.5em; display: block; text-align: center; text-decoration: none;}
+.aecid-codigo-cad-subgroup-data .aecid-codigo-cad-subgroup-data-footer{position: relative; width: 100%; padding: 0.5em 1em; background-color: #003E8B; color: white;}
+.aecid-codigo-cad-subgroup-data .aecid-codigo-cad-subgroup-data-footer .aecid-codigo-cad-subgroup-data-count{display: inline-block; vertical-align: top; margin: 0 0 0 -4px; width: 50%; text-align: left;}
+.aecid-codigo-cad-subgroup-data .aecid-codigo-cad-subgroup-data-footer .aecid-codigo-cad-subgroup-data-pages{display: inline-block; vertical-align: top; margin: 0 0 0 -4px; width: 50%; text-align: right;}
+.aecid-codigo-cad-subgroup-data .aecid-codigo-cad-subgroup-data-footer .aecid-codigo-cad-subgroup-data-pages select{width: 50px;}
+
+
+/*
+#003E8B → azul
+#B3B3B3 → linea gris tabla
+#F2F2F2 → celdas gris
+*/
+.aecid-codigo-cad-subgroup {margin: 2em 0;}
+.aecid-codigo-cad-subgroup-data table thead tr{background-color: #003E8B; color: white;}
+.aecid-codigo-cad-subgroup-data table, table td{border:1px solid #B3B3B3;}
+.aecid-codigo-cad-subgroup-data table th{border:1px solid #003E8B;  text-align: center;}
+.aecid-codigo-cad-subgroup-data table {margin-bottom: 0;}
+
+.path-intranet #block-aecid-theme-page-title .block__content > h1 {border-bottom: 2px solid #003e8b;color: #003e8b;  font-size: 1.7em; font-weight: bolder; padding: 0.3em 0;}
+.path-intranet #block-aecid-theme-content h3{font-size: 1.4em; color: #003E8B;}
+
+/*
+=================
+Intranet LightBox
+=================
+*/
+
+.aecid-intranet-lightbox{display: none; z-index: 999; position: fixed; top: 0; left: 0; box-sizing: border-box; width: 100%; height: 100vh; background-color: rgba(200, 200, 200, 0.7);}
+.aecid-intranet-lightbox-container{box-sizing: border-box; display: table; width: 50%; margin: 50px auto; padding: 20px; background-color: white; box-shadow: 7px 7px 20px #000000;}
+.aecid-intranet-lightbox-content-top{box-sizing: border-box; width: 100%; text-align: right;}
+.aecid-intranet-lightbox-content-body{overflow-x: hidden; overflow-y: auto; box-sizing: border-box; width: 100%; height: 250px; margin: 20px 0 20px 0;}
+.aecid-intranet-lightbox-close{cursor: pointer; display: inline-block; padding: 10px 0 10px 0; font-size: 1.7em; color: #cccccc;}
+.aecid-intranet-lightbox-close:hover{color: #333333;}

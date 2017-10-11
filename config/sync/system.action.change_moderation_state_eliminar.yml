@@ -1,0 +1,13 @@
+uuid: 041709d6-8e94-4f19-a569-8bb4f14a452e
+langcode: en
+status: true
+dependencies:
+  module:
+    - aecid_bulk_actions
+_core:
+  default_config_hash: _5msytfdDASEFKPo6DxH_5NC0G_2q1liCv3H59Yz0C0
+id: change_moderation_state_eliminar
+label: 'Elimina la Intervencion - Eliminar'
+type: node
+plugin: change_moderation_state_eliminar
+configuration: {  }

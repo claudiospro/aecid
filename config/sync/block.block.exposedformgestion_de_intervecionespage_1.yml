@@ -1,0 +1,29 @@
+uuid: e881d215-1969-483f-9f97-3ac2fe66c9f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.gestion_de_interveciones
+  module:
+    - system
+    - views
+  theme:
+    - aecid_theme
+id: exposedformgestion_de_intervecionespage_1
+theme: aecid_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:gestion_de_interveciones-page_1'
+settings:
+  id: 'views_exposed_filter_block:gestion_de_interveciones-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/intranet/intervenciones\r\n/intranet/intervenciones/*"
+    negate: false
+    context_mapping: {  }

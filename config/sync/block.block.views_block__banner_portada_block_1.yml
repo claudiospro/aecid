@@ -1,0 +1,30 @@
+uuid: ccc1a047-f155-489d-a95b-beb3aa254930
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.banner_portada
+  module:
+    - system
+    - views
+  theme:
+    - aecid_theme
+id: views_block__banner_portada_block_1
+theme: aecid_theme
+region: navbar
+weight: -7
+provider: null
+plugin: 'views_block:banner_portada-block_1'
+settings:
+  id: 'views_block:banner_portada-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: false
+    context_mapping: {  }

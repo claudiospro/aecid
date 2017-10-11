@@ -1,0 +1,8 @@
+uuid: e092f6eb-72ee-423c-a68f-0b23893c6466
+langcode: en
+status: true
+dependencies: {  }
+id: menu-externo
+label: 'Menú Externo'
+description: 'Menú Externo'
+locked: false

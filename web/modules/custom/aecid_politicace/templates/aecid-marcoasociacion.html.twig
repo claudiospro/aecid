@@ -1,0 +1,81 @@
+<div class="aecid-marcoasociacion-wrapper">
+  {% if data['user_role'] == 'administrator' %}
+  <ul class="aecid-marcoasociacion-general-actions-menu">
+    <li><a class="aecid-marcoasociacion-export-excel" href="/intranet/marcoasociacion/all/export" style="color: green;"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a></li>
+    <li><a class="aecid-marcoasociacion-export-pdf" href="/intranet/marcoasociacion/all/export" style="color: red;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+    <li><a href="/admin/structure/taxonomy/add?destination=/intranet/marcoasociacion/listado"><i class="fa fa-file-text-o" aria-hidden="true"></i> Nuevo Marco de Asociación</a></li>
+  </ul>
+  {% endif %}
+{% if data %}
+  <ul class="aecid-marcoasociacion-subgroup-container">
+  {% if data['user_role'] == 'administrator' %}
+  {% for item in data %}
+    {% if item != 'administrator' %}
+    <li class="aecid-marcoasociacion-subgroup">
+      <h6 class="aecid-marcoasociacion-subgroup-title">
+        {% if item['items']|length > 0 %}<i class="fa fa-play" aria-hidden="true" style="font-size: 0.6em;"></i> {% endif %}{{ item['title'] }}
+        <ul class="aecid-marcoasociacion-actions-menu">
+          <li><a class="aecid-marcoasociacion-export-excel" href="/intranet/marcoasociacion/{{ item['vid'] }}/export" style="color: green;"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a></li>
+          <li><a class="aecid-marcoasociacion-export-pdf" href="/intranet/marcoasociacion/{{ item['vid'] }}/export" style="color: red;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+          <li><a class="aecid-marcoasociacion-subgroup-data-name" href="/intranet/marcoasociacion/{{ item['vid'] }}/show" style="display: block; margin-left: 5px; padding: 5px 8px 5px 8px; background-color: #003e8b; border-radius: 5px; text-align: center; color: white;">ver <i class="fa fa-eye" aria-hidden="true"></i></a></li>
+        </ul>
+      </h6>
+      {% if item['items']|length > 0 %}
+      <div class="aecid-marcoasociacion-subgroup-data">
+        <table width="100%">
+          <thead>
+            <tr>
+              <th>Resultados de Desarrollo</th>
+              <th>Monto</th>
+              <th>Nro. Intervenciones</th>
+            </tr>
+          </thead>
+          {% for row in item['items'] %}
+            <tr>
+              <td>{{ row.name }}</td>
+              <td>{{ row.monto }}</td>
+              <td>{{ row.cantinter }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  {% else %}
+  {% for item in data %}
+    {% if item != 'actor' %}
+    <li class="aecid-marcoasociacion-subgroup">
+      <h6 class="aecid-marcoasociacion-subgroup-title">
+        {% if item['items']|length > 0 %}<i class="fa fa-play" aria-hidden="true" style="font-size: 0.6em;"></i> {% endif %}{{ item['title'] }}
+      </h6>
+      {% if item['items']|length > 0 %}
+      <div class="aecid-marcoasociacion-subgroup-data">
+        <table width="100%">
+          <thead>
+            <tr>
+              <th>Prioridades Sectoriales</th>
+              <th>Monto</th>
+              <th>Nro. Intervenciones</th>
+            </tr>
+          </thead>
+          {% for row in item['items'] %}
+            <tr>
+              <td>{{ row.name }}</td>
+              <td>{{ row.monto }}</td>
+              <td>{{ row.cantinter }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  {% endif %}
+  </ul>
+{% endif %}
+</div>

@@ -1,0 +1,23 @@
+uuid: c86673b9-12d2-40b9-86c7-b21f7c8910e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - link
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: user.field_sitio_web
+field_name: field_sitio_web
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,153 @@
+/* Layout CSS for: page.html.twig, generated: Fri, 11 Aug 17 13:07:34 -0500 */
+
+.page {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.l-rw {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 75em;
+  width: 100%;
+}
+
+.l-r {
+  flex: 0 0 auto;
+  padding: 0 0.625em;
+  width: 100%;
+}
+
+/* Begin breakpoint: wide */
+@media all and (min-width: 60.0625em) {
+
+.l-leaderboard { -webkit-order: -10; -ms-flex-order: -10; order: -10; }
+.l-header { -webkit-order: -4; -ms-flex-order: -4; order: -4; }
+.l-navbar { -webkit-order: -9; -ms-flex-order: -9; order: -9; }
+.l-highlighted { -webkit-order: -8; -ms-flex-order: -8; order: -8; }
+.l-features { -webkit-order: -7; -ms-flex-order: -7; order: -7; }
+.l-content-prefix { -webkit-order: -6; -ms-flex-order: -6; order: -6; }
+.l-main { -webkit-order: -5; -ms-flex-order: -5; order: -5; }
+.l-content-suffix { -webkit-order: -3; -ms-flex-order: -3; order: -3; }
+.l-subfeatures { -webkit-order: -1; -ms-flex-order: -1; order: -1; }
+.l-footer { -webkit-order: -2; -ms-flex-order: -2; order: -2; }
+
+.pr-header .arc--2 .l-r {
+  width: 50%;
+}
+
+.pr-features .arc--2 .l-r {
+  width: 50%;
+}
+
+.pr-features .arc--3 .l-r {
+  width: 33.33333%;
+}
+
+.pr-main .hr--2-3 .l-r,
+.pr-main .arc--3 .l-r:nth-child(2) {
+  width: 25%;
+}
+
+.pr-main .hr--2-3 .l-r:last-child,
+.pr-main .arc--3 .l-r:last-child {
+  width: 75%;
+}
+
+.pr-subfeatures .arc--2 .l-r {
+  width: 50%;
+}
+
+.pr-subfeatures .arc--3 .l-r {
+  width: 33.33333%;
+}
+
+.pr-subfeatures .arc--4 .l-r {
+  width: 25%;
+}
+
+}
+/* End breakpoint */
+
+/* Begin breakpoint: tablet */
+@media all and (min-width: 45.0625em) and (max-width: 60em) {
+
+.l-leaderboard { -webkit-order: -10; -ms-flex-order: -10; order: -10; }
+.l-header { -webkit-order: -4; -ms-flex-order: -4; order: -4; }
+.l-navbar { -webkit-order: -9; -ms-flex-order: -9; order: -9; }
+.l-highlighted { -webkit-order: -8; -ms-flex-order: -8; order: -8; }
+.l-features { -webkit-order: -7; -ms-flex-order: -7; order: -7; }
+.l-content-prefix { -webkit-order: -6; -ms-flex-order: -6; order: -6; }
+.l-main { -webkit-order: -5; -ms-flex-order: -5; order: -5; }
+.l-content-suffix { -webkit-order: -3; -ms-flex-order: -3; order: -3; }
+.l-subfeatures { -webkit-order: -1; -ms-flex-order: -1; order: -1; }
+.l-footer { -webkit-order: -2; -ms-flex-order: -2; order: -2; }
+
+.pr-header .arc--2 .l-r {
+  width: 50%;
+}
+
+.pr-features .arc--2 .l-r {
+  width: 50%;
+}
+
+.pr-features .arc--3 .l-r {
+  width: 33.33333%;
+}
+
+.pr-main .hr--2-3 .l-r,
+.pr-main .arc--3 .l-r:nth-child(2) {
+  width: 50%;
+}
+
+.pr-main .hr--2-3 .l-r:last-child,
+.pr-main .arc--3 .l-r:last-child {
+  width: 50%;
+}
+
+.pr-subfeatures .arc--2 .l-r {
+  width: 50%;
+}
+
+.pr-subfeatures .arc--3 .l-r {
+  width: 33.33333%;
+}
+
+.pr-subfeatures .arc--4 .l-r {
+  width: 25%;
+}
+
+}
+/* End breakpoint */
+
+/* Begin breakpoint: mobile */
+@media all and (max-width: 45em) {
+
+.l-leaderboard { -webkit-order: -10; -ms-flex-order: -10; order: -10; }
+.l-header { -webkit-order: -4; -ms-flex-order: -4; order: -4; }
+.l-navbar { -webkit-order: -9; -ms-flex-order: -9; order: -9; }
+.l-highlighted { -webkit-order: -8; -ms-flex-order: -8; order: -8; }
+.l-features { -webkit-order: -7; -ms-flex-order: -7; order: -7; }
+.l-content-prefix { -webkit-order: -6; -ms-flex-order: -6; order: -6; }
+.l-main { -webkit-order: -5; -ms-flex-order: -5; order: -5; }
+.l-content-suffix { -webkit-order: -3; -ms-flex-order: -3; order: -3; }
+.l-subfeatures { -webkit-order: -1; -ms-flex-order: -1; order: -1; }
+.l-footer { -webkit-order: -2; -ms-flex-order: -2; order: -2; }
+
+.pr-subfeatures .arc--2 .l-r,
+.pr-subfeatures .arc--3 .l-r:first-child,
+.pr-subfeatures .arc--4 .l-r {
+  width: 50%;
+}
+
+.pr-subfeatures .arc--3 .l-r:nth-child(2) {
+  width: 50%;
+}
+
+}
+/* End breakpoint */
+
+
+.l-attribution { -webkit-order: 100; -ms-flex-order: 100; order: 100 ;}

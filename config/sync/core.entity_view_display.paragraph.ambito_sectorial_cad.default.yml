@@ -1,0 +1,33 @@
+uuid: 9a6051dc-2530-4d1c-821b-e544dc1df2b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ambito_sectorial_cad.field_cad_general
+    - field.field.paragraph.ambito_sectorial_cad.field_porcentaje
+    - paragraphs.paragraphs_type.ambito_sectorial_cad
+id: paragraph.ambito_sectorial_cad.default
+targetEntityType: paragraph
+bundle: ambito_sectorial_cad
+mode: default
+content:
+  field_cad_general:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_porcentaje:
+    weight: 3
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden: {  }

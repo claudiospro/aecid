@@ -1,0 +1,33 @@
+uuid: 7b7cc10a-51c8-4e9a-b693-ce6606954062
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.socios_locales.field_porcentaje
+    - field.field.paragraph.socios_locales.field_socio_local
+    - paragraphs.paragraphs_type.socios_locales
+  module:
+    - content_moderation
+    - entity_reference_views_select
+id: paragraph.socios_locales.default
+targetEntityType: paragraph
+bundle: socios_locales
+mode: default
+content:
+  field_porcentaje:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_socio_local:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

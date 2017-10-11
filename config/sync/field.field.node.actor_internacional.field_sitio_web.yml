@@ -1,0 +1,23 @@
+uuid: fd879ba2-052a-4c8c-bf6e-102e24b49916
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sitio_web
+    - node.type.actor_internacional
+  module:
+    - link
+id: node.actor_internacional.field_sitio_web
+field_name: field_sitio_web
+entity_type: node
+bundle: actor_internacional
+label: 'Sitio Web'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

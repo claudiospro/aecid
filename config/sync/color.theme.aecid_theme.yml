@@ -1,0 +1,13 @@
+palette:
+  base: '#ffffff'
+  text: '#333333'
+  link: '#333333'
+logo: 'public://color/aecid_theme-afe49aa3/logo.svg'
+stylesheets:
+  - 'public://color/aecid_theme-afe49aa3/color.css'
+  - 'public://color/aecid_theme-afe49aa3/tabs.css'
+files:
+  - 'public://color/aecid_theme-afe49aa3/logo.svg'
+  - 'public://color/aecid_theme-afe49aa3/logo.png'
+  - 'public://color/aecid_theme-afe49aa3/color.css'
+  - 'public://color/aecid_theme-afe49aa3/tabs.css'

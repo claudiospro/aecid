@@ -1,0 +1,20 @@
+uuid: 36b5f9e1-3fed-4f93-9b68-37ab38370a5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

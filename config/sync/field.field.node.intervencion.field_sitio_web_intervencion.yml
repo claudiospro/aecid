@@ -1,0 +1,23 @@
+uuid: 53c46f3e-700f-46d9-a870-d23acb57ccc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sitio_web_intervencion
+    - node.type.intervencion
+  module:
+    - link
+id: node.intervencion.field_sitio_web_intervencion
+field_name: field_sitio_web_intervencion
+entity_type: node
+bundle: intervencion
+label: 'Sitio Web  donde encontraras más información de la Intervención'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

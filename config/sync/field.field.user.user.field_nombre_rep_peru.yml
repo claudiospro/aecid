@@ -1,0 +1,20 @@
+uuid: d3e0133b-4826-4eca-a5c2-f64d611ad98b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_nombre_rep_peru
+  module:
+    - user
+id: user.user.field_nombre_rep_peru
+field_name: field_nombre_rep_peru
+entity_type: user
+bundle: user
+label: Nombre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

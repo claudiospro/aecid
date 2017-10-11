@@ -1,0 +1,11 @@
+aecid_actores.global:
+  version: 8.x-1.0
+  css:
+    theme:
+      css/aecid_actores.css: {}
+  js:
+    js/aecid_actores.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once

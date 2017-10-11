@@ -1,0 +1,21 @@
+uuid: e6a18781-8996-4ad2-b889-f350dc8cc578
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.banner_principal
+  module:
+    - user
+id: node.banner_principal.teaser
+targetEntityType: node
+bundle: banner_principal
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_enlace_banner: true
+  field_imagen_banner: true
+  field_texto_banner: true

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: change_moderation_state_eliminar
+label: 'Elimina la Intervencion - Eliminar'
+type: node
+plugin: change_moderation_state_eliminar
+configuration: {  }

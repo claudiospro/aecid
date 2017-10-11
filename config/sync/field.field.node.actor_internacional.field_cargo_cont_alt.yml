@@ -1,0 +1,19 @@
+uuid: 0fda84f2-c700-4f12-a6cb-86b8eba4507b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cargo_cont_alt
+    - node.type.actor_internacional
+id: node.actor_internacional.field_cargo_cont_alt
+field_name: field_cargo_cont_alt
+entity_type: node
+bundle: actor_internacional
+label: Cargo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

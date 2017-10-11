@@ -1,0 +1,50 @@
+uuid: 9df22e93-f461-4862-a776-81f9cc1214eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.banner_principal.field_enlace_banner
+    - field.field.node.banner_principal.field_imagen_banner
+    - field.field.node.banner_principal.field_texto_banner
+    - node.type.banner_principal
+  module:
+    - image
+    - link
+    - user
+id: node.banner_principal.default
+targetEntityType: node
+bundle: banner_principal
+mode: default
+content:
+  field_enlace_banner:
+    weight: 101
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_imagen_banner:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_texto_banner:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

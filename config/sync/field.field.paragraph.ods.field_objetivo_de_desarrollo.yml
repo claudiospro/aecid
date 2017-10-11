@@ -1,0 +1,28 @@
+uuid: 75a7c48c-8d46-45e9-8b3f-94f4d6239656
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_objetivo_de_desarrollo
+    - paragraphs.paragraphs_type.ods
+    - taxonomy.vocabulary.objetivos_de_desarrollo_sostenib
+id: paragraph.ods.field_objetivo_de_desarrollo
+field_name: field_objetivo_de_desarrollo
+entity_type: paragraph
+bundle: ods
+label: 'Objetivo de desarrollo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      objetivos_de_desarrollo_sostenib: objetivos_de_desarrollo_sostenib
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

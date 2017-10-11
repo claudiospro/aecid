@@ -1,0 +1,31 @@
+uuid: 7036dd9a-c858-4593-9850-c71831d9e964
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_acceso:19a83e1a-30e9-4044-96ca-ae3694e7d7a1'
+  module:
+    - block_content
+    - system
+  theme:
+    - aecid_theme
+id: mapeo
+theme: aecid_theme
+region: features_first
+weight: -15
+provider: null
+plugin: 'block_content:19a83e1a-30e9-4044-96ca-ae3694e7d7a1'
+settings:
+  id: 'block_content:19a83e1a-30e9-4044-96ca-ae3694e7d7a1'
+  label: Mapeo
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

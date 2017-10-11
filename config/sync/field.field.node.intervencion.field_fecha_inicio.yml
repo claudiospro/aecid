@@ -1,0 +1,21 @@
+uuid: c7c7d1ea-9636-4afe-9400-0b85476d0d11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.intervencion
+  module:
+    - datetime
+id: node.intervencion.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: intervencion
+label: 'Fecha Inicio'
+description: 'Fecha en la que el proyecto comenzó o, en el caso de que se desconozca este dato, la fecha en la que la subvención fue concedida. En el caso de programas de larga duración, señalar la fecha del último desembolso realizado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

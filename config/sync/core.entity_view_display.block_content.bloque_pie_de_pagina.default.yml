@@ -1,0 +1,33 @@
+uuid: 5b6746d3-55fa-474f-b6ac-86fd53f2ef02
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_pie_de_pagina
+    - field.field.block_content.bloque_pie_de_pagina.field_des_acceso_pie_pag
+    - field.field.block_content.bloque_pie_de_pagina.field_icono_acceso_pie_pagina
+  module:
+    - image
+    - text
+id: block_content.bloque_pie_de_pagina.default
+targetEntityType: block_content
+bundle: bloque_pie_de_pagina
+mode: default
+content:
+  field_des_acceso_pie_pag:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_icono_acceso_pie_pagina:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

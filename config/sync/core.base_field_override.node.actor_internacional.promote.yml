@@ -1,0 +1,22 @@
+uuid: 86d68440-c4e6-4692-8800-a92264ce32a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.actor_internacional
+id: node.actor_internacional.promote
+field_name: promote
+entity_type: node
+bundle: actor_internacional
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: change_moderation_state_publicado
+label: 'Cambia el Estado de la Intervencion - Publicado'
+type: node
+plugin: change_moderation_state_publicado
+configuration: {  }

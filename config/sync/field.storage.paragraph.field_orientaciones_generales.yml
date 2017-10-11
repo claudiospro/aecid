@@ -1,0 +1,20 @@
+uuid: 6de89419-689d-4cc1-9c37-8521bf048f46
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_orientaciones_generales
+field_name: field_orientaciones_generales
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

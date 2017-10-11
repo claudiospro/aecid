@@ -1,0 +1,21 @@
+uuid: 767da484-fe4e-4963-82ad-3ff423b251f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ejecucion_directa
+    - node.type.intervencion
+id: node.intervencion.field_ejecucion_directa
+field_name: field_ejecucion_directa
+entity_type: node
+bundle: intervencion
+label: 'Ejecución Directa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

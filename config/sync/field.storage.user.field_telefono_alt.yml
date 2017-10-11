@@ -1,0 +1,21 @@
+uuid: 1c3fa9e6-2d10-43ce-af50-f76d6034d56d
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_telefono_alt
+field_name: field_telefono_alt
+entity_type: user
+type: string
+settings:
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

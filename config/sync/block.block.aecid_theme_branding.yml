@@ -1,0 +1,25 @@
+uuid: 10862334-911b-4c82-836a-9224d8086f42
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aecid_theme
+_core:
+  default_config_hash: dMpcH1YSG1iREdeTVGvFBLsVR9qZD4VRIesfMIUm7vo
+id: aecid_theme_branding
+theme: aecid_theme
+region: leaderboard
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

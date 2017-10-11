@@ -1,0 +1,20 @@
+uuid: cccfcf2d-caef-4480-9de5-baba82041feb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_telefono_alt
+  module:
+    - user
+id: user.user.field_telefono_alt
+field_name: field_telefono_alt
+entity_type: user
+bundle: user
+label: Teléfono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

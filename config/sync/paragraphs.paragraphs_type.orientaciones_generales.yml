@@ -1,0 +1,7 @@
+uuid: c369ebd6-cdf8-43ab-b9e8-720be4f818a4
+langcode: en
+status: true
+dependencies: {  }
+id: orientaciones_generales
+label: 'Orientaciones Generales'
+behavior_plugins: {  }

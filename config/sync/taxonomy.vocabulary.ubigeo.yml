@@ -1,0 +1,14 @@
+uuid: eed85da9-b123-40fb-b7a5-1562c6bce64c
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_vocabulary_date
+third_party_settings:
+  taxonomy_vocabulary_date:
+    type: 'Standard Taxonomy'
+name: Ubigeo
+vid: ubigeo
+description: ''
+hierarchy: 0
+weight: 0

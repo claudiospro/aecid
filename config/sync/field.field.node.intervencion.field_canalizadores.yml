@@ -1,0 +1,51 @@
+uuid: de85e923-1392-4613-aea6-7b49ece7cf7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_canalizadores
+    - node.type.intervencion
+    - paragraphs.paragraphs_type.canalizadores
+  module:
+    - entity_reference_revisions
+id: node.intervencion.field_canalizadores
+field_name: field_canalizadores
+entity_type: node
+bundle: intervencion
+label: Canalizadores
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      canalizadores: canalizadores
+    target_bundles_drag_drop:
+      ambito_sectorial_cad:
+        weight: 9
+        enabled: false
+      canalizadores:
+        enabled: true
+        weight: 10
+      departamento:
+        weight: 11
+        enabled: false
+      financiadores:
+        weight: 12
+        enabled: false
+      ods:
+        weight: 13
+        enabled: false
+      orientaciones_generales:
+        weight: 14
+        enabled: false
+      resultados_de_desarrollo:
+        weight: 15
+        enabled: false
+      socios_locales:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

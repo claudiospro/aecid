@@ -1,0 +1,19 @@
+uuid: 5e88669a-7845-46a0-bf7c-9db030974f33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_texto_banner
+    - node.type.banner_principal
+id: node.banner_principal.field_texto_banner
+field_name: field_texto_banner
+entity_type: node
+bundle: banner_principal
+label: 'Texto Banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

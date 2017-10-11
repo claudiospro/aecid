@@ -1,0 +1,23 @@
+uuid: 4419deff-1e21-42bf-a18e-c56892905979
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_num_mujeres
+    - node.type.intervencion
+id: node.intervencion.field_num_mujeres
+field_name: field_num_mujeres
+entity_type: node
+bundle: intervencion
+label: Mujeres
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

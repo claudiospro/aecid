@@ -1,0 +1,20 @@
+uuid: 59600426-50e6-466e-a3dd-ebdb38c31066
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_correo_rep_peru
+  module:
+    - user
+id: user.user.field_correo_rep_peru
+field_name: field_correo_rep_peru
+entity_type: user
+bundle: user
+label: Correo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

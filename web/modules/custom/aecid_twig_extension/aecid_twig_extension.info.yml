@@ -1,0 +1,5 @@
+name: Aecid Twig Extension
+type: module
+description: This is a module for extends filters and functions for Twig Template
+core: 8.x
+package: Aecid

@@ -1,0 +1,79 @@
+uuid: 51d8b6b3-591d-4ff5-8ab2-876ef929cf65
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.intervencion
+  module:
+    - content_moderation
+id: flujo_para_intervenciones
+label: 'Flujo para Intervenciones'
+states:
+  aprobado:
+    label: Aprobado
+    weight: -7
+  draft:
+    label: Borrador
+    weight: -10
+  pendiente_de_correccion:
+    label: 'Pendiente de Corrección'
+    weight: -8
+  pendiente_de_revision:
+    label: 'Pendiente de Revisión'
+    weight: -9
+  published:
+    label: Publicado
+    weight: -6
+transitions:
+  aprobado:
+    label: Aprobado
+    from:
+      - pendiente_de_revision
+    to: aprobado
+    weight: -7
+  create_new_draft:
+    label: Borrador
+    from:
+      - draft
+    to: draft
+    weight: -10
+  pendiente_de_correccion:
+    label: 'Pendiente de Corrección'
+    from:
+      - pendiente_de_revision
+    to: pendiente_de_correccion
+    weight: -8
+  pendiente_de_revision:
+    label: 'Pendiente de Revisión'
+    from:
+      - draft
+      - pendiente_de_correccion
+    to: pendiente_de_revision
+    weight: -9
+  publish:
+    label: Publicar
+    from:
+      - aprobado
+    to: published
+    weight: -6
+type: content_moderation
+type_settings:
+  states:
+    aprobado:
+      published: false
+      default_revision: false
+    draft:
+      published: false
+      default_revision: false
+    pendiente_de_correccion:
+      published: false
+      default_revision: false
+    pendiente_de_revision:
+      published: false
+      default_revision: false
+    published:
+      published: true
+      default_revision: true
+  entity_types:
+    node:
+      - intervencion

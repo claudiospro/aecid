@@ -1,0 +1,29 @@
+uuid: 2e329e8f-7f03-4d6e-b0ba-9ff71279b832
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_tipo
+    - taxonomy.vocabulary.tipo_actor
+  module:
+    - user
+id: user.user.field_tipo
+field_name: field_tipo
+entity_type: user
+bundle: user
+label: Tipo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_actor: tipo_actor
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

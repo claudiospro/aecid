@@ -1,0 +1,16 @@
+uuid: 88446fc2-c754-4971-a373-e2d7a0b5209a
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_vocabulary_date
+third_party_settings:
+  taxonomy_vocabulary_date:
+    type: 'Marco de Asociación'
+    start_date: '2013-01-01'
+    end_date: '2016-12-31'
+name: 'MAP 2013-2016'
+vid: map_2013_2016
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,25 @@
+uuid: e13b7278-f149-42c2-92a7-b03006fde8b0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_pie_de_pagina:ef1e2877-7fb2-4aec-b88a-936ceebb794d'
+  module:
+    - block_content
+  theme:
+    - aecid_theme
+id: av.jorgebasadre460sanisidro
+theme: aecid_theme
+region: subfeatures_first
+weight: 0
+provider: null
+plugin: 'block_content:ef1e2877-7fb2-4aec-b88a-936ceebb794d'
+settings:
+  id: 'block_content:ef1e2877-7fb2-4aec-b88a-936ceebb794d'
+  label: 'Av. Jorge Basadre 460 San Isidro'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

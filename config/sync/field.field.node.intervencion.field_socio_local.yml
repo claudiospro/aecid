@@ -1,0 +1,33 @@
+uuid: acf0fa9a-febb-4fc3-b4a9-fa6e2de9f27a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_socio_local
+    - node.type.intervencion
+    - paragraphs.paragraphs_type.socios_locales
+  module:
+    - entity_reference_revisions
+id: node.intervencion.field_socio_local
+field_name: field_socio_local
+entity_type: node
+bundle: intervencion
+label: 'Socio Local'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      socios_locales: socios_locales
+    target_bundles_drag_drop:
+      financiadores:
+        weight: 3
+        enabled: false
+      socios_locales:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

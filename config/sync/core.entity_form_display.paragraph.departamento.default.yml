@@ -1,0 +1,37 @@
+uuid: 79ef63c8-e648-44f2-a933-187102a7a130
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.departamento.field_departamento
+    - field.field.paragraph.departamento.field_porcentaje
+    - paragraphs.paragraphs_type.departamento
+  module:
+    - content_moderation
+    - shs
+id: paragraph.departamento.default
+targetEntityType: paragraph
+bundle: departamento
+mode: default
+content:
+  field_departamento:
+    weight: 6
+    settings:
+      display_node_count: false
+      create_new_items: false
+      create_new_levels: false
+      force_deepest: false
+    third_party_settings: {  }
+    type: options_shs
+    region: content
+  field_porcentaje:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

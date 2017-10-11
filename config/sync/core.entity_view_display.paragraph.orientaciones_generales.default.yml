@@ -1,0 +1,33 @@
+uuid: 81c01695-ca47-408f-9a63-56bfe418bb2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.orientaciones_generales.field_orientaciones_generales
+    - field.field.paragraph.orientaciones_generales.field_porcentaje
+    - paragraphs.paragraphs_type.orientaciones_generales
+id: paragraph.orientaciones_generales.default
+targetEntityType: paragraph
+bundle: orientaciones_generales
+mode: default
+content:
+  field_orientaciones_generales:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_porcentaje:
+    weight: 1
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden: {  }

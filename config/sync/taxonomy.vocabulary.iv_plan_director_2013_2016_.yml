@@ -1,0 +1,16 @@
+uuid: 03af4af7-5e39-4b8e-a525-9d16c1f88593
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_vocabulary_date
+third_party_settings:
+  taxonomy_vocabulary_date:
+    type: 'Plan Director'
+    start_date: '2013-01-01'
+    end_date: '2016-12-31'
+name: 'IV Plan Director (2013 - 2016)'
+vid: iv_plan_director_2013_2016_
+description: ''
+hierarchy: 0
+weight: 0

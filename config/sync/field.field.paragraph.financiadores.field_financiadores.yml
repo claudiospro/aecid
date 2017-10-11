@@ -1,0 +1,25 @@
+uuid: 3230215f-86b9-4bfe-bee5-0d142967a5d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_financiadores
+    - paragraphs.paragraphs_type.financiadores
+id: paragraph.financiadores.field_financiadores
+field_name: field_financiadores
+entity_type: paragraph
+bundle: financiadores
+label: Financiadores
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: listado_actores
+      display_name: financiadores
+      arguments: {  }
+field_type: entity_reference

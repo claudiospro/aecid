@@ -1,0 +1,30 @@
+uuid: 708a6863-0a4d-4a1d-9cdf-239a03878b42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ods.field_objetivo_de_desarrollo
+    - field.field.paragraph.ods.field_porcentaje
+    - paragraphs.paragraphs_type.ods
+id: paragraph.ods.default
+targetEntityType: paragraph
+bundle: ods
+mode: default
+content:
+  field_objetivo_de_desarrollo:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_porcentaje:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

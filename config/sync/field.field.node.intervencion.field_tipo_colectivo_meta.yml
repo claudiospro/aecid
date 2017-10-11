@@ -1,0 +1,21 @@
+uuid: fb3e60ce-ac7a-436c-b24d-0bdd84cad7ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_colectivo_meta
+    - node.type.intervencion
+  module:
+    - options
+id: node.intervencion.field_tipo_colectivo_meta
+field_name: field_tipo_colectivo_meta
+entity_type: node
+bundle: intervencion
+label: 'Tipo Colectivo meta'
+description: 'Colectivo al que la intervención es dirigida. Si este colectivo no es fácilmente identificable señalar el conjunto de la población.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

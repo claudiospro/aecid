@@ -1,0 +1,19 @@
+uuid: 655d78df-2054-48b9-af67-7ab2406dec67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_cont
+    - node.type.actor_internacional
+id: node.actor_internacional.field_nombre_cont
+field_name: field_nombre_cont
+entity_type: node
+bundle: actor_internacional
+label: Nombre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

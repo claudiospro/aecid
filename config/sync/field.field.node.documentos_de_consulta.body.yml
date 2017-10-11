@@ -1,0 +1,22 @@
+uuid: cea6439c-3859-40d1-ae0f-7bd180626ee3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.documentos_de_consulta
+  module:
+    - text
+id: node.documentos_de_consulta.body
+field_name: body
+entity_type: node
+bundle: documentos_de_consulta
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

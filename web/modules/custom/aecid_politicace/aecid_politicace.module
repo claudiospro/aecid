@@ -1,0 +1,80 @@
+<?php
+
+/**
+ * @file
+ * Contains aecid_politicace.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function aecid_politicace_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the aecid_politicace module.
+    case 'help.page.aecid_politicace':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Módulo para el contenido de Políticas CE.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function aecid_politicace_theme() {
+  return [
+    'aecid_lightbox' => array(
+        'variables' => array(
+            'content' => NULL,
+        ),
+        'template' => 'aecid_lightbox',
+    ),
+
+    'aecid_plandirector' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'aecid-plandirector',
+    ),
+
+    'aecid_plandirector_popup' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'aecid-plandirector-popup',
+    ),
+
+    'aecid_marcoasociacion_popup' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'aecid-marcoasociacion-popup',
+    ),
+
+    'aecid_marcoasociacion' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'aecid-marcoasociacion',
+    ),
+
+    'aecid_plandirector_export_table' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'aecid-plandirector-export-table',
+    ),
+
+    'aecid_marcoasociacion_export_table' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'aecid-marcoasociacion-export-table',
+    ),
+  ];
+}

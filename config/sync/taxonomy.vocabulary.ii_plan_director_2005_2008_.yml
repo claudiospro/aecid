@@ -1,0 +1,16 @@
+uuid: b17fc788-90c7-4366-9149-7f07a69058ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_vocabulary_date
+third_party_settings:
+  taxonomy_vocabulary_date:
+    type: 'Plan Director'
+    start_date: '2005-01-01'
+    end_date: '2008-12-31'
+name: 'II Plan Director (2005 - 2008)'
+vid: ii_plan_director_2005_2008_
+description: ''
+hierarchy: 0
+weight: 0

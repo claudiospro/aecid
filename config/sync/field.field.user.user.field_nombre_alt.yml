@@ -1,0 +1,20 @@
+uuid: fe9ca708-034a-42c1-95aa-79cf9f8ca9b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_nombre_alt
+  module:
+    - user
+id: user.user.field_nombre_alt
+field_name: field_nombre_alt
+entity_type: user
+bundle: user
+label: Nombre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

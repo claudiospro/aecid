@@ -1,0 +1,198 @@
+<div class="aecid-actor-wrapper">
+  <ul class="aecid-actor-general-actions-menu">
+    <li><a href="/node/add/actor_espanol?destination=/intranet/actor_espanol/listado"><i class="fa fa-file-text-o" aria-hidden="true"></i> Nuevo Actor Español</a></li>
+  </ul>
+  {# ESPAÑOLES ESTATALES #}
+  {% if data %}
+  {% for key, actor_type in data %}
+  {% if key == 'Españoles estatales' %}
+  <div class="aecid-actor-group-container">
+    <h3 class="aecid-actor-group-title">
+      {{ key }}
+      <ul class="aecid-actor-actions-menu">
+        <li><a href="#" style="color: green;"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a></li>
+        <li><a href="#" style="color: red;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+      </ul>
+    </h3>
+    {% if actor_type|length > 0 %}
+    {% for atg, actor_type_group in actor_type %}
+    <ul class="aecid-actor-subgroup-container">
+      <li class="aecid-actor-subgroup">
+        <h6 class="aecid-actor-subgroup-title">
+          {% if actor_type_group|length > 0 %}<i class="fa fa-play" aria-hidden="true" style="font-size: 0.6em;"></i>{% endif %} {{ atg }}
+          <ul class="aecid-actor-actions-menu">
+            <li><a href="#" style="color: green;"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a></li>
+            <li><a href="#" style="color: red;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+          </ul>
+        </h6>
+        {% if actor_type_group|length > 0 %}
+        <div class="aecid-actor-subgroup-data">
+          <table width="100%">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Nombre</th>
+                <th>Monto Canalizado (€)</th>
+                <th>Nro. Interv.</th>
+                <th>Monto Financiado (€)</th>
+                <th>Nro. Interv.</th>
+                <th>Monto Ejecución Directa (€)</th>
+                <th>Nro. Interv.</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for atsg, actor_type_subgroup in actor_type_group %}
+              <tr letter="{{ actor_type_subgroup['letter_init'] }}">
+                <td><input class="aecid-actor-show-state" type="checkbox" value="1" {% if actor_type_subgroup['show'] == '1' %}checked="checked"{% endif %} name="{{ actor_type_subgroup['nid'] }}"></td>
+                <td><a class="aecid-actor-subgroup-data-name" href="/intranet/actor_espanol/{{ actor_type_subgroup['nid'] }}/show">{{ actor_type_subgroup['name'] }}</a></td>
+                <td>{{ actor_type_subgroup['monto_cana'] }}</td>
+                <td>{{ actor_type_subgroup['nro_inter_1'] }}</td>
+                <td>{{ actor_type_subgroup['monto_fin'] }}</td>
+                <td>{{ actor_type_subgroup['nro_inter_2'] }}</td>
+                <td>{{ actor_type_subgroup['monto_eje'] }}</td>
+                <td>{{ actor_type_subgroup['nro_inter_3'] }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          <ul class="aecid-actor-subgroup-data-alphabetic">
+            <li><a class="aecid-actor-alphabetic-letter" href="#">A</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">B</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">C</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">D</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">E</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">F</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">G</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">H</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">I</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">J</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">K</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">L</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">M</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">N</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">Ñ</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">O</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">P</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">Q</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">R</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">S</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">T</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">U</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">V</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">W</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">X</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">Y</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">Z</a></li>
+            <li><a class="aecid-actor-alphabetic-letter active" href="#">Todos</a></li>
+          </ul>
+          <div class="aecid-actor-subgroup-data-footer">
+            <label class="aecid-actor-subgroup-data-count">Existen actores</label>
+          </div>
+        </div>
+        {% endif %}
+      </li>
+    </ul>
+    {% endfor %}
+    {% endif %}
+  </div>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+
+  {# ESPAÑOLES NO ESTATALES #}
+  {% if data %}
+  {% for key, actor_type in data %}
+  {% if key == 'Españoles no estatales' %}
+  <div class="aecid-actor-group-container">
+    <h3 class="aecid-actor-group-title">
+      {{ key }}
+      <ul class="aecid-actor-actions-menu">
+        <li><a href="#" style="color: green;"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a></li>
+        <li><a href="#" style="color: red;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+      </ul>
+    </h3>
+    {% if actor_type|length > 0 %}
+    {% for atg, actor_type_group in actor_type %}
+    <ul class="aecid-actor-subgroup-container">
+      <li class="aecid-actor-subgroup">
+        <h6 class="aecid-actor-subgroup-title">
+          {% if actor_type_group|length > 0 %}<i class="fa fa-play" aria-hidden="true" style="font-size: 0.6em;"></i>{% endif %} {{ atg }}
+          <ul class="aecid-actor-actions-menu">
+            <li><a href="#" style="color: green;"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a></li>
+            <li><a href="#" style="color: red;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+          </ul>
+        </h6>
+        {% if actor_type_group|length > 0 %}
+        <div class="aecid-actor-subgroup-data">
+          <table width="100%">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Nombre</th>
+                <th>Monto Canalizado (€)</th>
+                <th>Nro. Interv.</th>
+                <th>Monto Financiado (€)</th>
+                <th>Nro. Interv.</th>
+                <th>Monto Ejecución Directa (€)</th>
+                <th>Nro. Interv.</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for atsg, actor_type_subgroup in actor_type_group %}
+              <tr letter="{{ actor_type_subgroup['letter_init'] }}">
+                <td><input class="aecid-actor-show-state" type="checkbox" value="1" {% if actor_type_subgroup['show'] == '1' %}checked="checked"{% endif %} name="{{ actor_type_subgroup['nid'] }}"></td>
+                <td><a class="aecid-actor-subgroup-data-name" href="/node/{{ actor_type_subgroup['nid'] }}/edit?destination=/intranet/actor_espanol/listado">{{ actor_type_subgroup['name'] }}</a></td>
+                <td>{{ actor_type_subgroup['monto_cana'] }}</td>
+                <td>{{ actor_type_subgroup['nro_inter_1'] }}</td>
+                <td>{{ actor_type_subgroup['monto_fin'] }}</td>
+                <td>{{ actor_type_subgroup['nro_inter_2'] }}</td>
+                <td>{{ actor_type_subgroup['monto_eje'] }}</td>
+                <td>{{ actor_type_subgroup['nro_inter_3'] }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          <ul class="aecid-actor-subgroup-data-alphabetic">
+            <li><a class="aecid-actor-alphabetic-letter" href="#">A</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">B</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">C</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">D</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">E</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">F</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">G</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">H</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">I</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">J</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">K</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">L</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">M</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">N</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">Ñ</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">O</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">P</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">Q</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">R</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">S</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">T</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">U</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">V</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">W</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">X</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">Y</a></li>
+            <li><a class="aecid-actor-alphabetic-letter" href="#">Z</a></li>
+            <li><a class="aecid-actor-alphabetic-letter active" href="#">Todos</a></li>
+          </ul>
+          <div class="aecid-actor-subgroup-data-footer">
+            <label class="aecid-actor-subgroup-data-count">Existen actores</label>
+          </div>
+        </div>
+        {% endif %}
+      </li>
+    </ul>
+    {% endfor %}
+    {% endif %}
+  </div>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+</div>

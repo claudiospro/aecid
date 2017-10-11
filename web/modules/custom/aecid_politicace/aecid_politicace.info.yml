@@ -1,0 +1,5 @@
+name: Aecid Políticas CE
+type: module
+description: Módulo para los contenidos de Políticas CE.
+core: 8.x
+package: Aecid

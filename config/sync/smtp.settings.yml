@@ -1,0 +1,17 @@
+smtp_on: true
+smtp_host: mail.smtp2go.com
+smtp_hostbackup: ''
+smtp_port: '2525'
+smtp_protocol: tls
+smtp_username: aecid@drinux.com
+smtp_password: zOiiaYdLOjrW
+smtp_from: no-reply@aecid.pe
+smtp_fromname: 'AECID Peru'
+smtp_client_hostname: ''
+smtp_client_helo: ''
+smtp_allowhtml: '0'
+smtp_test_address: ''
+smtp_debugging: true
+prev_mail_system: php_mail
+_core:
+  default_config_hash: WEa5Ex_IeAcm6Bm0hmQ4vU_nDwJDB8hW-vxT1qpGIbM

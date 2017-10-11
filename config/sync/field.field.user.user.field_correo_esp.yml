@@ -1,0 +1,20 @@
+uuid: f60b7094-1978-44e8-a90d-e2f577f33368
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_correo_esp
+  module:
+    - user
+id: user.user.field_correo_esp
+field_name: field_correo_esp
+entity_type: user
+bundle: user
+label: Correo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

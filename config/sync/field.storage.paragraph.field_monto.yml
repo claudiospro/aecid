@@ -1,0 +1,20 @@
+uuid: e301c19a-2cbe-4c9c-8d14-bf7985ba99a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_monto
+field_name: field_monto
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 12
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

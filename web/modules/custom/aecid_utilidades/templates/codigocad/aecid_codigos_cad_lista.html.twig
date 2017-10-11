@@ -1,0 +1,55 @@
+<div class="aecid-codigo-cad-wrapper">
+  {% if data['user_role'] == 'administrator' %}
+  <ul class="aecid-codigo-cad-general-actions-menu">
+    <li><a class="aecid-codigo-cad-export-excel" href="/intranet/codigo_cad/all/export" style="color: green;"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a></li>
+    <li><a class="aecid-codigo-cad-export-pdf" href="/intranet/codigo_cad/all/export" style="color: red;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+    <li><a href="/admin/structure/taxonomy/manage/codigos_cad/add?destination=/intranet/codigos_cad/listado"><i class="fa fa-file-text-o" aria-hidden="true"></i> Nuevo CAD</a></li>
+  </ul>
+  {% endif %}
+  {% if data %}
+    <ul class="aecid-codigo-cad-subgroup-container">
+    {% for item in data %}
+      {% if item.name != '' %}
+      <li class="aecid-codigo-cad-subgroup">
+        <h6 class="aecid-codigo-cad-subgroup-title">
+          {% set code = getCodeCodigosCad(item.tid) %}
+          {% if item.children|length > 0 %}<i class="fa fa-play" aria-hidden="true" style="font-size: 0.6em;"></i> {% endif %}{% if code != '' %}{{ code }} - {% endif %}{{ item.name }}
+          {% if data['user_role'] == 'administrator' %}
+          <ul class="aecid-codigo-cad-actions-menu">
+            <li><a class="aecid-codigo-cad-export-excel" href="/intranet/codigo_cad/{{ item.tid }}/export" style="color: green;"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a></li>
+            <li><a class="aecid-codigo-cad-export-pdf" href="/intranet/codigo_cad/{{ item.tid }}/export" style="color: red;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+            <li><a class="aecid-codigo-cad-subgroup-data-name" href="/intranet/codigo_cad/{{ item.tid }}/show" style="display: block; margin-left: 5px; padding: 5px 8px 5px 8px; background-color: #003e8b; border-radius: 5px; text-align: center; color: white;">ver <i class="fa fa-eye" aria-hidden="true"></i></a></li>
+          </ul>
+          {% endif %}
+        </h6>
+        {% if item.children %}
+        <div class="aecid-codigo-cad-subgroup-data">
+          <table width="100%">
+            <thead>
+              <tr>
+                <th>Descripción Código CAD Específico</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for row in item.children %}
+              <tr>
+                <td>
+                  {% set code_child = getCodeCodigosCad(row.tid) %}
+                  {% if data['user_role'] == 'administrator' %}
+                  <a class="aecid-codigo-cad-subgroup-data-name" href="/intranet/codigo_cad/{{ row.tid }}/show">{% if code_child != '' %}{{ code_child }} - {% endif %}{{ row.name }}</a>
+                  {% else %}
+                  {% if code_child != '' %}{{ code_child }} - {% endif %}{{ row.name }}
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% endif %}
+      </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  {% endif %}
+</div>

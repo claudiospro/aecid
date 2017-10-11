@@ -1,0 +1,81 @@
+<div class="aecid-plandirector-wrapper">
+  {% if data['user_role'] == 'administrator' %}
+  <ul class="aecid-plandirector-general-actions-menu">
+    <li><a class="aecid-plandirector-export-excel" href="/intranet/plandirector/all/export" style="color: green;"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a></li>
+    <li><a class="aecid-plandirector-export-pdf" href="/intranet/plandirector/all/export" style="color: red;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+    <li><a href="/admin/structure/taxonomy/add?destination=/intranet/plandirector/listado"><i class="fa fa-file-text-o" aria-hidden="true"></i> Nuevo Plan Director</a></li>
+  </ul>
+  {% endif %}
+{% if data %}
+  <ul class="aecid-plandirector-subgroup-container">
+  {% if data['user_role'] == 'administrator' %}
+  {% for item in data %}
+    {% if item != 'administrator' %}
+    <li class="aecid-plandirector-subgroup">
+      <h6 class="aecid-plandirector-subgroup-title">
+        {% if item['items']|length > 0 %}<i class="fa fa-play" aria-hidden="true" style="font-size: 0.6em;"></i> {% endif %}{{ item['title'] }}
+        <ul class="aecid-plandirector-actions-menu">
+          <li><a class="aecid-plandirector-export-excel" href="/intranet/plandirector/{{ item['vid'] }}/export" style="color: green;"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a></li>
+          <li><a class="aecid-plandirector-export-pdf" href="/intranet/plandirector/{{ item['vid'] }}/export" style="color: red;"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
+          <li><a class="aecid-plandirector-subgroup-data-name" href="/intranet/plandirector/{{ item['vid'] }}/show" style="display: block; margin-left: 5px; padding: 5px 8px 5px 8px; background-color: #003e8b; border-radius: 5px; text-align: center; color: white;">ver <i class="fa fa-eye" aria-hidden="true"></i></a></li>
+        </ul>
+      </h6>
+      {% if item['items']|length > 0 %}
+      <div class="aecid-plandirector-subgroup-data">
+        <table width="100%">
+          <thead>
+            <tr>
+              <th>Prioridades Sectoriales</th>
+              <th>Monto</th>
+              <th>Nro. Intervenciones</th>
+            </tr>
+          </thead>
+          {% for row in item['items'] %}
+            <tr>
+              <td>{{ row.name }}</td>
+              <td>{{ row.monto }}</td>
+              <td>{{ row.cantinter }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  {% else %}
+  {% for item in data %}
+    {% if item != 'actor' %}
+    <li class="aecid-plandirector-subgroup">
+      <h6 class="aecid-plandirector-subgroup-title">
+        {% if item['items']|length > 0 %}<i class="fa fa-play" aria-hidden="true" style="font-size: 0.6em;"></i> {% endif %}{{ item['title'] }}
+      </h6>
+      {% if item['items']|length > 0 %}
+      <div class="aecid-plandirector-subgroup-data">
+        <table width="100%">
+          <thead>
+            <tr>
+              <th>Prioridades Sectoriales</th>
+              <th>Monto</th>
+              <th>Nro. Intervenciones</th>
+            </tr>
+          </thead>
+          {% for row in item['items'] %}
+            <tr>
+              <td>{{ row.name }}</td>
+              <td>{{ row.monto }}</td>
+              <td>{{ row.cantinter }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  {% endif %}
+  </ul>
+{% endif %}
+</div>

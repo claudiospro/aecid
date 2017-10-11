@@ -1,0 +1,19 @@
+uuid: 0ef10f0e-b6ed-4dee-8abf-af7f5e5c1e56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_celular_cont_alt
+    - node.type.actor_peruano
+id: node.actor_peruano.field_celular_cont_alt
+field_name: field_celular_cont_alt
+entity_type: node
+bundle: actor_peruano
+label: Celular
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: be247477-f774-4a3b-947c-2d5041b26fcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_socio_local
+    - paragraphs.paragraphs_type.socios_locales
+id: paragraph.socios_locales.field_socio_local
+field_name: field_socio_local
+entity_type: paragraph
+bundle: socios_locales
+label: 'Socio Local'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: listado_actores
+      display_name: socio_local
+      arguments: {  }
+field_type: entity_reference

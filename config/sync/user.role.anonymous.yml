@@ -1,0 +1,43 @@
+uuid: 006bbfec-421d-4e24-98b3-b1d801964970
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access profile overview'
+  - 'access site-wide contact form'
+  - 'administer profile'
+  - 'administer profile types'
+  - 'create espanoles profile'
+  - 'create internacionales profile'
+  - 'create peruanos profile'
+  - 'delete any espanoles profile'
+  - 'delete any internacionales profile'
+  - 'delete any peruanos profile'
+  - 'delete own espanoles profile'
+  - 'delete own internacionales profile'
+  - 'delete own peruanos profile'
+  - 'search content'
+  - 'update any espanoles profile'
+  - 'update any internacionales profile'
+  - 'update any peruanos profile'
+  - 'update own espanoles profile'
+  - 'update own internacionales profile'
+  - 'update own peruanos profile'
+  - 'use advanced search'
+  - 'use text format restricted_html'
+  - 'view any espanoles profile'
+  - 'view any internacionales profile'
+  - 'view any peruanos profile'
+  - 'view any profile'
+  - 'view own espanoles profile'
+  - 'view own internacionales profile'
+  - 'view own peruanos profile'
+  - 'view own profile'

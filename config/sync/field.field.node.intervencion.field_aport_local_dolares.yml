@@ -1,0 +1,23 @@
+uuid: f784900d-b158-434f-a809-d756dfe752eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aport_local_dolares
+    - node.type.intervencion
+id: node.intervencion.field_aport_local_dolares
+field_name: field_aport_local_dolares
+entity_type: node
+bundle: intervencion
+label: US$
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: $
+field_type: decimal

@@ -1,0 +1,54 @@
+uuid: 4a2cc803-cb43-457c-af82-1dfa406e90a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tipo_colectivo_meta
+field_name: field_tipo_colectivo_meta
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Adolescencia
+      label: Adolescencia
+    -
+      value: Afrodescendientes
+      label: Afrodescendientes
+    -
+      value: Desplazados
+      label: Desplazados
+    -
+      value: Familias
+      label: Familias
+    -
+      value: Infancia
+      label: Infancia
+    -
+      value: Mujeres
+      label: Mujeres
+    -
+      value: 'Personas en Situación de Discapacidad'
+      label: 'Personas en Situación de Discapacidad'
+    -
+      value: 'Pueblos Indígenas'
+      label: 'Pueblos Indígenas'
+    -
+      value: Refugiados
+      label: Refugiados
+    -
+      value: 'Tercera Edad'
+      label: 'Tercera Edad'
+    -
+      value: 'El conjunto de la Población'
+      label: 'El conjunto de la Población'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

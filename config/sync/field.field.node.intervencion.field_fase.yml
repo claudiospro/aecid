@@ -1,0 +1,21 @@
+uuid: 8b77f709-11f2-4185-a5c0-d3d50f7cd0a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fase
+    - node.type.intervencion
+  module:
+    - options
+id: node.intervencion.field_fase
+field_name: field_fase
+entity_type: node
+bundle: intervencion
+label: Fase
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

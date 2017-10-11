@@ -1,0 +1,23 @@
+uuid: f1ae7990-8d97-4217-8f19-daf791173ac6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_acceso
+    - field.storage.block_content.field_link_acceso_portada
+  module:
+    - link
+id: block_content.bloque_acceso.field_link_acceso_portada
+field_name: field_link_acceso_portada
+entity_type: block_content
+bundle: bloque_acceso
+label: 'Link Acceso Portada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

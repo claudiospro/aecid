@@ -1,0 +1,39 @@
+uuid: 2ea3c508-786e-41b1-86a8-0092e22bdbf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_objetivo_de_desarrollo
+    - node.type.intervencion
+    - paragraphs.paragraphs_type.ods
+  module:
+    - entity_reference_revisions
+id: node.intervencion.field_objetivo_de_desarrollo
+field_name: field_objetivo_de_desarrollo
+entity_type: node
+bundle: intervencion
+label: 'Objetivo de Desarrollo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      ods: ods
+    target_bundles_drag_drop:
+      ambito_sectorial_cad:
+        weight: 5
+        enabled: false
+      financiadores:
+        weight: 6
+        enabled: false
+      ods:
+        enabled: true
+        weight: 7
+      socios_locales:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,5 @@
+name: Aecid Utlidades
+type: module
+description: Modulo para el contenido de Utilidades
+core: 8.x
+package: Aecid

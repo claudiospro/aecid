@@ -1,0 +1,34 @@
+<div class="aecid-intranet-lightbox-content-actions">
+  <ul>
+    <li><a href="/taxonomy/term/{{ data['term_tid'] }}/edit?destination=/intranet/codigos_cad/listado"><i class="fa fa-pencil" aria-hidden="true"></i> Editar</a></li>
+    <li><a href="/taxonomy/term/{{ data['term_tid'] }}/delete?destination=/intranet/codigos_cad/listado"><i class="fa fa-trash" aria-hidden="true"></i> Eliminar</a></li>
+  </ul>
+</div>
+<div class="aecid-intranet-lightbox-content-header">
+  <label>
+    Código:<br>
+    {% if data['term_codcad'] %}<small>{{ data['term_codcad'] }}</small>{% endif %}
+  </label>
+  <label>
+    Descripción:<br>
+    {% if data['term_title'] %}<small>{{ data['term_title'] }}</small>{% endif %}
+  </label>
+  <br>
+  <a href="/admin/structure/taxonomy/manage/codigos_cad/add?destination=/intranet/codigos_cad/listado"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Agregar</a>
+</div>
+<div class="aecid-intranet-lightbox-content-body">
+  <table width="100%">
+    <tbody>
+    {% if data['term_childs'] %}
+      {% for term_child in data['term_childs'] %}
+      {% set code_child = getCodeCodigosCad(term_child.tid) %}
+      <tr>
+        <td>{% if code_child != '' %}{{ code_child }} - {% endif %}{{ term_child.name }}</td>
+        <td><a href="/taxonomy/term/{{ term_child.tid }}/edit?destination=/intranet/codigos_cad/listado"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+        <td><a href="/taxonomy/term/{{ term_child.tid }}/delete?destination=/intranet/codigos_cad/listado"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+      </tr>
+      {% endfor %}
+    {% endif %}
+    </tbody>
+  </table>
+</div>

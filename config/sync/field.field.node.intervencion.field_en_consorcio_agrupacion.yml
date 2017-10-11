@@ -1,0 +1,23 @@
+uuid: 90ddbe9c-1849-469a-ab4c-d91157a5765f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_en_consorcio_agrupacion
+    - node.type.intervencion
+id: node.intervencion.field_en_consorcio_agrupacion
+field_name: field_en_consorcio_agrupacion
+entity_type: node
+bundle: intervencion
+label: 'En consorcio / agrupación'
+description: 'Sólo marcar en el caso de que la intervención sea impulsada por un consorcio o agrupación. Si este fuera el caso, ingresar el nombre de todas las entidades socias y su peso en la ejecución.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,49 @@
+#=====================================
+# RUTAS PARA EL CONTROL DE CÓDIGOS CAD
+#=====================================
+aecid_utilidades.codigocad_controller_getCodigosCad:
+  path: '/intranet/codigos_cad/listado'
+  defaults:
+    _controller: '\Drupal\aecid_utilidades\Controller\CodigocadController::getCodigosCadLista'
+    _title: 'Códigos CAD'
+  requirements:
+    _permission: 'aecid aecid_utilidades'
+aecid_utilidades.codigocad_controller_getCodigoCadById:
+  path: '/intranet/codigo_cad/{tid}/show'
+  defaults:
+    _controller: '\Drupal\aecid_utilidades\Controller\CodigocadController::getCodigoCadById'
+    _title: 'Códigos CAD'
+  requirements:
+    _permission: 'aecid aecid_utilidades'
+    tid: '^[0-9]+'
+aecid_utilidades.codigocad_controller_getCodigoCadByIdForExport:
+  path: '/intranet/codigo_cad/{tid}/export'
+  defaults:
+    _controller: '\Drupal\aecid_utilidades\Controller\CodigocadController::getCodigoCadByIdForExport'
+    _title: 'Códigos CAD'
+  requirements:
+    _permission: 'aecid aecid_utilidades'
+    tid: '^[0-9]+'
+aecid_utilidades.codigocad_controller_getAllCodigoCadForExport:
+  path: '/intranet/codigo_cad/all/export'
+  defaults:
+    _controller: '\Drupal\aecid_utilidades\Controller\CodigocadController::getAllCodigoCadForExport'
+    _title: 'Códigos CAD'
+  requirements:
+    _permission: 'aecid aecid_utilidades'
+#aecid_utilidades.codigocad_controller_checkDeleteCodigoCadById:
+#  path: '/intranet/codigo_cad/{tid}/checkdelete'
+#  defaults:
+#    _controller: '\Drupal\aecid_utilidades\Controller\CodigocadController::checkDeleteCodigoCadById'
+#    _title: 'Códigos CAD'
+#  requirements:
+#    _permission: 'aecid aecid_utilidades'
+#    tid: '^[0-9]+'
+#aecid_utilidades.codigocad_controller_deleteCodigoCadById:
+#  path: '/intranet/codigo_cad/{tid}/delete'
+#  defaults:
+#    _controller: '\Drupal\aecid_utilidades\Controller\CodigocadController::deleteCodigoCadById'
+#    _title: 'Códigos CAD'
+#  requirements:
+#    _permission: 'aecid aecid_utilidades'
+#    tid: '^[0-9]+'

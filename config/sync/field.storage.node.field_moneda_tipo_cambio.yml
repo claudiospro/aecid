@@ -1,0 +1,27 @@
+uuid: 70920416-917b-448a-93f9-f0e6410cc705
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_moneda_tipo_cambio
+field_name: field_moneda_tipo_cambio
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Nuevos Soles'
+      label: 'Nuevos Soles'
+    -
+      value: 'Dólares americanos'
+      label: 'Dólares americanos'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

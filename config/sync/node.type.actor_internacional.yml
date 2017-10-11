@@ -1,0 +1,17 @@
+uuid: bc6a54d1-c675-4887-bb09-1d635fc57266
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Actor Internacional'
+type: actor_internacional
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

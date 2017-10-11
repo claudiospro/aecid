@@ -1,0 +1,11 @@
+aecid_utilidades.codigo_cad:
+  version: 8.x-1.0
+  css:
+    theme:
+      css/aecid_codigocad.css: {}
+  js:
+    js/aecid_codigocad.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once

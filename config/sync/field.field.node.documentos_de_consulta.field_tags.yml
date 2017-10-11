@@ -1,0 +1,28 @@
+uuid: 4ff46326-aa5e-4363-859a-f5b82ed3f130
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.documentos_de_consulta
+    - taxonomy.vocabulary.tags
+id: node.documentos_de_consulta.field_tags
+field_name: field_tags
+entity_type: node
+bundle: documentos_de_consulta
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

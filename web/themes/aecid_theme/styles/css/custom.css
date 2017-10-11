@@ -1,0 +1,1352 @@
+/**
+ * Custom CSS
+ * Use this file to override styles if you feel uncomfortable editing
+ * component stylesheets.
+ ============================================================================ */
+/*boton generales*/
+ .dropbutton .dropbutton-action .button {
+  color: #4D4D4D !important;
+  background-color: #f7c410 !important;}
+
+.dropbutton .dropbutton-action .button:hover, .dropbutton .dropbutton-action .button:focus, .dropbutton .dropbutton-action .button:active, .dropbutton .dropbutton-action .button.active {
+  color: #4D4D4D !important;
+  background-color: #f7c410 !important;
+  border-color: #4D4D4D !important;
+}
+
+
+body.path-frontpage{background-image: url('/sites/default/files/fondo-content.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;}
+.form-type-select__select-wrapper:not(.is-multiple):after {content: none !important;}
+
+/*Global status*/
+.global-status-error{cursor: pointer; display: none; position: fixed; bottom: 25px; right: 25px; background-color: #f0ad4e; padding: 10px; box-shadow: -2px 2px 10px #000000; text-align: left; color: white;}
+
+/*Preloader*/
+.aecid-preloader{position: fixed; width: 150px; height: 150px; top: calc(50% - 75px); left: calc(50% - 75px);}
+.aecid-preloader label{display: block; width: 150px; text-align: center; margin-top: -100px;}
+.aecid-preloader label h3{margin: 0;}
+.aecid-preloader img{-webkit-animation: aecid-preloading-rotating 4s linear infinite; -moz-animation: aecid-preloading-rotating 4s linear infinite; -ms-animation: aecid-preloading-rotating 4s linear infinite; -o-animation: aecid-preloading-rotating 4s linear infinite; animation: aecid-preloading-rotating 4s linear infinite;}
+@-webkit-keyframes aecid-preloading-rotating{
+  from {-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg);}
+}
+@keyframes aecid-preloading-rotating {
+  from {-ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+  to {-ms-transform: rotate(360deg); -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+/*Vista intervención*/
+.view-gestion-de-interveciones form div[data-drupal-selector="edit-header"]{display: none;}
+.view-gestion-de-interveciones form div[data-drupal-selector="edit-actions"]{display: none;}
+
+/*
+==================
+Region leaderboard
+==================
+*/
+
+/*Logo*/
+div[data-at-row="leaderboard"]{background-color: #ffffff; background-image: url('/sites/default/files/fonfo-hader.png'); background-size: 100% auto; background-repeat: no-repeat; border-top: solid 8px #C60B1E;}
+div[data-at-row="leaderboard"] #block-aecid-theme-branding{display: inline-block; vertical-align: middle; width: 70%; margin: 0 -2px 0 -2px; padding: 10px 0;}
+div[data-at-row="leaderboard"] #block-aecid-theme-branding .site-branding__logo-img{width: 250px; height: auto;}
+div[data-at-row="leaderboard"] #block-aecid-theme-account-menu{position: relative; display: inline-block; vertical-align: middle; width: 30%; margin: 0 -2px 0 -2px; padding: 10px 0;}
+div[data-at-row="leaderboard"] #block-aecid-theme-account-menu ul.menu{display: block;}
+div[data-at-row="leaderboard"] #block-aecid-theme-account-menu ul.menu li.menu__item{float: right; margin: 0; margin-left: 5px;}
+div[data-at-row="leaderboard"] #block-aecid-theme-account-menu .menu__link{display: block; margin: 0; padding: 8px 20px; background-color: #F7C410; font-weight: 600; color: #4D4D4D;}
+div[data-at-row="leaderboard"] #block-aecid-theme-account-menu .menu__link:hover{background-color: rgba(255, 184, 15, 0.7);}
+div[data-at-row="leaderboard"] #block-aecid-theme-account-menu .aecid-current-user{position: absolute; top: 0; left: 15px;}
+div[data-at-row="leaderboard"] #block-aecid-theme-account-menu .aecid-current-user p{margin: 0; padding: 0;}
+div[data-at-row="leaderboard"] #block-aecid-theme-account-menu .aecid-current-user h4{font-size: 13px;}
+
+/*
+==================
+Region highlighted // reeplazar la clase 'menu' por →  menu-name--menu-intranet / menu-name--menu-externo
+==================
+*/
+
+body.path-not-frontpage div[data-at-row="highlighted"]{background-color: #C60B1E; position: relative;}
+body.path-not-frontpage div[data-at-row="highlighted"] > div > div.regions.container{background: none;}
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"]{margin: 0;}
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"] .menu{list-style: none; margin: 0; padding: 0;}
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"] .menu > li{position: relative; display: inline-block; vertical-align: top; border-top: solid 4px #C60B1E;}
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"] .menu > li > span a{display: block;  margin: 0; padding: 12px 20px; color: #ffffff;}
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"] .menu > li ul li > span a{display: block; width: 200px; margin: 0; padding: 8px; color: #ffffff;}
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"] .menu > li:hover ul{display: inline;}
+
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"] .menu > li ul{display: none; z-index: 20; position: absolute; margin: 0; padding: 0; background-color: #C60B1E;}
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"] .menu > li:hover{border-top: solid 4px #003E8B;}
+#block-menuexterno .menu > li {vertical-align: initial;}
+#block-menuexterno .menu > li:hover {border-top: 0; border-bottom: solid 4px #f7c410;}
+#block-menuexterno .menu .menu__item--active-trail{border-top: 0 !important; border-bottom: solid 4px #f7c410;}
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"] .menu > li ul li > span a:hover{background-color: #003E8B;}
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"] .menu > li.menu__item--active-trail{border-top: solid 4px #003E8B;}
+#block-menuexterno-menu .menu  >li.menu__item--active-trail{border-top: 0 !important; border-bottom: solid 4px #f7c410;}
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"] .menu > li ul li > span a.is-active{background-color: #003E8B;}
+
+/* menu buscador */
+div[data-at-row="highlighted"] .pr-highlighted .search-block-form .block__content form{margin: 0px!important;}
+div[data-at-row="highlighted"] .pr-highlighted .search-block-form { padding: 0; position: absolute; right: 15%; top: -15%; width: 20%;}
+div[data-at-row="highlighted"] .pr-highlighted .search-block-form .block__content .form-type-search input{width: 100%!important;  border: 0 none; /*border-bottom-left-radius: 0.5em; border-top-left-radius: 0.5em;*/ border-radius: 10px;}
+div[data-at-row="highlighted"] .pr-highlighted .search-block-form .block__content .js-form-wrapper input{ background-image: url("/themes/aecid_theme/images/buscando.jpg"); background-position: center center;border: medium none; border-bottom-left-radius: 0; border-top-left-radius: 0; position: relative;width: 30px;}
+
+/*
+==================
+Region navbar
+==================
+*/
+
+/*Banner Portada*/
+div[data-at-row="navbar"] > div > div{max-width: 100%; width: 100%;}
+div[data-at-row="navbar"] > div > div > div.region{padding: 0;}
+div[data-at-row="navbar"]{overflow: hidden; position: relative;}
+div[data-at-row="navbar"] h2.block__title{z-index: 20; position: absolute; top: 0; right: 100px; width: 400px; height: 100%; padding: 30px; background-color: rgba(198, 11, 30, 0.6); font-size: 30px; text-align: right; color: #ffffff;}
+div[data-at-row="navbar"] h2.block__title span{position: relative; display: block; transform: translateY(calc(50% - 100%)); top: 50%;}
+div[data-at-row="navbar"] .view.view-banner-portada > .view-content{display: inline; white-space: nowrap; transition: margin-left 0.6s;}
+div[data-at-row="navbar"] .view.view-banner-portada > .view-content > .views-row{display: inline-block; vertical-align: top; width: 100%; margin-right: -4px;}
+div[data-at-row="navbar"] .view.view-banner-portada > .view-content > .views-row .views-field-field-imagen-banner img{width: 100%; height: auto;}
+div[data-at-row="navbar"] .b-prev, div[data-at-row="navbar"] .b-next{cursor: pointer; position: absolute; top: calc(50% - 25px); width: 35px; height: 50px; background-color: rgba(255, 255, 255, 0.4); border: solid 1px #cccccc;}
+div[data-at-row="navbar"] .b-prev{background-image: url('/sites/default/files/b_prev.png'); background-size: 100% 100%; background-repeat: no-repeat; left: 0;}
+div[data-at-row="navbar"] .b-next{background-image: url('/sites/default/files/b_next.png'); background-size: 100% 100%; background-repeat: no-repeat; right: 0;}
+
+/*
+==================
+Region features - Portada
+==================
+*/
+
+/*Iconos Acceso Superior*/
+body.path-frontpage div[data-at-row="features"]{margin-top: 5px;}
+body.path-frontpage div[data-at-row="features"] .region .block{position: relative;}
+body.path-frontpage div[data-at-row="features"] .region .block .block__title{display: none;}
+/*body.path-frontpage div[data-at-row="features"]*/ .region .block .block__content .field-name-field-icono-acceso-portada{text-align: center;}
+/*body.path-frontpage div[data-at-row="features"]*/ .region .block .block__content .field-name-field-icono-acceso-portada > figure{cursor: pointer; overflow: hidden; display: inline-block; margin: 0; padding: 20px; border-radius: 50%; border: solid 2px #4D4D4D; text-align: center;}
+/*body.path-frontpage div[data-at-row="features"]*/ .region .block .block__content .field-name-field-icono-acceso-portada > figure img{width: 150px; height: auto; transition: all 0.4s;}
+/*body.path-frontpage div[data-at-row="features"]*/ .region .block .block__content .field-name-field-link-acceso-portada{text-align: center;}
+/*body.path-frontpage div[data-at-row="features"]*/ .region .block .block__content .field-name-field-link-acceso-portada .field__item a{display: block; margin-top: 4px; font-weight: 600; font-size: 22px; color: #4D4D4D;}
+/*body.path-frontpage div[data-at-row="features"]*/ .region .block .block__content:hover .field-name-field-icono-acceso-portada > figure img{transform: scale(1.2);}
+
+/*body.path-frontpage div[data-at-row="features"] .region */ #block-mapeo .block__content:hover .field__items a{color:#008837; text-decoration: underline;}
+/*body.path-frontpage div[data-at-row="features"] .region */ #block-estadisticas .block__content:hover .field__items a{color:#FEA621; text-decoration: underline;}
+/*body.path-frontpage div[data-at-row="features"] .region */ #block-quienesparticipan .block__content:hover .field__items a{color:#4FA0CA; text-decoration: underline;}
+/*body.path-frontpage  .region*/ #block-conceptolaidea .block__content:hover .field__items a{color:#E56887; text-decoration: underline;}
+/*body.path-frontpage  .region*/  #block-contacto .block__content:hover .field__items a{color:#7C4E78; text-decoration: underline;}
+
+
+/*
+==================
+Region header - Portada
+==================
+*/
+
+/*Iconos Acceso Superior*/
+body.path-frontpage div[data-at-row="header"] .region .block .block__title{display: none;}
+/*body.path-frontpage div[data-at-row="header"]*/ .region .block .block__content .field-name-field-icono-acceso-portada{text-align: center;}
+/*body.path-frontpage div[data-at-row="header"]*/ .region .block .block__content .field-name-field-icono-acceso-portada > figure{cursor: pointer; overflow: hidden; display: inline-block; margin: 0; padding: 20px; border-radius: 50%; border: solid 2px #4D4D4D; text-align: center;}
+/*body.path-frontpage div[data-at-row="header"]*/ .region .block .block__content .field-name-field-icono-acceso-portada > figure img{width: 150px; height: auto; transition: all 0.4s;}
+/*body.path-frontpage div[data-at-row="header"]*/ .region .block .block__content .field-name-field-link-acceso-portada{text-align: center;}
+/*body.path-frontpage div[data-at-row="header"]*/ .region .block .block__content .field-name-field-link-acceso-portada .field__item a{display: block; margin-top: 10px; font-weight: 600; font-size: 22px; color: #4D4D4D;}
+/*body.path-frontpage div[data-at-row="header"]*/ .region .block .block__content:hover .field-name-field-icono-acceso-portada > figure img{transform: scale(1.2);}
+
+/*Paginas de Error*/
+
+.pr-main__sidebar-second .block-config-provider--block-content .field__item a ,
+.path-node-9 #main-content .pr-main__sidebar-second .block-config-provider--block-content .field__item a ,
+.path-node-8 #main-content .pr-main__sidebar-second .block-config-provider--block-content .field__item a {font-size: 16px !important; margin-top: -20px !important;}
+
+.pr-main__sidebar-second .block-config-provider--block-content .field-name-field-icono-acceso-portada > figure,
+.path-node-9 .block-config-provider--block-content .field-name-field-icono-acceso-portada > figure,
+.path-node-8 .block-config-provider--block-content .field-name-field-icono-acceso-portada > figure {margin: 1.5em !important;}
+
+.pr-main__sidebar-second .block-config-provider--block-content,
+.path-node-9 #main-content .pr-main__sidebar-second .block-config-provider--block-content,
+.path-node-8 #main-content .pr-main__sidebar-second .block-config-provider--block-content {padding-bottom: 20px; display: inline-block; margin: 0.8em; vertical-align: top; width: 15%;}
+
+.page-node-type--page .regions .pr-main__sidebar-second,
+.path-node-9 #main-content .pr-main__sidebar-second,
+.path-node-8 #main-content .pr-main__sidebar-second {text-align: center;}
+
+
+/*
+==================
+Region main - Portada
+==================
+*/
+
+/*Iconos Acceso Superior*/
+body.path-frontpage div[data-at-row="main"] .region .block{margin-top: 0px; margin-bottom: 5px; padding: 20px; background-color: #ffffff; border: solid 1px #cccccc; padding-bottom: 0px;}
+body.path-frontpage div[data-at-row="main"] .region .block .block__title{font-size: 22px; font-weight: 700; color: #4D4D4D;}
+body.path-frontpage div[data-at-row="main"] .region .block .block__content p{font-size: 18px; text-align: justify; color: #4D4D4D; margin: 0px;}
+body.path-frontpage div[data-at-row="main"] .region .views-element-container.element-container-wrapper{display: none;}
+
+/*Login Page*/
+body.path-user-login div[data-at-row="main"] > div > .l-rw{box-sizing: border-box; width: 600px; margin-top: 50px; margin-bottom: 50px; padding: 20px; background-color: #ffffff; border: solid 1px #cccccc;}
+body.path-user-login div[data-at-row="main"] .region main.block-main-content{box-sizing: border-box;}
+body.path-user-login div[data-at-row="main"] .region > div.block-config-provider--core{display: none;}
+body.path-user-login div[data-at-row="main"] .region main.block-main-content form.user-login-form label{color: #4D4D4D;}
+body.path-user-login div[data-at-row="main"] .region main.block-main-content form.user-login-form input{border: solid 1px #cccccc;width: 100%!important;}
+body.path-user-login div[data-at-row="main"] .region main.block-main-content form.user-login-form .description{color: #4D4D4D;}
+body.path-user-login div[data-at-row="main"] .region main.block-main-content form.user-login-form input[type="submit"].button{width: 100%; background-color: rgba(255, 184, 15, 1.0); border: none; font-weight: 600; color: #4D4D4D margin:0px!important;}
+body.path-user-login div[data-at-row="main"] .region main.block-main-content form.user-login-form input[type="submit"].button:hover{background-color: rgba(255, 184, 15, 0.7);}
+
+/*Contact Page*/
+body.path-webform div[data-at-row="main"]{background-color: #ffffff;}
+body.path-webform div[data-at-row="main"] .region .block .block__content .page__title{font-size: 1.5em; color: #003E8B;font-weight: bolder;}
+body.path-webform div[data-at-row="main"] .region .block .block__content .page__title:after{content: '(*) Todos los campos son obligatorios'; display: block; width: 100%; margin-top: 5px; padding-top: 8px; border-top: 2px solid #003e8b; font-size: 11px!important; color: #4D4D4D!important;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form{box-sizing: border-box; position: relative;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form > div.js-form-item{box-sizing: border-box; width: 50%;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form > div.js-form-item input {width: 100%!important;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form > div.js-form-item textarea {width: 100%!important;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form > .captcha{box-sizing: border-box; width: 50%;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form > div.form-actions{box-sizing: border-box; width: 50%;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form > div#edit-direccion{box-sizing: border-box; position: absolute; right: 11%; top: 0; width: 30%; color:#4D4D4D;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form > div#edit-direccion *{color: #4D4D4D;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form label{box-sizing: border-box; display: none; color: #4D4D4D;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form input{box-sizing: border-box; border: solid 1px #cccccc;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form textarea{box-sizing: border-box; border: solid 1px #cccccc;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form input[type="submit"].button{box-sizing: border-box; width: 100%; background-color: rgba(255, 184, 15, 1.0) !important; border: none; font-weight: 600; color: #000;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form input[type="submit"].button:hover{background-color: rgba(255, 184, 15, 0.7);}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form input:focus{border: solid 1px #003E8B;}
+body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form textarea:focus{border: solid 1px #003E8B;}
+
+/*
+==================
+Region footer
+==================
+*/
+
+/*Titulo footer*/
+div[data-at-row="footer"]{background-color: #f0f0f0; border-top: solid 3px #003E8B;}
+div[data-at-row="footer"] .region .block .block__content .field { margin: 0;}
+div[data-at-row="footer"] .region .block .block__content{border-bottom: solid 1px #cccccc; text-align: center; font-weight: 600; font-size: 20px; color: #4D4D4D;}
+div[data-at-row="footer"] .region .block .block__content p {margin: 0.6em 0;}
+div[data-at-row="footer"] .region .block { margin-top: 0px;}
+
+div[data-at-row="footer"] .contextual-region{margin: 0px!important;}
+div[data-at-row="footer"] .contextual-region .block__inner .block__content div.field{margin: 0px!important;}
+
+/*
+==================
+Region subfeatures
+==================
+*/
+
+/*Iconos Acceso Pie de Página*/
+div[data-at-row="subfeatures"]{background-color: #f0f0f0;}
+div[data-at-row="subfeatures"] .region .block{margin: 0.5em 0em;}
+div[data-at-row="subfeatures"] .region .block .block__content .field-name-field-icono-acceso-pie-pagina{text-align: center;}
+div[data-at-row="subfeatures"] .region .block .block__content .field-name-field-icono-acceso-pie-pagina > figure{cursor: pointer; display: inline-block; margin: 0; padding: 0.5em; text-align: center;}
+div[data-at-row="subfeatures"] .region .block .block__content .field-name-field-icono-acceso-pie-pagina > figure img{width: 40px; height: auto;}
+div[data-at-row="subfeatures"] .region .block .block__content .field-name-field-des-acceso-pie-pag{text-align: center; margin: 0px;  margin-bottom: 1.3em;}
+div[data-at-row="subfeatures"] .region .block .block__content .field-name-field-des-acceso-pie-pag .field__item a{text-decoration: none; display: block; font-weight: 600; font-size: 15px; color: #4D4D4D;}
+div[data-at-row="subfeatures"] .region .block .block__content .field-name-field-des-acceso-pie-pag .field__item p{margin: 0px!important;}
+
+/*Adaptive Theme Default Block*/
+div[data-at-row="attribution"]{display: none;}
+
+/*form items*/
+
+/* commented by  @adam
+textarea, select, input[type="date"], input[type="datetime"],
+input[type="datetime-local"], input[type="email"], input[type="month"],
+input[type="number"], input[type="password"], input[type="search"],
+input[type="tel"], input[type="text"], input[type="time"],
+input[type="url"], input[type="week"]{width: auto !important;}
+*/
+
+textarea, select, input[type="date"], input[type="datetime"],
+input[type="datetime-local"], input[type="email"], input[type="month"],
+input[type="number"], input[type="password"], input[type="search"],
+input[type="tel"], input[type="time"],
+input[type="url"], input[type="week"]{width: auto;}
+
+
+/* */
+.profile-form .field-group-tabs-wrapper label {display: inline-block;width: 23%;}
+.profile-form .field-group-tabs-wrapper .form-type-select__select-wrapper {width: 70%;}
+/*
+=================
+Intranet LightBox
+=================
+*/
+
+.aecid-intranet-lightbox{display: none; z-index: 999; position: fixed; top: 0; left: 0; box-sizing: border-box; width: 100%; height: 100vh; background-color: rgba(200, 200, 200, 0.7);}
+.aecid-intranet-lightbox-container{box-sizing: border-box; display: table; width: 500px; height: 350px; margin: 50px auto; padding: 20px; background-color: white; box-shadow: 7px 7px 20px #000000;}
+
+@media (max-width: 45em){
+
+
+/*mapeo*/
+.view-mapeo #mapeo-regions-container{width: 100%;}
+.view-mapeo #mapeo-map-container{width: 100%; height: 480px;}
+
+
+/*page error*/
+
+
+#block-aecid-theme-content #error-403 img{width: 100% !important;}
+#block-aecid-theme-content #error-403 p a{padding: 15px !important;}
+
+
+.error-page > div{width: auto !important;}
+
+
+.path-node-9 #main-content .pr-main__sidebar-second .block-config-provider--block-content .field__item a, .path-node-8 #main-content .pr-main__sidebar-second .block-config-provider--block-content .field__item a{font-size: 20px;}
+.path-node-9 #main-content .pr-main__sidebar-second .block-config-provider--block-content, .path-node-8 #main-content .pr-main__sidebar-second .block-config-provider--block-content{width: 100%;}
+.pr-main__sidebar-second .block-config-provider--block-content, .path-node-9 #main-content .pr-main__sidebar-second .block-config-provider--block-content, .path-node-8 #main-content .pr-main__sidebar-second .block-config-provider--block-content{width: 90%;}
+
+  /*Header Logo*/
+  div[data-at-row="leaderboard"]{background-image: none;}
+
+
+  /*block search*/
+div[data-at-row="highlighted"] .pr-highlighted .search-block-form{top: 0; position: relative; width: 90%; right: 12px;}
+body.path-not-frontpage div[data-at-row="highlighted"] nav[role="navigation"] .menu > li{display: block;}
+
+
+  /*Form Contact Page*/
+  body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form{position: static;}
+  body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form > div.js-form-item{float: none; width: 95%;}
+  body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form > .captcha{float: none; width: 95%;}
+  body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form > div#edit-direccion{position: static; width: 95%;}
+  body.path-webform div[data-at-row="main"] .region main.block-main-content form.webform-submission-contact-form input[type="submit"].button{width: 95%; background-color: #FFB80F; border: none; font-weight: 600; color: #4D4D4D;}
+
+  /*Banner Responsive*/
+  div[data-at-row="navbar"] h2.block__title{display: none;}
+  div[data-at-row="navbar"] > div > .l-rw{padding: 0;}
+  div[data-at-row="navbar"] .view.view-banner-portada > .view-content > .views-row{overflow: hidden; width: 100%;}
+  div[data-at-row="navbar"] .view.view-banner-portada > .view-content > .views-row .views-field-field-imagen-banner{position: relative; left: -50%; display: block; width: 1000px;}
+}
+
+/*Mapeo*/
+
+.view-mapeo table.table.views-table{width: 100%!important;}
+#mapeo-map-container{text-align: center; box-sizing: border-box; display: inline-block; vertical-align: top; width: 65%; height: 700px; margin: 0 -2px 0 -2px; padding: 10px;}
+#mapeo-map-container .st0{cursor: pointer; fill:#c8c8c8;}
+#mapeo-map-container .st0:hover{fill:#FFB80F;}
+#mapeo-map-container .st0.stactive{fill:#D80F39!important;}
+#mapeo-map-container .map-tooltip{display: none; box-sizing: border-box; position: absolute; top: 0; left: 0; padding: 5px 10px 5px 10px; background-color: #ffffff; border-radius: 4px; border: solid 1px #003E8B; text-align: center; color: #003E8B; transform: translateX(-50%)}
+#mapeo-map-container .map-tooltip.active{display: block;}
+
+#mapeo-regions-container .mapeo-all-reload{display: none;}
+#mapeo-regions-container{box-sizing: border-box; display: inline-block; vertical-align: top; width: 35%; margin: 0 -2px 0 -2px; padding: 10px;}
+#mapeo-regions-container table tr td{padding: 0;}
+#mapeo-regions-container table tr td a{display: block; text-decoration: none; padding: 0.3rem;}
+
+/* mapeo */
+.view-mapeo * {color: #4D4D4D;}
+
+.view-mapeo table tbody {border: 1px solid #b3b3b3;}
+.view-mapeo table thead {border: 2px solid #003e8b;}
+
+.view-mapeo table thead tr {background: #003e8b;}
+.view-mapeo table thead tr th {border: medium none; color:#fff;}
+.view-mapeo .view-header table thead tr th{padding: 0.5em;}
+.view-mapeo .view-header thead tr th:nth-child(2) {text-align: center;}
+
+.view-mapeo table tbody tr td { border: medium none; padding: 5px 15px;}
+.view-mapeo .view-header table tbody tr td:nth-child(2) {text-align: center;}
+.view-mapeo table tbody tr:nth-child(2n){background: #f0f0f0;}
+.view-mapeo table tbody tr{border: 0px;}
+
+
+.view-mapeo .view-content table .table__row th { text-align: center; padding: 0.2em 0.5em!important;}
+.view-mapeo .view-content table .table__row th:nth-child(5) {white-space: nowrap;}
+
+/*general*/
+
+button, .button{color: #4d4d4d !important;}
+/*
+border → #B3B3B3
+color gris → 4D4D4D
+rojo content → #D81739
+amarillo → #F7C410
+azul → #003e8b
+*/
+
+/* menu - administrador */
+#block-aecid-theme-local-tasks nav ul {padding: 0;}
+#block-aecid-theme-local-tasks nav ul li {display: inline-block; list-style: outside none none; text-decoration: none; font-weight: bolder;}
+#block-aecid-theme-local-tasks nav ul li a {border: 1px solid #B3B3B3; color: #4D4D4D;padding: 0.5em 1em; text-decoration: none;}
+#block-aecid-theme-local-tasks nav ul li a:hover{background: #D81739; color:#fff; border: 1px solid #D81739;}
+
+.page-node-type--page #block-aecid-theme-content .node__header h1{font-size: 1.5em; color:#4d4d4d; font-weight: bolder; }
+.page-node-type--page #block-aecid-theme-content .node__content p{ color:#4d4d4d; text-align: justify; font-size: 18px;}
+
+
+
+/****** formularios generales - intervenciones  ******/
+#node-intervencion-form .description { display: none;} /* activarlo para hacer el tooltip */
+.layout-region-node-secondary__inner .entity-meta__header{display: none;}
+.aecid-intervencion form .details-description > h4 {font-size: 1.2em;font-weight: bold;}
+.aecid-intervencion form .details-description {margin-bottom: 1em;}
+
+.is-horizontal .layout-region-node-main, .is-horizontal .layout-region-node-footer {flex-basis: 100%!important; width: 100%;}
+.aecid-intervencion form ul.horizontal-tabs-list li { background:#F7C410; border-top-left-radius: 0.5em; border-top-right-radius: 0.5em; font-size: 0.9em; border-top: 4px solid #F7C410;  margin-right:1px;}
+.aecid-intervencion form ul.horizontal-tabs-list li.selected{background: #fff;  border-top: 4px solid #D81739; margin-right:1px; border-left: 1px solid #ccc;}
+.aecid-intervencion form ul.horizontal-tabs-list {background: none; border: 0px!important; position: relative; top: 0.5em; z-index: 9;}
+.aecid-intervencion form ul.horizontal-tabs-list li a:hover{background: none;}
+
+.aecid-intervencion form .tabledrag-toggle-weight-wrapper{display: none;}
+.aecid-intervencion form table .table__header th{border: none!important;}
+.aecid-intervencion form table .table__body td{border:  none!important; padding:0.5em 0em !important; }
+.aecid-intervencion form table .table__body tr{border: none;}
+.aecid-intervencion form table .table__header{display: none!important;}
+.aecid-intervencion form table .table__body .paragraph-type-top {display: none;}  /* boton remove */
+
+.aecid-intervencion form .field--widget-image-image{border:none!important;padding: 0px!important;}
+.aecid-intervencion form .field-add-more-submit{background: #f7c410!important; border: 0px!important; }
+.aecid-intervencion form .field-add-more-submit:hover{background: #ffcd57!important;}
+
+/* 1 identificacion*/
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-title{margin-top:1em;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-title .form-textarea-wrapper{width: 100%!important;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-title .form-textarea-wrapper textarea {width: 100%!important;}
+
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-canalizadora .form-type-select > label {display: inline-block; width: 30%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-canalizadora .form-type-select > span {width: 35%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-canalizadora .form-type-select > span select {width: 100%!important;}
+
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--widget-erviews-options-select {width: 75%; display: inline-block; vertical-align: top; position: relative}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--widget-erviews-options-select .form-type-select label {display: inline-block;width: 40%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--widget-erviews-options-select .form-type-select span { width: 55%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--widget-erviews-options-select .form-type-select span select {width: 100%!important;  background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat; padding-right: 3em;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--name-field-porcentaje {width: 20%; vertical-align: top; display: inline-block;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--name-field-porcentaje .form-type-number label {width: auto; display: inline-block;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--name-field-porcentaje .form-type-number input {width:38%!important;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table{margin-bottom:0px!important; }
+
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-codigo .form-type-textfield label {display: inline-block; width: 30%; white-space: normal;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-codigo-aecid .form-type-textfield label {display: inline-block; width: 30%; white-space: normal;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-modalidad-de-cooperacion .form-type-select > label {display: inline-block; width: 30%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-modalidad-de-cooperacion .form-type-select > span {width: 35%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-modalidad-de-cooperacion .form-type-select > span .shs-container > div > div{width: 100%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-modalidad-de-cooperacion .form-type-select > span .shs-container > div select.form-select {width: 100%!important;  background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat; padding-right: 3em;}
+
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--type-text-with-summary .form-type-textarea .form-textarea-wrapper {width: 100%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--type-text-with-summary .form-type-textarea .form-textarea-wrapper textarea { width: 100%!important;}
+
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-objetivo-especifico .form-textarea-wrapper{width: 100%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-objetivo-especifico .form-textarea-wrapper textarea {width: 100%!important;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-resultados .form-textarea-wrapper{width: 100%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-resultados .form-textarea-wrapper textarea {width: 100%!important;}
+
+
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-num-colectivo-meta {display: inline-block; width: 60%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-num-colectivo-meta .form-type-number label {display: inline-block;vertical-align: top; white-space: normal; width: 38%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-num-colectivo-meta .form-type-number input {display: inline-block;vertical-align: top;  width: 18%!important; position: relative; right: -11%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-num-colectivo-meta .form-type-number span {display: inline-block;width: 30%; font-size: 1em; position: relative; right: -11%;}
+
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-num-mujeres {display: inline-block;  vertical-align: top; width: 18%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-num-mujeres > div {margin: 0px!important;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-num-mujeres .form-type-number label { display: inline-block; margin: 5px 0; font-size: 1em;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-num-mujeres .form-type-number input {float: left;margin-right: 2px; width: 48%!important;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-no-puede-precisar {display: inline-block;vertical-align: top; width: 18%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-no-puede-precisar > div {margin: 0;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-no-puede-precisar > div label { font-size: 1em;}
+
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-tipo-colectivo-meta {margin-top: 15px;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-tipo-colectivo-meta .form-checkboxes .form-type-checkbox {display: inline-block; margin: 1px 0; width:38%;vertical-align: top;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-tipo-colectivo-meta .form-checkboxes .form-type-checkbox label {font-size: 1em; white-space:normal;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-tipo-colectivo-meta .form-checkboxes .form-type-checkbox:nth-child(7) label {white-space: normal; width: 85%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-tipo-colectivo-meta .form-checkboxes .form-type-checkbox:nth-child(7) input { position: relative;top: -24px;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-tipo-colectivo-meta legend { display: inline-block; float: left; width: 30%; }
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-tipo-colectivo-meta .fieldset-wrapper {display: inline-block; float: left;  width: 70%;}
+
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-duracion .form-type-number label {display: inline-block; width: 30%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-duracion .form-type-number span {  font-size: 1em;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-ampliacion .form-type-number label {display: inline-block; width: 30%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-ampliacion .form-type-number span {font-size: 1em;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-fecha-inicio h4 {display: inline-block; width: 60%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-fecha-inicio .container-inline { display: inline-block; width: auto;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-fecha-inicio .container-inline > div input{width: 100%!important;  background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat; padding-right: 1.5em;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-fecha-termino h4 {display: inline-block; width: 30%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-fecha-termino .container-inline { display: inline-block;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-fecha-termino .container-inline > div input{width: 100%!important;  background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat; padding-right: 1.5em;}
+
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-fase label {display: inline-block; width: 30%;}
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-fase span {display: inline-block; width: 35%; }
+.aecid-intervencion form .horizontal-tabs-panes  #edit-group-1 .field--name-field-fase span select { width: 100%!important; background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat; padding-right: 1.5em;}
+
+
+.page-node-type--intervencion .field-node--field-objetivo-de-desarrollo .field__items{width: 75%;}
+.page-node-type--intervencion .field-node--field-objetivo-de-desarrollo .field__items .field__item{width: 80%}
+.page-node-type--intervencion .field-node--field-objetivo-de-desarrollo .field__items .field-paragraph-field-objetivo-de-desarrollo{display: inline-block; width: 80%;}
+.page-node-type--intervencion .field-node--field-objetivo-de-desarrollo .field__items .field-paragraph--field-porcentaje{display: inline-block;}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+/*mapeo*/
+.view-mapeo #mapeo-regions-container{width: 100%;}
+.view-mapeo #mapeo-map-container{width: 100%; height: 480px;}
+
+/*error page*/
+.error-page > div{width: 25% !important;}
+.page-node-type--page .block-config-provider--block-content .field-name-field-icono-acceso-portada > figure,
+.path-node-9 .block-config-provider--block-content .field-name-field-icono-acceso-portada > figure,
+.path-node-8 .block-config-provider--block-content .field-name-field-icono-acceso-portada > figure{margin: 0.5em !important;}
+
+.page-node-type--page .pr-main__sidebar-second .block-config-provider--block-content .field__item a,
+.path-node-9 #main-content .pr-main__sidebar-second .block-config-provider--block-content .field__item a,
+.path-node-8 #main-content .pr-main__sidebar-second .block-config-provider--block-content .field__item a{font-size: 14px; margin-top: -10px !important;}
+
+ .region .block .block__content .field-name-field-icono-acceso-portada > figure{padding: 5px !important;}
+ .region .block .block__content .field-name-field-link-acceso-portada .field__item a{font-size: 14px !important;}
+
+
+#block-aecid-theme-content #error-403 img{width: 35% !important;}
+
+
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--widget-erviews-options-select{width: 66%}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--widget-erviews-options-select .form-type-select label{width: 40%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--widget-erviews-options-select .form-type-select span{ right: -20%; width: 39%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--name-field-porcentaje {width: 28%;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-codigo .form-type-textfield label{width: 40%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadora .form-type-select > label{width: 40%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-codigo-aecid .form-type-textfield label{width: 40%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-modalidad-de-cooperacion .form-type-select > label {width: 40%;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-colectivo-meta{width: 100%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-colectivo-meta .form-type-number label{width: 30%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-colectivo-meta .form-type-number input{right: 0;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-colectivo-meta .form-type-number span{width: auto; right: 0;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-mujeres{width: auto; right: -31%; position: relative;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-no-puede-precisar{width: auto; right: -22%; position: relative;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-tipo-colectivo-meta .form-checkboxes .form-type-checkbox{width: 45%;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-tipo-colectivo-meta .form-checkboxes .form-type-checkbox:nth-child(11) label {white-space: normal;width: 85%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-tipo-colectivo-meta .form-checkboxes .form-type-checkbox:nth-child(11) label { white-space: normal;width: 85%;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-tipo-colectivo-meta .form-checkboxes .form-type-checkbox:nth-child(7) input {/*top: -50px;*/}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-tipo-colectivo-meta .form-checkboxes .form-type-checkbox:nth-child(11) input {position: relative;  top: -24px;}
+}
+@media screen and (min-width: 150px) and (max-width: 767px){
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--widget-erviews-options-select .form-type-select label{display: block;width: 100%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--widget-erviews-options-select .form-type-select span{width: 96%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--name-field-porcentaje .form-type-number label{display: block;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-canalizadores table tbody .element-container-wrapper .field--name-field-porcentaje{width: 100%;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-codigo .form-type-textfield label {width: 55%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-codigo-aecid .form-type-textfield label{width: 55%;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-modalidad-de-cooperacion .form-type-select > label{width: 100%;display: block;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-modalidad-de-cooperacion .form-type-select > span{width: 100%;display: block;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-tipo-colectivo-meta legend{display: block; width: auto;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-tipo-colectivo-meta .fieldset-wrapper{display: block; width: auto;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-tipo-colectivo-meta .form-checkboxes .form-type-checkbox{width: auto;display: block;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-fecha-inicio h4{display: block;width: auto;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-fecha-inicio .container-inline{display: block; width: 100%;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-fecha-termino h4{display: block;width: auto;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-fecha-termino .container-inline{display: block; width: 100%;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-duracion .form-type-number label {display: block; width: auto;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-duracion .form-type-number .form-number { width: 85px!important;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-ampliacion .form-type-number label {display: block; width: auto;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-ampliacion .form-type-number .form-number {width: 85px!important;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-no-puede-precisar{width: 100%;}
+
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-colectivo-meta {display: block; width: auto;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-colectivo-meta .form-type-number input {display: inline-block; width: 85px!important; right: 0;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-colectivo-meta .form-type-number label{width: 100%; display: block;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-colectivo-meta .form-type-number span {display: inline-block;  width: auto;  width: 58%; right: 0;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-mujeres{width: 100%;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-mujeres .form-type-number input{display: inline-block; width: 85px!important;}
+.aecid-intervencion form .horizontal-tabs-panes #edit-group-1 .field--name-field-num-mujeres .form-type-number label{display: inline-block; width: 58%;}
+}
+
+
+/* 11 adicionales */
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-informacion-adicional-de-l label {display: inline-block; width: 30%; vertical-align: top;  white-space: normal;}
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-informacion-adicional-de-l .form-textarea-wrapper {display: inline-block; width: 68%;}
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-informacion-adicional-de-l .form-textarea-wrapper textarea{width: 100%!important;}
+
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-sitio-web-intervencion label {display: inline-block; width: 30%; white-space: normal;}
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-sitio-web-intervencion input {vertical-align: top; width: 68%!important;}
+
+.aecid-intervencion form #edit-group-11-adicionales fieldset legend.form-required {border-bottom: 1px solid #003e8b;display: block; margin-bottom: 1.5em; width: 100%;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset .form-required span {color: #003e8b;font-weight: bolder;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string label { display: inline-block; width: 30%;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-email label {display: inline-block; width: 30%;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-email input { display: inline-block; width: 68%}
+
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string-long label {display: inline-block;width: 30%; vertical-align: top;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string input {border-radius: 5px; display: inline-block;margin-bottom: 0.2em; width: 68%;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string-long .form-textarea-wrapper {display: inline-block; width: 68%;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string-long .form-textarea-wrapper textarea { width: 100%!important;}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  div[data-at-row="leaderboard"] #block-aecid-theme-account-menu .aecid-current-user{position: relative !important;}
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-informacion-adicional-de-l label{ width: 25%;}
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-informacion-adicional-de-l input{width: 68%!important;}
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-sitio-web-intervencion label { width: 25%;}
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-sitio-web-intervencion input{width: 68%!important;}
+
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-email label{width: 25%;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string input{width: 68%!important;}
+
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string label{width: 25%;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-email input{width: 68%!important;}
+
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string-long label{width: 25%;}
+}
+
+
+
+@media screen and (min-width: 150px) and (max-width: 767px){
+
+div[data-at-row="leaderboard"] #block-aecid-theme-account-menu .menu__link {padding: 3px 2px;}
+body.path-user-login div[data-at-row="main"] > div > .l-rw{width: 100%;}
+div[data-at-row="leaderboard"] #block-aecid-theme-account-menu .aecid-current-user{position: relative !important; left: 0;}
+div[data-at-row="leaderboard"] #block-aecid-theme-account-menu ul.menu li.menu__item{padding: 1px;}
+
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-informacion-adicional-de-l label{display: block; width: auto;}
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-informacion-adicional-de-l .form-textarea-wrapper {width: 100%;}
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-sitio-web-intervencion label{display: block; width: auto;}
+.aecid-intervencion form #edit-group-11-adicionales .field--name-field-sitio-web-intervencion input{width: 100%!important;}
+
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string{width: 37%;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string > div{width: 100%!important;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string label{display: block; width: auto;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string input{display: block; width: auto;}
+
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-email {width: 37%;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-email > div{width: 100%!important;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-email > div label{display: block; width: auto;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-email > div input{display: block; width: auto;}
+
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string-long label{display: block;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset.required-fields .fieldset-wrapper .field--type-string-long .form-textarea-wrapper textarea{display: block; width: 54%!important;}
+.aecid-intervencion form #edit-group-11-adicionales fieldset legend.form-required{display: block; width:37%; }
+}
+
+/* 10 archivos  */
+.aecid-intervencion form #edit-group-10 .field--name-field-desc-documento label{width: 30%; display: inline-block;  vertical-align: top;}
+.aecid-intervencion form #edit-group-10 .field--name-field-desc-documento .form-textarea-wrapper { display: inline-block; width: auto;}
+.aecid-intervencion form #edit-group-10 .field--name-field-desc-documento .form-textarea-wrapper textarea{width: 100%!important;}
+.aecid-intervencion form #edit-group-10 .field--name-field-documento label {display: inline-block; width: 30%;}
+.aecid-intervencion form #edit-group-10 .field--name-field-documento .form-managed-file {display: inline-block;width: 61%;}
+.aecid-intervencion form #edit-group-10 .field--name-field-documento .form-managed-file > div > input {width: 100%!important; padding: 0;}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.aecid-intervencion form #edit-group-10 .field--name-field-desc-documento label{display: inline-block; width: 25%;}
+.aecid-intervencion form #edit-group-10 .field--name-field-desc-documento .form-textarea-wrapper {display: inline-block;width: 68%;}
+
+.aecid-intervencion form #edit-group-10 .field--name-field-documento label{display: inline-block; width: 25%;}
+.aecid-intervencion form #edit-group-10 .field--name-field-documento .form-managed-file{display: inline-block;width: 68%;}
+}
+@media screen and (min-width: 150px) and (max-width: 767px){
+.aecid-intervencion form #edit-group-10 .field--name-field-documento label{display: block;}
+.aecid-intervencion form #edit-group-10 .field--name-field-documento .form-managed-file{display: block;width: 100%;}
+}
+
+/* 9 fotos */
+.aecid-intervencion form #edit-group-9 .field--name-field-desc-foto label {width: 30%;display: inline-block; vertical-align: top;}
+.aecid-intervencion form #edit-group-9 .field--name-field-desc-foto .form-textarea-wrapper { display: inline-block; width: auto;}
+.aecid-intervencion form #edit-group-9 .field--name-field-desc-foto .form-textarea-wrapper textarea{width: 100%!important;}
+.aecid-intervencion form #edit-group-9 .field--name-field-foto label {width: 30%;display: inline-block; vertical-align: top;}
+.aecid-intervencion form #edit-group-9 .field--name-field-foto .form-managed-file {display: inline-block;width: 61%;}
+.aecid-intervencion form #edit-group-9 .field--name-field-foto .form-managed-file > div{width: 100%;}
+.aecid-intervencion form #edit-group-9 .field--name-field-foto .form-managed-file > div > input {width: 100%!important; padding: 0;}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.aecid-intervencion form #edit-group-9 .field--name-field-desc-foto label{display: inline-block; width: 25%;}
+.aecid-intervencion form #edit-group-9 .field--name-field-desc-foto .form-textarea-wrapper {display: inline-block;width: 68%;}
+
+.aecid-intervencion form #edit-group-9 .field--name-field-foto label{display: inline-block; width: 25%;}
+.aecid-intervencion form #edit-group-9 .field--name-field-foto .form-managed-file{display: inline-block;width: 68%;}
+}
+
+@media screen and (min-width: 150px) and (max-width: 767px){
+.aecid-intervencion form #edit-group-9 .field--name-field-desc-foto label{display: block;width: auto;}
+.aecid-intervencion form #edit-group-9 .field--name-field-desc-foto .form-textarea-wrapper{display: block;width: auto;}
+.aecid-intervencion form #edit-group-9 .field--name-field-foto label {display: block;width: auto;}
+.aecid-intervencion form #edit-group-9 .field--name-field-foto .form-managed-file{display: block;width: auto;}
+}
+
+/* 8 ubicacion */
+.aecid-intervencion form #edit-group-8 .field--name-field-ambito-geografico label {display: inline-block;width: 30%;}
+.aecid-intervencion form #edit-group-8 .field--name-field-ambito-geografico span {display: inline-block; width: 40%;}
+.aecid-intervencion form #edit-group-8 .field--name-field-ambito-geografico span select {width: 100%!important; background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat;}
+.aecid-intervencion form #edit-group-8 .field--name-field-departamento .table__body .field--name-field-departamento {display: inline-block; width: 70%;}
+.aecid-intervencion form #edit-group-8 .field--name-field-departamento .table__body .field--name-field-departamento .shs-container .shs-widget-container { margin-left: 5px; width: 30%;}
+.aecid-intervencion form #edit-group-8 .field--name-field-departamento .table__body .field--name-field-departamento .shs-container .shs-widget-container select { width: 100%!important;}
+.aecid-intervencion form #edit-group-8 .field--name-field-departamento .table__body .field--name-field-porcentaje {display: inline-block;  width: 25%;}
+.aecid-intervencion form #edit-group-8 .field--name-field-departamento .table__body .field--name-field-porcentaje input { width: 30%!important;}
+.aecid-intervencion form #edit-group-8 .field--name-field-departamento .table__body .field--name-field-departamento .shs-widget-container select{background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat;  padding-right: 3em;}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.aecid-intervencion form #edit-group-8 .field--name-field-ambito-geografico span{width: 68%;}
+}
+@media screen and (min-width: 150px) and (max-width: 767px){
+.aecid-intervencion form #edit-group-8 .field--name-field-departamento .table__body .field--name-field-departamento{display: block; width: 100%;}
+.aecid-intervencion form #edit-group-8 .field--name-field-departamento .table__body .field--name-field-departamento .shs-container .shs-widget-container { display: block; margin-bottom: 5px; margin-left: 0; width: 100%;}
+.aecid-intervencion form #edit-group-8 .field--name-field-departamento .table__body .field--name-field-porcentaje{display: block; width: 100%;}
+.aecid-intervencion form #edit-group-8 .field--name-field-ambito-geografico label {display: block;width: 100%;}
+.aecid-intervencion form #edit-group-8 .field--name-field-ambito-geografico span {display: block;width: 100%;}
+}
+/* 7 map*/
+.aecid-intervencion form #edit-group-7 .field--widget-options-select {width: 60%; display: inline-block; vertical-align: top;}
+.aecid-intervencion form #edit-group-7 .field--widget-options-select label {display: inline-block;width: 40%; white-space: normal;}
+.aecid-intervencion form #edit-group-7 .field--widget-options-select span  {display: inline-block; width: 50%;}
+.aecid-intervencion form #edit-group-7 .field--widget-options-select span select {width: 100%!important; margin:0px!important;  background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat;   padding-right: 3em;}
+.aecid-intervencion form #edit-group-7 .field--name-field-porcentaje {width: 25%; display: inline-block; vertical-align: top;}
+.aecid-intervencion form #edit-group-7 .field--name-field-porcentaje label {display: inline-block;}
+.aecid-intervencion form #edit-group-7 .field--name-field-porcentaje input {width: 30%!important;}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.aecid-intervencion form #edit-group-7 .field--widget-options-select{width: 63%;}
+.aecid-intervencion form #edit-group-7 .field--widget-options-select label{display: inline-block; width: 52%;}
+.aecid-intervencion form #edit-group-7 .field--widget-options-select span{width: 46%;}
+
+.aecid-intervencion form #edit-group-7 .field--name-field-porcentaje{width: 30%;}
+.aecid-intervencion form #edit-group-7 .field--name-field-porcentaje label{display: inline-block;}
+}
+@media screen and (min-width: 150px) and (max-width: 767px){
+.aecid-intervencion form #edit-group-7 .field--widget-options-select {width: 100%;display: block; margin-bottom: 0.5em;}
+.aecid-intervencion form #edit-group-7 .field--widget-options-select label{display: block; width: 100%;}
+.aecid-intervencion form #edit-group-7 .field--widget-options-select span {display: block;  width: 100%;}
+
+.aecid-intervencion form #edit-group-7 .field--name-field-porcentaje{width: 100%;display: block;}
+.aecid-intervencion form #edit-group-7 .field--name-field-porcentaje label{display: block;}
+.aecid-intervencion form #edit-group-7 .field--name-field-porcentaje input{width: 88%;}
+}
+
+/*6  plan director */
+.aecid-intervencion form #edit-group-6 .field--widget-options-select {width: 60%; display: inline-block; vertical-align: top;}
+.aecid-intervencion form #edit-group-6 .field--widget-options-select label {display: inline-block;width: 40%; white-space: normal;}
+.aecid-intervencion form #edit-group-6 .field--widget-options-select span  {display: inline-block; width: 50%; }
+.aecid-intervencion form #edit-group-6 .field--widget-options-select span select {width: 100%!important; margin:0px!important; background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat;   padding-right: 3em;}
+.aecid-intervencion form #edit-group-6 .field--name-field-porcentaje { width: 25%; display: inline-block; vertical-align: top;}
+.aecid-intervencion form #edit-group-6 .field--name-field-porcentaje label {display: inline-block;}
+.aecid-intervencion form #edit-group-6 .field--name-field-porcentaje input{width: 30%!important;}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.aecid-intervencion form #edit-group-6 .field--widget-options-select{width: 63%;}
+.aecid-intervencion form #edit-group-6 .field--widget-options-select label{display:inline-block;width: 52%;}
+.aecid-intervencion form #edit-group-6 .field--widget-options-select span{width: 46%;}
+
+.aecid-intervencion form #edit-group-6 .field--name-field-porcentaje{width: 30%;}
+.aecid-intervencion form #edit-group-6 .field--name-field-porcentaje label{display: inline-block;}
+}
+@media screen and (min-width: 150px) and (max-width: 767px){
+.aecid-intervencion form #edit-group-6 .field--widget-options-select {width: 100%;display: block; margin-bottom: 0.5em;}
+.aecid-intervencion form #edit-group-6 .field--widget-options-select label{display: block;}
+.aecid-intervencion form #edit-group-6 .field--widget-options-select span {display: block;  width: 100%;}
+
+.aecid-intervencion form #edit-group-6 .field--name-field-porcentaje{width: 100%;display: block;}
+.aecid-intervencion form #edit-group-6 .field--name-field-porcentaje label{display: block;}
+.aecid-intervencion form #edit-group-6 .field--name-field-porcentaje input{width: 88%;}
+}
+
+/*5  ODS */
+.aecid-intervencion form #edit-group-5-ods .field--widget-options-select {width: 60%; display: inline-block; vertical-align: top;}
+.aecid-intervencion form #edit-group-5-ods .field--widget-options-select label {display: inline-block; white-space: normal;width: 40%;}
+.aecid-intervencion form #edit-group-5-ods .field--widget-options-select span  {display: inline-block; width: 50%;}
+.aecid-intervencion form #edit-group-5-ods .field--widget-options-select span select {width: 100%!important; margin:0px!important;background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat;   padding-right: 3em;}
+.aecid-intervencion form #edit-group-5-ods .field--name-field-porcentaje { width: 25%; display: inline-block; vertical-align: top;}
+.aecid-intervencion form #edit-group-5-ods .field--name-field-porcentaje label {display: inline-block;}
+.aecid-intervencion form #edit-group-5-ods .field--name-field-porcentaje input {width: 30%!important;}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.aecid-intervencion form #edit-group-5-ods .field--widget-options-select{width: 63%;}
+.aecid-intervencion form #edit-group-5-ods .field--widget-options-select label{display: inline-block; width: 52%;}
+.aecid-intervencion form #edit-group-5-ods .field--widget-options-select span{width: 46%;}
+
+.aecid-intervencion form #edit-group-5-ods .field--name-field-porcentaje{width: 30%;}
+.aecid-intervencion form #edit-group-5-ods .field--name-field-porcentaje label{display: inline-block;}
+}
+@media screen and (min-width: 150px) and (max-width: 767px){
+.aecid-intervencion form #edit-group-5-ods .field--widget-options-select {width: 100%;display: block; margin-bottom: 0.5em;}
+.aecid-intervencion form #edit-group-5-ods .field--widget-options-select label{display: block; width: 100%;}
+.aecid-intervencion form #edit-group-5-ods .field--widget-options-select span {display: block;  width: 100%;}
+
+.aecid-intervencion form #edit-group-5-ods .field--name-field-porcentaje{width: 100%;display: block;}
+.aecid-intervencion form #edit-group-5-ods .field--name-field-porcentaje label{display: block;}
+.aecid-intervencion form #edit-group-5-ods .field--name-field-porcentaje input{width: 88%;}
+}
+
+/* 4 cad */
+.aecid-intervencion form #edit-group-4-cad .field--widget-options-shs {width: 70%; display: inline-block; vertical-align: top;}
+.aecid-intervencion form #edit-group-4-cad .field--widget-options-shs label {display: inline-block;}
+.aecid-intervencion form #edit-group-4-cad .field--widget-options-shs span .shs-widget-container { display: inline-block; margin-left: 5px; width: 30%;}
+.aecid-intervencion form #edit-group-4-cad .field--widget-options-shs span  {width: auto;}
+.aecid-intervencion form #edit-group-4-cad .field--widget-options-shs span select {width: 100%!important; margin:0px!important;}
+.aecid-intervencion form #edit-group-4-cad .field--widget-options-shs span div select {background-image: url("/sites/default/files/aspa.jpg");background-position: right center; background-repeat: no-repeat; display: block;  padding-right: 3em;}
+.aecid-intervencion form #edit-group-4-cad .field--name-field-porcentaje { width: 25%; display: inline-block; vertical-align: top;}
+.aecid-intervencion form #edit-group-4-cad .field--name-field-porcentaje label {width: auto;}
+.aecid-intervencion form #edit-group-4-cad .field--name-field-porcentaje input{width: 30%!important;}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.aecid-intervencion form #edit-group-4-cad .field--widget-options-shs{width: 70%;}
+.aecid-intervencion form #edit-group-4-cad .field--name-field-porcentaje{width: 25%;}
+
+}
+@media screen and (min-width: 150px) and (max-width: 767px){
+.aecid-intervencion form #edit-group-4-cad .field--widget-options-shs span .shs-widget-container{width: 100%; margin-bottom:5px; margin-left: 0px;}
+.aecid-intervencion form #edit-group-4-cad .field--widget-options-shs {width: 100%;display: block; margin-bottom: 0.5em;}
+.aecid-intervencion form #edit-group-4-cad .field--widget-options-shs label{display: block; width: 100%;}
+.aecid-intervencion form #edit-group-4-cad .field--widget-options-shs span {display: block;  width: 100%;}
+
+.aecid-intervencion form #edit-group-4-cad .field--name-field-porcentaje{width: 100%;display: block;}
+.aecid-intervencion form #edit-group-4-cad .field--name-field-porcentaje label{display: block;}
+}
+
+/* 3 socios */
+.aecid-intervencion form #edit-group-3 .field--widget-erviews-options-select {width: 60%; display: inline-block;  vertical-align: top;}
+.aecid-intervencion form #edit-group-3 .field--widget-erviews-options-select label {display: inline-block; white-space: normal; width: 40%;}
+.aecid-intervencion form #edit-group-3 .field--widget-erviews-options-select span  {display: inline-block; width:50%;}
+.aecid-intervencion form #edit-group-3 .field--widget-erviews-options-select span select {width: 100%!important; margin:0px!important; background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat; }
+.aecid-intervencion form #edit-group-3 .field--name-field-porcentaje input { width: 30%!important;}
+.aecid-intervencion form #edit-group-3 .field--name-field-porcentaje { width: 25%; display: inline-block;  vertical-align: top;}
+.aecid-intervencion form #edit-group-3 .field--name-field-porcentaje label {display: inline-block;}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.aecid-intervencion form #edit-group-3 .field--widget-erviews-options-select{width: 63%;}
+.aecid-intervencion form #edit-group-3 .field--widget-erviews-options-select label{display: inline-block; width: 52%;}
+.aecid-intervencion form #edit-group-3 .field--widget-erviews-options-select span{width: 46%;}
+
+.aecid-intervencion form #edit-group-3 .field--name-field-porcentaje{width: 30%;}
+.aecid-intervencion form #edit-group-3 .field--name-field-porcentaje label{display: inline-block;}
+}
+
+@media screen and (min-width: 150px) and (max-width: 767px){
+.aecid-intervencion form #edit-group-3 .field--widget-erviews-options-select{width: 100%;display: block; margin-bottom: 0.5em;}
+.aecid-intervencion form #edit-group-3 .field--widget-erviews-options-select label{display: block; width: 100%;}
+.aecid-intervencion form #edit-group-3 .field--widget-erviews-options-select span {display: block;  width: 100%;}
+
+.aecid-intervencion form #edit-group-3 .field--name-field-porcentaje{width: 100%;display: block;}
+.aecid-intervencion form #edit-group-3 .field--name-field-porcentaje label{display: block;}
+.aecid-intervencion form #edit-group-3 .field--name-field-porcentaje input{width: 88%;}
+}
+
+/* 2 presupuesto */
+.aecid-intervencion form #edit-group-2 fieldset legend {border-bottom: 1px solid #003e8b; width: 100%;  margin-bottom: 1em;}
+.aecid-intervencion form #edit-group-2 fieldset legend .fieldset-legend{font-weight: bolder; color:#003e8b;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(3) .fieldset-wrapper > .field--type-decimal {display: inline-block;  margin-right: 0.5em; width: auto;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(3) .fieldset-wrapper > .field--name-field-moneda{display: inline-block; width: auto;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(3) .fieldset-wrapper > .field--type-decimal label{ display: inline-block;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(3) .fieldset-wrapper > .field--type-decimal span { display: none;}
+
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform > div{display: inline-block;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform > div.field--name-moderation-state {display: none;}
+
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--widget-erviews-options-select {width: 42%;padding: 0; display: inline-block; vertical-align: top;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--widget-erviews-options-select span{ width: 100%; }
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--widget-erviews-options-select span select {width: 100%!important;background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat; padding-right:3em;}
+
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--name-field-monto {width: 30%; vertical-align: top;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--name-field-monto input{width: 100%!important;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--name-field-monto > div label {display: block;}
+
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--name-field-moneda {display: inline-block; width: 10%; vertical-align: top;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--name-field-moneda span{ width: 100%;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--name-field-moneda span select{width: 100%!important; background-image: url("/sites/default/files/aspa.jpg"); background-position: right center; background-repeat: no-repeat; }
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(3)  .fieldset-wrapper > .field--type-decimal label{display: block;}
+
+}
+
+@media screen and (min-width: 150px) and (max-width: 767px){
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform > div{margin-bottom: 1em;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--widget-erviews-options-select {display: block; width: 100%;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--widget-erviews-options-select span {display: block; width: 95%;}
+
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--name-field-monto {display: block; width: 100%;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--name-field-monto input {display: block; width: 95%;}
+
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--name-field-moneda{display: block; width: 100%;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(2) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .field--name-field-moneda span {display: block; width: 95%;}
+
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(3) .fieldset-wrapper > .field--type-decimal label{display: block!important;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(3) .fieldset-wrapper .field--name-field-financiadores tbody .paragraphs-subform .js-form-item{margin-bottom: 1em;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(3) .fieldset-wrapper .field--type-decimal{width: 100%;}
+.aecid-intervencion form #edit-group-2 fieldset:nth-child(3) .fieldset-wrapper > .field--type-decimal input{width: 100%!important;}
+}
+
+
+/******FORMULARIOS GENERALES *******/
+.node-form * {color:#4d4d4d;}
+.node-form * label, .node-form * span, .node-form * h4, .node-form * h5{font-size: 1.1em; font-weight: 500;}
+.node-form input,
+.node-form select,
+/*.node-form .table td, .node-form .table th, */
+.node-form textarea{border: 1px solid #b3b3b3;}
+.captcha .description, #edit-preview{display: none;}
+.captcha .field-prefix {display: inline-block;}
+.captcha .js-form-item .form-text.required {width: 60px;}
+.node-form h1 { font-size: 1.4em; font-weight: bolder;}
+.layout-node-form-footer #edit-delete {border-radius: 7px;height: 46px;  padding: 10px 1em 1em; width: 100px;}
+/*.node-form input[type="number"] {-moz-appearance: textfield;}*/
+
+.node-form .cke {border: none!important;}
+.node-form .cke_inner.cke_reset span.cke_top{border-bottom:none!important;}
+.node-form .cke_inner.cke_reset .cke_bottom {display: none;}
+.node-form .field--type-text-with-summary .text-format-wrapper .filter-wrapper > div {display: none;}
+.node-form .field--type-text-with-summary .text-format-wrapper .filter-wrapper {border: 0 none;}
+.node-form .cke_inner.cke_reset > span, .node-form .cke_inner.cke_reset > div{border: 1px solid #B3B3B3;}
+
+.node-form .dropbutton-wrapper{border-radius: 0.5em; overflow: hidden;}
+.node-form .dropbutton-wrapper .dropbutton-widget .dropbutton .publish .publish__link-wrapper input{background:#F7C410!important; }
+.node-form .dropbutton-wrapper .dropbutton-widget .dropbutton .dropbutton-toggle button {background: #F7C410!important;}
+.node-form .dropbutton-wrapper .dropbutton-widget {border: none!important; background: #F7C410}
+.node-form .dropbutton-wrapper .dropbutton-widget .dropbutton {border: none;}
+.node-form .dropbutton-wrapper .dropbutton-widget .dropbutton .unpublish {border: 0px!important; }
+.node-form .dropbutton-wrapper .dropbutton-widget .dropbutton .unpublish span input {background: #F7C410; border-top: 1px solid #4d4d4d!important;}
+.node-form .dropbutton-wrapper .dropbutton-widget .dropbutton * {color:#4d4d4d; font-weight: bolder;}
+.node-form .dropbutton-wrapper .dropbutton-widget .dropbutton li input {height: 46px; padding: 1em;}
+/*
+.node-form #edit-preview { border: 0 solid; border-radius: 0.5em; height: 46px; padding: 0.5em 1em; background: #F7C410; font-weight: bolder; color:#4d4d4d;}
+*/
+.node-form .table .table__body .field-multiple-drag {display: none;}
+.node-form .horizontal-tabs-panes .required-fields { overflow: hidden!important;}
+.node-form .horizontal-tabs {border: 0 none;}
+.node-form .horizontal-tabs .horizontal-tabs-panes{border: 1px solid #b3b3b3;margin: 0px; position: relative;}
+.node-form .horizontal-tabs .horizontal-tabs-panes .horizontal-tabs-pane {margin: 1em 3em;}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.node-form .horizontal-tabs .horizontal-tabs-panes .horizontal-tabs-pane{margin: 1em 0em;}
+}
+
+@media screen and (min-width: 150px) and (max-width: 767px){
+.node-form .horizontal-tabs .horizontal-tabs-panes .horizontal-tabs-pane{margin: 0em;}
+}
+
+
+
+/* pagina principal */
+.node-banner-principal-form .field--type-string input{width: 100%!important;}
+.node-banner-principal-form .field--name-field-imagen-banner { border: 0px!important; padding: 0;}
+.node-banner-principal-form .field--name-field-enlace-banner input {width: 100%!important;}
+.node-banner-principal-form .field--name-field-texto-banner .form-type-textarea textarea {width: 100%!important;}
+
+/* pagina basica */
+.node-page-form #edit-title-wrapper > div input {width: 100%!important;}
+
+
+/* tipo de cambio */
+.node-tipo-de-cambio-form .form-item-field-moneda-tipo-cambio span{display: inline-block !important; width: 34%;}
+.node-tipo-de-cambio-form .field--name-field-moneda-tipo-cambio{width: 100%}
+.node-tipo-de-cambio-form .label,.node-tipo-de-cambio-form label { display: inline-block; width: 10%;}
+.node-tipo-de-cambio-form .container-inline { display: inline-block;}
+
+
+/* pagina error 404 y 403 */
+#block-aecid-theme-content #error-404 { margin: 0 auto; text-align: center;}
+#block-aecid-theme-content #error-404 *{text-align: center;}
+#block-aecid-theme-content #error-404 p.numero-error { color: #D81739; font-size: 9em; font-weight: bold; text-align: center; padding: 30px 0;}
+#block-aecid-theme-content #error-404 p.texto-error {color: #4D4D4D; font-size: 1.4em;  margin: 1em; text-align: center;}
+#block-aecid-theme-content #error-404 p a { border: 1px solid #4D4D4D; border-radius: 0.5em;margin: 0 auto; padding: 0.5em 1em; color:#4D4D4D; text-decoration: none;font-weight: bolder;}
+#block-aecid-theme-content #error-404 p a:hover { border: 1px solid #F7C410; background: #F7C410;}
+
+#block-aecid-theme-content #error-403 { margin: 0 auto; text-align: center;}
+#block-aecid-theme-content #error-403 *{text-align: center; color:#4D4D4D;}
+#block-aecid-theme-content #error-403 p a { border: 1px solid #4D4D4D; border-radius: 0.5em;margin: 0 auto; padding: 0.5em 4em; color:#4D4D4D; text-decoration: none;font-weight: bolder;}
+#block-aecid-theme-content #error-403 p a:hover { border: 1px solid #F7C410; background: #F7C410;}
+#block-aecid-theme-content #error-403 p.numero-error {  font-size: 2em; font-weight: bold; text-align: center; text-transform: uppercase; }
+#block-aecid-theme-content #error-403 p.texto-error { font-size: 1.4em;  margin: 1em; text-align: center;font-style: italic; margin-bottom: 1.5em; }
+#block-aecid-theme-content #error-403 img { padding: 2em; width: 25%;}
+.node.node--id-9,.node.node--id-8{box-shadow: none;}
+.node--id-9 .node__title,.node--id-8 .node__title{display: none;}
+
+
+
+
+/****** INTERVENCIONES VISTA ******/
+.inter-obs{cursor: pointer; position: relative; width: 20px;}
+.inter-obs .inter-obs-txt{display: none; overflow-x: hidden; overflow-y: auto; box-sizing: border-box; position: absolute; top: 0; left: -220px; width: 200px; height: 100px; padding: 8px; background-color: #ffffff; border: solid 1px #cccccc;}
+.inter-obs:hover .inter-obs-txt{display: inline;}
+#view-field-fecha-inicio-table-column .tablesort{display: none;}
+
+
+.view-gestion-de-interveciones * {color:#4D4D4D;}
+.view-gestion-de-interveciones .view-header .controles-inter-export {border-bottom: 2px solid #D81739; padding: 0.2em 1em; margin-bottom:0.5em;}
+.view-gestion-de-interveciones .view-header .controles-inter-export a {padding: 0.4em 1em;  font-weight: bolder; }
+.view-gestion-de-interveciones .view-header .controles-inter-export a:hover{background-color: #D81739; border-top-left-radius: 0.5em; border-top-right-radius: 0.5em; text-decoration: none; color:#fff;}
+.view-gestion-de-interveciones .view-header .controles-inter-export > label{display: inline-block;}
+.view-gestion-de-interveciones .view-header .controles-inter-export a:nth-child(2) {margin-left: 1.5em;}
+.view-gestion-de-interveciones .view-header .controles-inter-export a i.fa {margin-right: 4px; font-size: 1.2em;}
+.view-gestion-de-interveciones .view-header .controles-inter-export a:hover i.fa {color:#fff!important;}
+.view-gestion-de-interveciones .view-header .controles-inter-export a i.fa-file-excel-o {color: #2ea500;}
+.view-gestion-de-interveciones .view-header .controles-inter-export a i.fa-file-pdf-o {color: #D81739;}
+
+
+.view-gestion-de-interveciones .view-header {}
+.view-gestion-de-interveciones .view-header .controles-intervencion {padding: 1em 0;  margin-bottom: 1em;}
+.view-gestion-de-interveciones .view-header .controles-intervencion a {border: 1px solid #B3B3B3; padding: 0.5em 1em; display: inline-block;}
+.view-gestion-de-interveciones .view-header .controles-intervencion a:hover{background:#D81739; color:#fff; border:1px solid#D81739; text-decoration: none;}
+.view-gestion-de-interveciones .view-header .controles-intervencion a i.fa {margin-right: 4px; font-size: 1.2em; color: #D81739;}
+.view-gestion-de-interveciones .view-header .controles-intervencion a:hover i.fa{color:#fff;}
+
+.view-gestion-de-interveciones form[role="form"] #edit-header {display: none;}
+.view-gestion-de-interveciones form[role="form"] table{width: 100%;}
+.view-gestion-de-interveciones form[role="form"] table thead{border: 1px solid #003e8b;}
+.view-gestion-de-interveciones form[role="form"] table thead tr{background:#003e8b; }
+.view-gestion-de-interveciones form[role="form"] table thead tr th{color:#fff; border: none!important; white-space: nowrap;}
+
+.view-gestion-de-interveciones form[role="form"] table tbody {border:1px solid #B3B3B3;}
+.view-gestion-de-interveciones form[role="form"] table tbody tr{border:none!important;}
+.view-gestion-de-interveciones form[role="form"] table tbody tr td{border:none!important; padding: 0.8em 0.5em;}
+
+.view-gestion-de-interveciones form[role="form"] table tbody tr:nth-child(2n) {background: #f0f0f0!important;}
+
+.view-gestion-de-interveciones .view-header > a {background: #f0f0f0 none repeat scroll 0 0; padding: 0.5em 1.5em; display: inline-block;margin: 0 -3px;}
+
+.view-gestion-de-interveciones .view-header i.fa-share-square-o {margin-right: 3px;}
+.view-gestion-de-interveciones .view-header .color-borrador::before {background: #D81739; border: 1px solid #b3b3b3; content: " ";display: inline-block;font-size: 21px; height: 10px; margin: 0 3px 0px 0; width: 10px;}
+.view-gestion-de-interveciones .view-header .color-pendiente::before {background: #F7C410; border: 1px solid #b3b3b3; content: " ";display: inline-block;font-size: 21px; height: 10px; margin: 0 3px 0px 0; width: 10px;}
+.view-gestion-de-interveciones .view-header .color-aprobado::before {background: #003e8b; border: 1px solid #b3b3b3; content: " ";display: inline-block;font-size: 21px; height: 10px; margin: 0 3px 0px 0; width: 10px;}
+.view-gestion-de-interveciones .view-header .color-publicado::before {background: #2ea500; border: 1px solid #b3b3b3; content: " ";display: inline-block;font-size: 21px; height: 10px; margin: 0 3px 0px 0; width: 10px;}
+.view-gestion-de-interveciones .view-header .color-todos::before {background: #D0D0D0; border: 1px solid #b3b3b3; content: " ";display: inline-block;font-size: 21px; height: 10px; margin: 0 3px 0px 0; width: 10px;}
+
+.view-gestion-de-interveciones .view-header .controles-intervencion a:last-child {background: #fff none repeat scroll 0 0; color: #D81739; margin-left: 1.5em; border: 1px solid #D81739;}
+.view-gestion-de-interveciones .view-header .controles-intervencion a:last-child:active{background: #fff; border: 1px solid #B3B3B3; color:#4D4D4D;}
+.view-gestion-de-interveciones .view-header .controles-intervencion a:last-child:hover{background: #D81739 none repeat scroll 0 0;  color: #fff;}
+
+
+.view-gestion-de-interveciones form[role="form"] table tbody tr td > .inter-state-pc::before{background: #F7C410; border: 1px solid #b3b3b3; content: " ";display:block;font-size: 21px; height: 10px;  width: 10px;}
+.view-gestion-de-interveciones form[role="form"] table tbody tr td > .inter-state-pr::before{background: #F7C410; border: 1px solid #b3b3b3; content: " ";display:block;font-size: 21px; height: 10px;  width: 10px;}
+.view-gestion-de-interveciones form[role="form"] table tbody tr td > .inter-state-apro::before{background: #003e8b; border: 1px solid #b3b3b3; content: " ";display: block;font-size: 21px; height: 10px; width: 10px;}
+.view-gestion-de-interveciones form[role="form"] table tbody tr td > .inter-state-public::before{background: #2ea500; border: 1px solid #b3b3b3; content: " ";display: block;font-size: 21px; height: 10px; width: 10px;}
+.view-gestion-de-interveciones form[role="form"] table tbody tr td > .inter-state-draft::before{background: #D81739; border: 1px solid #b3b3b3; content: " ";display: block;font-size: 21px; height: 10px; width: 10px;}
+.view-gestion-de-interveciones thead a{color: #fff;}
+
+/* INTERVENCIONES DISPLAY */
+
+/* 1 */
+article.node--type-intervencion .node__header .node__title {font-size: 1.4em;}
+article.node--type-intervencion *{color:#4d4d4d;}
+article.node--type-intervencion .node__content .field > h3.field__label {color:#003e8b;}
+article.node--type-intervencion .node__content .form-wrapper{border:1px solid #F7C410; overflow: hidden;}
+article.node--type-intervencion .node__content .form-wrapper summary[role="button"] {background: #fff; font-weight: bolder;}
+article.node--type-intervencion .node__content .form-wrapper:hover summary[role="button"]{background: #f2f2f2!important; }
+.node-intervencion-delete-form #edit-actions input {width: auto;}
+.node-intervencion-delete-form #edit-actions #edit-cancel { border: medium none; color: #000; height: 42px;padding-top: 10px;width: auto;}
+
+.path-node-add-intervencion .details-wrapper #edit-field-codigo-aecid-0-value{width: 20%;}
+.path-node-add-intervencion .details-wrapper #edit-field-fecha-inicio-wrapper{display: inline-block; width: 50%;}
+.path-node-add-intervencion .details-wrapper #edit-field-aprobado-pero-no-iniciado-wrapper{display: inline-block;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-canalizadores .field__item .field-name-field-canalizadores {display: inline-block;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-canalizadores .field__item .field-name-field-porcentaje {display: inline-block;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-financiadores h3{width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-financiadores .field__items .paragraph > div { display: inline-block; margin-right: 5px;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-canalizadores h3{width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-canalizadores .field__items {width: auto;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-codigo h3.field__label {width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-codigo .field__items {width: auto;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-node--field-codigo-aecid h3.field__label {width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-codigo-aecid .field__items {width: auto;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-modalidad-de-cooperacion h3.field__label {width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-modalidad-de-cooperacion .field__items {width: auto;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-modalidad-de-cooperacion .field__items div { margin: 0px!important;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-body h3 {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-body .field__items { display: inline-block; text-align: justify;  width: 64%;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-objetivo-especifico h3 {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-objetivo-especifico .field__items { display: inline-block; text-align: justify;  width: 64%;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-resultados h3 {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-resultados .field__items { display: inline-block; text-align: justify;  width: 64%;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-num-colectivo-meta h3 {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-num-colectivo-meta .field__items { display: inline-block; text-align: justify;  width: 64%;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-num-mujeres h3 {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-num-mujeres .field__items { display: inline-block; text-align: justify;  width: 64%;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-tipo-colectivo-meta h3 {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-tipo-colectivo-meta .field__items { display: inline-block; }
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-fecha-inicio h3 {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-fecha-inicio .field__items { display: inline-block; }
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-duracion h3 {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-duracion .field__items { display: inline-block;}
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-fecha-termino h3 {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-fecha-termino .field__items { display: inline-block; }
+
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-fase h3 {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-1 .field-name-field-fase .field__items { display: inline-block; }
+
+article.node--type-intervencion .node__content #edit-group-8-ubicacion .field-name-field-ambito-geografico h3.field__label {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-8-ubicacion .field-name-field-ambito-geografico .field__items .field__item { margin: 0px!important;}
+article.node--type-intervencion .node__content #edit-group-8-ubicacion .field-name-field-multipais h3.field__label {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-8-ubicacion .field-name-field-departamento h3.field__label {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-8-ubicacion .field-node--field-departamento > .field__items > .field__item{display: block; vertical-align: top;}
+article.node--type-intervencion .node__content #edit-group-8-ubicacion .field-name-field-departamento > .field__items > .field__item .field-paragraph-field-departamento {display: inline-block;}
+article.node--type-intervencion .node__content #edit-group-8-ubicacion .field-name-field-departamento > .field__items > .field__item .field-paragraph--field-porcentaje {display: inline-block; margin-left: 1em;}
+article.node--type-intervencion .node__content #edit-group-8-ubicacion .field-name-field-departamento > .field__items > .field__item .field-paragraph-field-departamento .field__item {margin: 0px!important;}
+
+article.node--type-intervencion .node__content #edit-group-7 .field-name-field-resultados-de-desarrollo h3.field__label {display: inline-block; vertical-align: top; width: 25%;}
+
+article.node--type-intervencion .node__content #edit-group-6-plan-director .field-name-field-orientaciones-generales h3.field__label {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-6-plan-director .field-name-field-orientaciones-generales .field__item .field-paragraph-field-orientaciones-generales {display: inline-block; vertical-align: top; width: 80%;}
+article.node--type-intervencion .node__content #edit-group-6-plan-director .field-name-field-orientaciones-generales .field__item .field-paragraph-field-orientaciones-generales .field__item { margin: 0;}
+article.node--type-intervencion .node__content #edit-group-6-plan-director .field-paragraph--field-porcentaje {display: inline-block;vertical-align: top;margin-left: 1em;}
+article.node--type-intervencion .node__content #edit-group-6-plan-director .field-name-field-no-puede-precisar h3.field__label {width: 25%;display: inline-block; vertical-align: top;}
+
+article.node--type-intervencion .node__content #edit-group-5-ods .field-name-field-objetivo-de-desarrollo h3.field__label {display: inline-block; vertical-align: top; width: 25%;}
+
+article.node--type-intervencion .node__content #edit-group-4-cad .field-name-field-cad h3.field__label{width: 25%; display: inline-block; vertical-align: top;}
+article.node--type-intervencion .node__content #edit-group-4-cad .field-name-field-cad > .field__items > .field__item {display: block;}
+article.node--type-intervencion .node__content #edit-group-4-cad .field-name-field-cad > .field__items > .field__item .field-paragraph-field-cad-general {width: 80%;display: inline-block;vertical-align: top;}
+article.node--type-intervencion .node__content #edit-group-4-cad .field-name-field-cad > .field__items > .field__item .field-paragraph--field-porcentaje {display: inline-block;vertical-align: top;margin-left: 1em;}
+
+article.node--type-intervencion .node__content #edit-group-3 .field-name-field-ejecucion-directa h3.field__label {display: inline-block; vertical-align: top; width: 25%;}
+article.node--type-intervencion .node__content #edit-group-3 .field-name-field-socio-local h3.field__label {display: inline-block; vertical-align: top; width: 25%;}
+
+article.node--type-intervencion .node__content #edit-group-2- .field-name-field-aport-local-dolares h3 {display: inline-block; vertical-align: top; width: 25%;}
+
+
+
+
+/* 11 */
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-informacion-adicional-de-l h3.field__label {display: inline-block; vertical-align: top;width: 25%;}
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-informacion-adicional-de-l .field__items { width: 64%; text-align: justify;}
+
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-sitio-web-intervencion h3.field__label { width: 25%; display: inline-block;}
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-sitio-web-intervencion .field__items { width: 64%; text-align: justify;  vertical-align: top;}
+
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-nombres h3.field__label { width: 25%; display: inline-block;}
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-nombres .field__items { width: auto;}
+
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-apellidos  h3.field__label { width: 25%; display: inline-block;}
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-apellidos .field__items { width: auto;}
+
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-telefonos  h3.field__label { width: 25%; display: inline-block;}
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-telefonos .field__items { width: auto;}
+
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-correo h3.field__label { width: 25%; display: inline-block;}
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-correo .field__items{ width: auto;}
+
+
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-observaciones h3.field__label { width: 25%; display: inline-block;}
+article.node--type-intervencion .node__content #edit-group-11-adicionales .field-name-field-observaciones .field__items{ width: 64%;}
+
+
+/*Add Actores peruanos*/
+
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs .horizontal-tabs-list{background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border: 0 none; position: relative;top: 0.5em;z-index: 9}
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs li {background: #f7c410 none repeat scroll 0 0;border-top-left-radius: 0.5em;border-top-right-radius: 0.5em;font-size: 0.9em;margin-right: 1px;}
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs li.selected a{display: block; padding: 0.5em 0.6em 0.3em;position: relative;text-decoration: none;top: 0;}
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs li.selected{background: #fff none repeat scroll 0 0;border-left: 1px solid #ccc;border-top: 4px solid #d81739;margin-right: 1px;}
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs label{display: inline-block; width: 30%;}
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs .form-url,
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs .form-email{border-radius: 5px;display: inline-block;width: 69%}
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs span{display: inline-block;width: auto;}
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs  #edit-field-tipo-wrapper .form-type-select__select-wrapper{width:60%; }
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs #edit-field-tipo-wrapper .shs-container .shs-widget-container{display: inline-block; width: 35%;}
+
+#node-actor-peruano-form .fieldset-wrapper .js-form-item, .path-node-add-actor-peruano .block-plugin-id--filter-block .js-form-item{padding:0.2em; }
+#node-actor-peruano-form  .horizontal-tabs legend{width: 100%;}
+#node-actor-peruano-form .horizontal-tabs legend span { border-bottom: 1px solid #003e8b; color: #003e8b; margin-bottom: 1.5em; width: 100% !important;}
+
+#node-actor-peruano-form .js-form-item input.form-text,
+#node-actor-peruano-form .js-form-item select.form-select,
+#node-actor-peruano-form .js-form-item input.form-date{width: auto; border-radius: 5px;}
+
+
+@media screen and (min-width: 150px) and (max-width: 767px){
+
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs label{width: 100%!important;}
+
+#node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs .form-url, #node-actor-peruano-form .field-group-tabs-wrapper .horizontal-tabs .form-email{width: 100% !important}
+
+  }
+
+
+/*Add Actores internacionales*/
+
+#node-actor-internacional-form .field-group-tabs-wrapper .horizontal-tabs .horizontal-tabs-list{background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border: 0 none; position: relative;top: 0.5em;z-index: 9}
+#node-actor-internacional-form .field-group-tabs-wrapper .horizontal-tabs li {background: #f7c410 none repeat scroll 0 0;border-top-left-radius: 0.5em;border-top-right-radius: 0.5em;font-size: 0.9em;margin-right: 1px;}
+#node-actor-internacional-form .field-group-tabs-wrapper .horizontal-tabs li.selected a{display: block; padding: 0.5em 0.6em 0.3em;position: relative;text-decoration: none;top: 0;}
+#node-actor-internacional-form .field-group-tabs-wrapper .horizontal-tabs li.selected{background: #fff none repeat scroll 0 0;border-left: 1px solid #ccc;border-top: 4px solid #d81739;margin-right: 1px;}
+#node-actor-internacional-form .field-group-tabs-wrapper .horizontal-tabs label{display: inline-block; width: 30%;}
+#node-actor-internacional-form .field-group-tabs-wrapper .horizontal-tabs .form-url,
+#node-actor-internacional-form .field-group-tabs-wrapper .horizontal-tabs .form-email{border-radius: 5px;display: inline-block;width: 69%}
+#node-actor-internacional-form .field-group-tabs-wrapper .horizontal-tabs span{display: inline-block;width: auto;}
+#node-actor-internacional-form .field-group-tabs-wrapper .horizontal-tabs  #edit-field-tipo-wrapper .form-type-select__select-wrapper{width:60%; }
+#node-actor-internacional-form .field-group-tabs-wrapper .horizontal-tabs #edit-field-tipo-wrapper .shs-container .shs-widget-container{display: inline-block; width: 35%;}
+
+#node-actor-internacional-form .fieldset-wrapper .js-form-item, #node-actor-internacional-form  .block-plugin-id--filter-block .js-form-item{padding:0.2em; }
+#node-actor-internacional-form .horizontal-tabs legend{width: 100%;}
+#node-actor-internacional-form .horizontal-tabs legend span { border-bottom: 1px solid #003e8b; color: #003e8b; margin-bottom: 1.5em; width: 100% !important;}
+
+#node-actor-internacional-form .js-form-item input.form-text,
+#node-actor-internacional-form .js-form-item select.form-select,
+#node-actor-internacional-form .js-form-item input.form-date{width: auto; border-radius: 5px;}
+
+
+
+
+/*Add Actores españoles*/
+
+#node-actor-espanol-form .field-group-tabs-wrapper .horizontal-tabs .horizontal-tabs-list{background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border: 0 none; position: relative;top: 0.5em;z-index: 9}
+#node-actor-espanol-form .field-group-tabs-wrapper .horizontal-tabs li {background: #f7c410 none repeat scroll 0 0;border-top-left-radius: 0.5em;border-top-right-radius: 0.5em;font-size: 0.9em;margin-right: 1px;}
+#node-actor-espanol-form .field-group-tabs-wrapper .horizontal-tabs li.selected a{display: block; padding: 0.5em 0.6em 0.3em;position: relative;text-decoration: none;top: 0;}
+#node-actor-espanol-form .field-group-tabs-wrapper .horizontal-tabs li.selected{background: #fff none repeat scroll 0 0;border-left: 1px solid #ccc;border-top: 4px solid #d81739;margin-right: 1px;}
+#node-actor-espanol-form .field-group-tabs-wrapper .horizontal-tabs label{display: inline-block; width: 30%;}
+#node-actor-espanol-form .field-group-tabs-wrapper .horizontal-tabs .form-url,
+#node-actor-espanol-form .field-group-tabs-wrapper .horizontal-tabs .form-email{border-radius: 5px;display: inline-block;width: 69%}
+#node-actor-espanol-form .field-group-tabs-wrapper .horizontal-tabs span{display: inline-block;width: auto;}
+#node-actor-espanol-form .field-group-tabs-wrapper .horizontal-tabs  #edit-field-tipo-wrapper .form-type-select__select-wrapper{width:60%; }
+#node-actor-espanol-form .field-group-tabs-wrapper .horizontal-tabs #edit-field-tipo-wrapper .shs-container .shs-widget-container{display: inline-block; width: 35%;}
+
+#node-actor-espanol-form .fieldset-wrapper .js-form-item, #node-actor-espanol-form  .block-plugin-id--filter-block .js-form-item{padding:0.2em; }
+#node-actor-espanol-form .horizontal-tabs legend{width: 100%;}
+#node-actor-espanol-form .horizontal-tabs legend span { border-bottom: 1px solid #003e8b; color: #003e8b; margin-bottom: 1.5em; width: 100% !important;}
+
+#node-actor-espanol-form .js-form-item input.form-text,
+#node-actor-espanol-form .js-form-item select.form-select,
+#node-actor-espanol-form .js-form-item input.form-date{width: auto; border-radius: 5px;}
+#node-actor-espanol-form .form-type-managed-file .image-widget{display: inline-block;}
+#node-actor-espanol-form .form-type-managed-file .image-widget .description{text-align: center;}
+
+
+/* ACTORES */
+.aecid-actor-subgroup-data table tbody td a {color: #4D4D4D;}
+
+
+
+
+/* estadisticas */
+/*================*/
+.node--id-63  .node__title{display: none;}
+#block-lineaexportacion .controles-export a { color: rgb(77, 77, 77); font-weight: bolder; padding: 0.4em 1em; margin-right: -16px; margin-left: 15px;}
+#block-lineaexportacion .controles-export a:hover i.fa { color: #fff;}
+#block-lineaexportacion .controles-export a:hover {background: rgb(216, 23, 57) none repeat scroll 0% 0%;color: rgb(255, 255, 255);    text-transform: none;    text-decoration: none;border-top-left-radius: 0.5em; border-top-right-radius: 0.5em;}
+#block-lineaexportacion .controles-export .fa-file-pdf-o { color: rgb(216, 23, 57); padding-right: 5px; font-size: 16px;}
+#block-lineaexportacion .controles-export .fa-file-excel-o { color: rgb(46, 165, 0); font-size: 16px; padding-right: 5px;}
+#block-lineaexportacion .controles-export {border-bottom: 2px solid rgb(198, 11, 30);padding: 0.2em 1em;margin-bottom: 0.5em; text-align: right; color: rgb(221, 221, 221)}
+
+/* documentos de interes */
+
+
+.view-documentos-de-consulta .doc-title h1 { border-bottom: 2px solid #003e8b;color: #003e8b;font-size: 1.7em;font-weight: bolder; padding: 0.3em 0;}
+.view-documentos-de-consulta .view-header .controles-add{text-align: right;}
+.view-documentos-de-consulta .view-header .controles-add a {color: #003e8b; padding: 0.8em; font-weight: bolder;}
+.view-documentos-de-consulta .view-header .controles-add a:hover{color: #fff;background: #C60B1E; text-decoration: none;}
+.view-documentos-de-consulta .controles-add a i{margin-right: 5px;}
+.view-id-documentos_de_consulta .view-content .table tbody tr td > i{display: none;}
+
+#block-lineaexportacion .block__content .page__title {border-bottom: 2px solid #003e8b;}
+.block-plugin-id--page-title-block .block__content .page__title { color: #003e8b; font-size: 1.7em; font-weight: bolder; padding: 0.3em 0;}
+.view-id-documentos_de_consulta .views-table .table__header{background: #003e8b none repeat scroll 0 0; color:#fff;}
+.view-id-documentos_de_consulta .views-table .table__header th{border: none;}
+.view-id-documentos_de_consulta .views-table .table__header {border-bottom:1px solid #003e8b;}
+.view-id-documentos_de_consulta .view-content .table tbody{border-bottom: 1px solid #b3b3b3;}
+.view-id-documentos_de_consulta .view-content .table tbody tr td {border: medium none;}
+.view-id-documentos_de_consulta tbody tr td a{color: #4d4d4d; text-decoration: none;}
+.view-id-documentos_de_consulta tbody .table__row.even{background: #f0f0f0 none repeat scroll 0 0;}
+
+
+/*Filtros*/
+.path-extranet-mapeo .pr-main__sidebar-first .block__inner .block__content,
+.path-intranet-intervenciones-actor .pr-main__sidebar-first .block__inner .block__content,
+.path-intranet-intervenciones .pr-main__sidebar-first .block__inner .block__content {border: solid 1px #b3b3b3; color: #4d4d4d; padding: 20px;}
+.pr-main__sidebar-first .block__inner .form-actions{display: block;}
+.pr-main__sidebar-first .block__inner .block__title {background: #d81739 none repeat scroll 0 0;color: #fff;font-size: 25px;margin-bottom: 2px;padding: 0.2em;text-align: center;display: block;}
+.form-actions .button {background: #f7c410 none repeat scroll 0 0;border-radius: 5px;font-weight: bolder;margin-bottom: 1em;padding-bottom: 1.5em;   padding-top: 1em;  width: 100%;}
+
+.pr-main__sidebar-first .js-form-item input.form-text,
+.pr-main__sidebar-first .js-form-item select.form-select,
+.pr-main__sidebar-first .js-form-item input.form-date {border: 1px solid #b3b3b3; border-radius: 5px; width: 100%; border: 1px solid #b3b3b3; border-radius: 5px; color: #4d4d4d;}
+
+.fieldset-wrapper .js-form-item,
+.block-plugin-id--filter-block .js-form-item {margin-bottom: 0.1em;}
+.js-form-item .fieldset-wrapper select#edit-publicos{background: none; color: #4d4d4d;}
+.js-form-item .fieldset-wrapper select { color: #4d4d4d; background-image: url("/sites/default/files/aspa.jpg");background-position: right center;background-repeat: no-repeat;}
+#codigo-block-form--2 #edit-actions--3 #edit-submit--3,
+#codigo-block-form--2 #edit-actions--4 #edit-submit--4 {background: #003e8b none repeat scroll 0 0; color: #fff !important;}
+
+
+/*bloques acceso página error*/
+
+.error-page{margin-top: 30px;}
+.error-page > div {display: inline-block; margin: 1.5em; vertical-align: top; width: 15%; position: relative;}
+.error-page figure {border: 2px solid #4d4d4d;border-radius: 50%; cursor: pointer; margin: 20px !important; padding: 1em;}
+.error-page img { height: auto;transition: all 0.4s ease 0s;width: 150px; transform: scale(1.2); padding: 0.9em;}
+.error-page > div:hover img {padding: 0; transition: all 0.5s;}
+.error-page .field-block-content--field-link-acceso-portada .field__item a{color: #4d4d4d;font-size: 16px; font-weight: bolder;}
+
+.error-page > div .field-block-content--field-link-acceso-portada a{width: 100%; height: 100%; position: absolute; left: 0;  top: 0; padding-top: 95%;}
+
+
+.error-page .er-map .field-block-content--field-link-acceso-portada .field__item a:hover {color: #008837;}
+.error-page .er-est .field-block-content--field-link-acceso-portada .field__item a:hover {color: #FEA621;}
+.error-page .er-quienes .field-block-content--field-link-acceso-portada .field__item a:hover {color: #4FA0CA;}
+.error-page .er-concepto .field-block-content--field-link-acceso-portada .field__item a:hover {color: #E56887;}
+.error-page .er-contato .field-block-content--field-link-acceso-portada .field__item a:hover {color: #7C4E78;}
+
+
+/*Reportes*/
+
+.view-reportes .view-content .views-row { display: inline-block; font-weight: 500;    margin-bottom: 5em;    margin-left: 2em;    margin-right: 2em;    text-align: center;    vertical-align: top;    width: 14%;}
+.view-reportes .view-content .views-row a {text-decoration: none;}
+.path-intranet-reportes #block-aecid-theme-page-title h1 {border-bottom: 2px solid;}
+
+@media screen and (min-width: 150px) and (max-width: 767px){
+  .node-tipo-de-cambio-form .label, .node-tipo-de-cambio-form label{width: 25%}
+  .view-reportes .view-content .views-row{margin-left: 0; padding-left: 2.5em; padding-right: 2.5em; width: 100%;}
+  body.path-intranet-tipocambio .view-tipo-cambio .view-content .cambiotipo-container{width: 100% !important;}
+  .view-tipo-cambio .view-content table{width: 100% !important;}
+
+  .aecid-intranet-lightbox-container{width:350px !important;}
+
+
+}
+
+/* documentos de consulta */
+
+
+.node-documentos-de-consulta-form label{display: inline-block; width: 20%; vertical-align: top;}
+
+.node-documentos-de-consulta-form .form-textarea-wrapper,
+.node-documentos-de-consulta-form #edit-field-adjunto-0-upload,
+.node-documentos-de-consulta-form .field--type-string input{display: inline-block; width: 75%;}
+
+/*Vista de tipo de cambio*/
+.view-tipo-cambio .doc-title h1 { border-bottom: 2px solid #003e8b;color: #003e8b;font-size: 1.7em;font-weight: bolder; padding: 0.3em 0;}
+.view-tipo-cambio .view-header .controles-add{text-align: right;}
+.view-tipo-cambio .view-header .controles-add a {color: #003e8b; padding: 0.8em; font-weight: bolder;}
+.view-tipo-cambio .view-header .controles-add a:hover{color: #fff;background: #C60B1E; text-decoration: none;}
+.view-tipo-cambio .controles-add a i{margin-right: 5px;}
+.view-tipo-cambio table caption{display: none;}
+
+.view-tipo-cambio tbody { border: 1px solid #b3b3b3 !important;}
+.view-tipo-cambio .view-rows table thead tr { background: #003e8b none repeat scroll 0 0; color: #fff;}
+.view-tipo-cambio table tbody tr.even{background: #eee;}
+
+body.path-intranet-tipocambio .view-tipo-cambio .view-content .cambiotipo-container{display: inline-block; vertical-align: top; width: 49%;}
+.view-tipo-cambio .view-content table{width: 80%;}
+
+
+/*pop up códigos cad*/
+
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-header{position: relative; text-align: right;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-header a { border: 1px solid #d81739;color: #d81739;padding: 0.5em 1em;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-header a:hover{color: #fff; background:#d81739; text-decoration: none;}
+.aecid-intranet-lightbox{color: #4d4d4d;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-body i{color: #d81739;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-body i:hover{color: #4d4d4d;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-actions ul{margin-top:15px; text-align: right;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-actions ul li{text-decoration: none;text-transform: none; display: inline;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-actions ul li a{padding: 0.5em 1em; color: #4d4d4d; border: 1px solid #b3b3b3; text-decoration: none;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-actions ul li a i {color: #d81739}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-header label{text-align: left;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-header label br{float: left;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-header label small{margin-left: 10px;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-actions ul li a:hover{background:  #f7c410; border: solid 1px #b3b3b3;}
+.aecid-intranet-lightbox .aecid-intranet-lightbox-content-actions ul li a:hover i{color: #4d4d4d;}

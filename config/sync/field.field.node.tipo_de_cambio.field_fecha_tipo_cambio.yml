@@ -1,0 +1,21 @@
+uuid: 0c9c1ce5-f85c-48f9-8db5-8b27c1610994
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_tipo_cambio
+    - node.type.tipo_de_cambio
+  module:
+    - datetime
+id: node.tipo_de_cambio.field_fecha_tipo_cambio
+field_name: field_fecha_tipo_cambio
+entity_type: node
+bundle: tipo_de_cambio
+label: Fecha
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

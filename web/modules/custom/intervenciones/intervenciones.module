@@ -1,0 +1,64 @@
+<?php
+
+/**
+ * @file
+ * Contains intervenciones.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function intervenciones_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the intervenciones module.
+    case 'help.page.intervenciones':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Módulo de Intervenciones') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function intervenciones_theme() {
+  return [
+    'intervenciones_table_simple_export' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'intervenciones-table-simple-export',
+    ),
+    
+    /*Mapeo templates*/
+    'intervenciones' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'intervenciones',
+    ),
+    'mapa_intervencion_mapeo' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'mapa-intervencion-mapeo',
+    ),
+    'departamentos_intervenciones_listado' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'departamentos-intervenciones-listado',
+    ),
+    'provincias_mapa' => array(
+        'variables' => array(
+            'data' => NULL,
+        ),
+        'template' => 'provincias-mapa',
+    ),
+  ];
+}

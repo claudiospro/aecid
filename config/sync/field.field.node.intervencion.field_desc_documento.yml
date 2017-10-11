@@ -1,0 +1,19 @@
+uuid: c8e7db01-a1e0-4236-8da9-343894c7b505
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_desc_documento
+    - node.type.intervencion
+id: node.intervencion.field_desc_documento
+field_name: field_desc_documento
+entity_type: node
+bundle: intervencion
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

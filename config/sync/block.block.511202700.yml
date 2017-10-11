@@ -1,0 +1,25 @@
+uuid: 475eebfa-7559-4388-8836-d990bca1196c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_pie_de_pagina:f4032300-ef02-4ef6-b291-0a064f2d8c07'
+  module:
+    - block_content
+  theme:
+    - aecid_theme
+id: '511202700'
+theme: aecid_theme
+region: subfeatures_second
+weight: 0
+provider: null
+plugin: 'block_content:f4032300-ef02-4ef6-b291-0a064f2d8c07'
+settings:
+  id: 'block_content:f4032300-ef02-4ef6-b291-0a064f2d8c07'
+  label: (51-1)202700
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

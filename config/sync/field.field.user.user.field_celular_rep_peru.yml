@@ -1,0 +1,20 @@
+uuid: 0d3a5bed-a64b-4a35-98b0-dd95e0546fc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_celular_rep_peru
+  module:
+    - user
+id: user.user.field_celular_rep_peru
+field_name: field_celular_rep_peru
+entity_type: user
+bundle: user
+label: Celular
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 9649ca4e-85d8-4f1f-a281-99379985f933
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_cont
+    - node.type.actor_peruano
+id: node.actor_peruano.field_nombre_cont
+field_name: field_nombre_cont
+entity_type: node
+bundle: actor_peruano
+label: Nombre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

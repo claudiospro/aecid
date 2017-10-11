@@ -1,0 +1,14 @@
+uuid: 61a8287a-e429-4491-9b95-baff78a9c15e
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy_vocabulary_date
+third_party_settings:
+  taxonomy_vocabulary_date:
+    type: 'Códigos CAD'
+name: 'Códigos CAD'
+vid: codigos_cad
+description: ''
+hierarchy: 0
+weight: 0

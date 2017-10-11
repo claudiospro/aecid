@@ -1,0 +1,19 @@
+uuid: ec64010b-1874-45f8-a039-bf717790b189
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codigo_cad
+    - taxonomy.vocabulary.codigos_cad
+id: taxonomy_term.codigos_cad.field_codigo_cad
+field_name: field_codigo_cad
+entity_type: taxonomy_term
+bundle: codigos_cad
+label: Código
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

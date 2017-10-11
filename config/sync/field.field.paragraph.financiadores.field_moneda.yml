@@ -1,0 +1,23 @@
+uuid: 9c25f4fd-90e5-4b6e-9a85-21fd0ee8536a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_moneda
+    - paragraphs.paragraphs_type.financiadores
+  module:
+    - options
+id: paragraph.financiadores.field_moneda
+field_name: field_moneda
+entity_type: paragraph
+bundle: financiadores
+label: moneda
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: €
+default_value_callback: ''
+settings: {  }
+field_type: list_string

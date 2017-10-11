@@ -1,0 +1,15 @@
+system.configuration.change_moderation_state_eliminar:
+  type: change_moderation_state_eliminar
+  label: 'Elimina la Intervencion - Eliminar.'
+
+system.configuration.change_moderation_state_aprobado:
+  type: change_moderation_state_aprobado
+  label: 'Cambia el Estado de la Intervención - Aprobado.'
+
+system.configuration.change_moderation_state_desaprobado:
+  type: change_moderation_state_desaprobado
+  label: 'Cambia el Estado de la Intervencion - Desaprobado.'
+
+system.configuration.change_moderation_state_publicado:
+  type: change_moderation_state_publicado
+  label: 'Cambia el Estado de la Intervencion - Publicado.'

@@ -1,0 +1,19 @@
+uuid: b3311994-98eb-46df-a904-e31a6ee498c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_correo_cont_alt
+    - node.type.actor_internacional
+id: node.actor_internacional.field_correo_cont_alt
+field_name: field_correo_cont_alt
+entity_type: node
+bundle: actor_internacional
+label: Correo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

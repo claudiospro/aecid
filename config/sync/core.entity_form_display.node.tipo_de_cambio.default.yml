@@ -1,0 +1,49 @@
+uuid: ac28ccf9-9dcf-4db9-94cd-fd2d6427e7c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tipo_de_cambio.field_fecha_tipo_cambio
+    - field.field.node.tipo_de_cambio.field_moneda_tipo_cambio
+    - field.field.node.tipo_de_cambio.field_tasa_tipo_cambio
+    - node.type.tipo_de_cambio
+  module:
+    - datetime
+id: node.tipo_de_cambio.default
+targetEntityType: node
+bundle: tipo_de_cambio
+mode: default
+content:
+  field_fecha_tipo_cambio:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_moneda_tipo_cambio:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tasa_tipo_cambio:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

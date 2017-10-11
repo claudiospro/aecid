@@ -1,0 +1,14 @@
+uuid: 1769e274-7c90-44c9-8ce1-6e47c49fbf64
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.actor
+  module:
+    - user
+id: user_add_role_action.actor
+label: 'Add the Actor role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: actor

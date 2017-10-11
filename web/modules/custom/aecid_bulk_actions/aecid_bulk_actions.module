@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains aecid_bulk_actions.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function aecid_bulk_actions_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the aecid_bulk_actions module.
+    case 'help.page.aecid_bulk_actions':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom mass actions for Aecid') . '</p>';
+      return $output;
+
+    default:
+  }
+}

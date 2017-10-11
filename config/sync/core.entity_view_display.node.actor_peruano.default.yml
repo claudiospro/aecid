@@ -1,0 +1,181 @@
+uuid: e296f9b8-c94c-4aff-a832-3ceac2a46c62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.actor_peruano.field_acronimo
+    - field.field.node.actor_peruano.field_cargo_cont
+    - field.field.node.actor_peruano.field_cargo_cont_alt
+    - field.field.node.actor_peruano.field_celular_cont
+    - field.field.node.actor_peruano.field_celular_cont_alt
+    - field.field.node.actor_peruano.field_correo
+    - field.field.node.actor_peruano.field_correo_cont
+    - field.field.node.actor_peruano.field_correo_cont_alt
+    - field.field.node.actor_peruano.field_departamento_provincia_dis
+    - field.field.node.actor_peruano.field_direccion
+    - field.field.node.actor_peruano.field_fax
+    - field.field.node.actor_peruano.field_nombre_cont
+    - field.field.node.actor_peruano.field_nombre_cont_alt
+    - field.field.node.actor_peruano.field_sitio_web
+    - field.field.node.actor_peruano.field_telefono
+    - field.field.node.actor_peruano.field_telefono_cont
+    - field.field.node.actor_peruano.field_telefono_cont_alt
+    - field.field.node.actor_peruano.field_tipo
+    - node.type.actor_peruano
+  module:
+    - link
+    - user
+id: node.actor_peruano.default
+targetEntityType: node
+bundle: actor_peruano
+mode: default
+content:
+  field_acronimo:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cargo_cont:
+    weight: 111
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cargo_cont_alt:
+    weight: 116
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_celular_cont:
+    weight: 113
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_celular_cont_alt:
+    weight: 117
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_correo:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_correo_cont:
+    weight: 114
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_correo_cont_alt:
+    weight: 118
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_departamento_provincia_dis:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_direccion:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_fax:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_nombre_cont:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_nombre_cont_alt:
+    weight: 115
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sitio_web:
+    weight: 109
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_telefono:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_telefono_cont:
+    weight: 112
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_telefono_cont_alt:
+    weight: 119
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tipo:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

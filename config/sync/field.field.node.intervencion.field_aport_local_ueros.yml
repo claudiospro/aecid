@@ -1,0 +1,23 @@
+uuid: 9b2c97ce-08d3-4270-91cf-3292014b4ec8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aport_local_ueros
+    - node.type.intervencion
+id: node.intervencion.field_aport_local_ueros
+field_name: field_aport_local_ueros
+entity_type: node
+bundle: intervencion
+label: €
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: €
+field_type: decimal

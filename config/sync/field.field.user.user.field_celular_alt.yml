@@ -1,0 +1,20 @@
+uuid: ddab94e0-a000-4afc-976b-d0c6558d9f92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_celular_alt
+  module:
+    - user
+id: user.user.field_celular_alt
+field_name: field_celular_alt
+entity_type: user
+bundle: user
+label: Celular
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

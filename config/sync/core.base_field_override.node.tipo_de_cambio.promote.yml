@@ -1,0 +1,22 @@
+uuid: 16ae2f47-ab97-43e4-ac6a-ca991124496c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tipo_de_cambio
+id: node.tipo_de_cambio.promote
+field_name: promote
+entity_type: node
+bundle: tipo_de_cambio
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

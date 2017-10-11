@@ -1,0 +1,23 @@
+uuid: dc6d0829-eef0-42a5-a694-aba802e02ed4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_sitio_web
+  module:
+    - link
+    - user
+id: user.user.field_sitio_web
+field_name: field_sitio_web
+entity_type: user
+bundle: user
+label: 'Sitio Web'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

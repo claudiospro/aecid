@@ -1,0 +1,30 @@
+uuid: 4cef9c51-6ae1-4a33-a5fb-4c3df0e80447
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.resultados_de_desarrollo.field_porcentaje
+    - field.field.paragraph.resultados_de_desarrollo.field_resultados_de_desarrollo
+    - paragraphs.paragraphs_type.resultados_de_desarrollo
+id: paragraph.resultados_de_desarrollo.default
+targetEntityType: paragraph
+bundle: resultados_de_desarrollo
+mode: default
+content:
+  field_porcentaje:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_resultados_de_desarrollo:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

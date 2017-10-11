@@ -1,0 +1,25 @@
+uuid: a22b0259-e27f-453e-b3f8-116aa9a74018
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_pie_de_pagina:ed5df64f-0168-438e-af9c-61482cb4f857'
+  module:
+    - block_content
+  theme:
+    - aecid_theme
+id: matrixaecid.pe
+theme: aecid_theme
+region: subfeatures_third
+weight: 0
+provider: null
+plugin: 'block_content:ed5df64f-0168-438e-af9c-61482cb4f857'
+settings:
+  id: 'block_content:ed5df64f-0168-438e-af9c-61482cb4f857'
+  label: matrix@aecid.pe
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

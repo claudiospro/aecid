@@ -1,0 +1,21 @@
+uuid: 900a521e-e20e-419b-8e21-c0feed28b189
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_pie_de_pagina
+    - field.storage.block_content.field_des_acceso_pie_pag
+  module:
+    - text
+id: block_content.bloque_pie_de_pagina.field_des_acceso_pie_pag
+field_name: field_des_acceso_pie_pag
+entity_type: block_content
+bundle: bloque_pie_de_pagina
+label: 'Descripción Acceso Pie Página'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

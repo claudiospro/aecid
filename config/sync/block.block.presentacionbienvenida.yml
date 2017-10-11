@@ -1,0 +1,31 @@
+uuid: 8eefdc5b-3d8e-49a0-afde-ae7d2973c6d4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2cab0d56-5d2c-4ba4-ac87-25c6f3cdaef4'
+  module:
+    - block_content
+    - system
+  theme:
+    - aecid_theme
+id: presentacionbienvenida
+theme: aecid_theme
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:2cab0d56-5d2c-4ba4-ac87-25c6f3cdaef4'
+settings:
+  id: 'block_content:2cab0d56-5d2c-4ba4-ac87-25c6f3cdaef4'
+  label: 'PRESENTACIÓN - BIENVENIDA'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

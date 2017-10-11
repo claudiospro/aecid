@@ -1,0 +1,20 @@
+uuid: a1abfdb5-3f0c-4bf2-82e1-e343294b9ea0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_num_colectivo_meta
+field_name: field_num_colectivo_meta
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
